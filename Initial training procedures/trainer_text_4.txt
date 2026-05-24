@@ -1,0 +1,35 @@
+In the world of electronics, you all must have heard the term Transistor in your life at least once. But have you ever thought about what are transistors? How do they work? What are the types of transistors? So today you will get the answer to all such questions. In this article, we will understand about the device MOSFET and its characteristics. But before that let me clear the term transistor.
+
+So a transistor is a type of semiconductor device that is used to maintain and regulate the voltage and current level. It has the functions of a switch and an amplifier. You might be thinking about what is the need to study transistors. This is because it is one of the essential components in most of the electronic devices present today. We cannot imagine this world of technology without transistors.
+
+Basics
+MOSFET is a very popular kind of IG-FET. The full form of MOSFET is the Metal Oxide Semiconductor Field Effect Transistor. The diagram of MOSFET is given below.
+
+In these kinds of devices, the gate terminal is separated from the channel using the insulating layer. This insulating layer is formed from the oxide layer of the semiconductor. The insulating layer of MOSFET is formed from SiO2.
+
+Now MOSFET is also classified into two types:-
+
+Depletion type
+
+Enhancement type
+
+When we provide external voltage in the channel, it can either increase or decrease the amount of charge carriers in the channel. If the number of charge carriers increases, it is known as enhancement type MOSFET. But if the number of charge carriers decrease then it is known as depletion type MOSFET.
+
+FET
+Now one of those transistors is FET. The full form of FET is a Field Effect Transistor. It is a three-terminal device that uses the electric field to regulate and maintain the flow of current. The three terminals are :
+
+Gate
+Drain
+Source
+Current flows between two terminals, drain and source. The flow of current can be controlled by applying external voltage between gate and source. This external voltage generates electric field in device. So by controlling electric field and voltage, we can regulate the flow of current. Thus it is a Voltage Controlled Device. It has many applications such as Integrated circuits, oscillators and buffer amplifiers. They are small in size and because of this they are used in ICs.
+
+Now there are two types of FET:-
+
+JFET ( Junction Field Effect Transistor)
+
+IG-FET (Insulated Gate Field Effect Transistor)
+
+Important Terminologies
+Transistor : It is a kind of semiconductor device which can generate electric current or voltage on its own.
+Gate Terminal : The current conduction between drain and source is controlled by applying voltage in the gate terminal.
+Threshold voltage : Maximum amount of voltage required for the formation of channel.
