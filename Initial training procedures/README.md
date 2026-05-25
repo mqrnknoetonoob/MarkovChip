@@ -138,7 +138,7 @@ instead of
 is -> very
 ```
 
-### **7. Text Normalization**
+### **6. Text Normalization**
 Before training:
 * All text is converted to lowercase.
 * Unnecessary punctuation is removed.
