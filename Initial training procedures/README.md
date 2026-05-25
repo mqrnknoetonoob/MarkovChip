@@ -29,3 +29,124 @@ If you do not have the `marklex.db` file populated, you can recreate the databas
 To insert the required words from the text list into the database, run:
 ```bash
 python parasite_word_inserter.py
+
+# Database Training Rules
+
+## 1. Vocabulary Registration
+
+All unique words are stored in the `word_list` table.
+
+- If a word does not already exist:
+  - it is inserted into the database.
+- If the word already exists:
+  - insertion is ignored due to the `UNIQUE` constraint.
+
+---
+
+## 2. Transition Frequency Tracking
+
+The `frequency_list` table stores contextual word transitions.
+
+Each row represents:
+
+previous_word -> current_word
+
+along with the frequency of occurrence.
+
+---
+
+## 3. Frequency Update Logic
+
+During training:
+
+- If a transition already exists:
+  - its frequency is incremented.
+- Otherwise:
+  - a new transition entry is created with initial frequency `1`.
+
+---
+
+## 4. Parasite Word Mechanism
+
+Function words such as:
+- auxiliary verbs,
+- prepositions,
+- conjunctions,
+- articles,
+
+are stored in the `parasite_list` table.
+
+These words are treated as contextual bridge words rather than semantic anchors.
+
+---
+
+## 5. Semantic Anchor Preservation
+
+If the current word is identified as a parasite word:
+
+- the transition is still recorded,
+- BUT the contextual anchor (`prev_word`) is not updated.
+
+This preserves long-range semantic context.
+
+### Example
+
+Input sentence:
+
+he is very tired
+
+If:
+
+is
+
+is marked as a parasite word,
+
+the generated transitions become:
+
+he -> is  
+he -> very  
+very -> tired
+
+instead of:
+
+is -> very
+
+---
+
+## 6. Sentence Boundary Handling
+
+Training is performed sentence-by-sentence.
+
+Sentence delimiters:
+- `.`
+- `!`
+- `?`
+
+are used to prevent invalid cross-sentence transitions.
+
+Example:
+
+He is tired. She is happy.
+
+does NOT generate:
+
+tired -> she
+
+---
+
+## 7. Text Normalization
+
+Before training:
+
+- all text is converted to lowercase,
+- unnecessary punctuation is removed,
+- apostrophes are preserved to maintain contractions such as:
+  - don't
+  - i'm
+  - he's
+
+---
+
+## 8. Architecture Goal
+
+The database is designed to generate a sparse probabilistic transition graph suitable for lightweight software inference and future hardware acceleration.
