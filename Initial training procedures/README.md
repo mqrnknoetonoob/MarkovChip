@@ -1,152 +1,161 @@
-# Initial Training Procedures
+# MarkLex — Initial Training Procedures
 
-This folder contains all the necessary scripts, data sources, and SQL files used for the initial model training and database preparation of the **MarkLex** project.
+MarkLex is a lightweight predictive text system based on sparse probabilistic Markov-chain inference.
 
----
-
-## 📂 Folder Structure & File Guide
-
-Here is a quick overview of the files included in this directory and their respective purposes:
-
-* **`main_trainer_script.py`**: The primary training script used to train the model.
-* **`parasite_word_inserter.py`**: A utility script designed to process and insert parasite words into the database.
-* **`marklex.db`**: The local SQLite database file containing the training data.
-* **`schema.sql`**: The database schema file containing the structure (`CREATE TABLE` statements) of the database.
-* **`testquery.sql`**: A collection of SQL queries used for testing and verifying database records.
-* **`parasite_word.txt`**: A raw text file containing the list of parasite words to be processed.
-* **`trainer_text_1.txt` to `trainer_text_4.txt`**: Raw text corpora used as data sources for model training.
+The project is being developed as a hardware-oriented NLP architecture targeting efficient future ASIC implementation for smartphone-style text prediction systems.
 
 ---
 
-## 🚀 How to Run
+# Core Idea
 
-Before running the scripts, ensure you have Python 3.x installed on your system along with any required dependencies.
+Instead of treating every word equally, MarkLex preserves semantic anchors while selectively bypassing low-semantic grammatical bridge words (called parasite words).
 
-### 1. Database Setup
-If you do not have the `marklex.db` file populated, you can recreate the database structure using the provided `schema.sql` file, or simply run the pipeline scripts below.
-
-### 2. Populate Parasite Words
-To insert the required words from the text list into the database, run:
-```bash
-python parasite_word_inserter.py
-
-# Database Training Rules
-
-## 1. Vocabulary Registration
-
-All unique words are stored in the `word_list` table.
-
-- If a word does not already exist:
-  - it is inserted into the database.
-- If the word already exists:
-  - insertion is ignored due to the `UNIQUE` constraint.
+This creates a sparse contextual transition graph suitable for:
+- lightweight inference,
+- reduced memory complexity,
+- sparse lookup acceleration,
+- future hardware implementation.
 
 ---
 
-## 2. Transition Frequency Tracking
+# Current Architecture
 
-The `frequency_list` table stores contextual word transitions.
+The current software prototype consists of:
 
-Each row represents:
-
-previous_word -> current_word
-
-along with the frequency of occurrence.
-
----
-
-## 3. Frequency Update Logic
-
-During training:
-
-- If a transition already exists:
-  - its frequency is incremented.
-- Otherwise:
-  - a new transition entry is created with initial frequency `1`.
+- SQLite-based sparse transition database
+- Corpus training pipeline
+- Frequency-based contextual transition generation
+- Parasite-word contextual anchoring
 
 ---
 
-## 4. Parasite Word Mechanism
+# Project Structure
 
-Function words such as:
-- auxiliary verbs,
-- prepositions,
-- conjunctions,
-- articles,
+```text
+Initial training procedures/
+│
+├── marklex.db
+├── train.py
+├── parasite_word_inserter.py
+├── parasite_words.txt
+├── training_text.txt
+└── README.md
+```
 
-are stored in the `parasite_list` table.
+Database Schema
 
-These words are treated as contextual bridge words rather than semantic anchors.
+The system currently uses three tables:
 
----
+## Database Schema
 
-## 5. Semantic Anchor Preservation
+The system currently uses three tables to manage and process text transitions efficiently:
 
-If the current word is identified as a parasite word:
+| Table Name | Purpose |
+| :--- | :--- |
+| **`word_list`** | Stores all unique words. |
+| **`frequency_list`** | Stores contextual transition frequencies. |
+| **`parasite_list`** | Stores low-semantic grammatical bridge words. |
 
-- the transition is still recorded,
-- BUT the contextual anchor (`prev_word`) is not updated.
+## **Database Setup**
 
-This preserves long-range semantic context.
-
-### Example
-
-Input sentence:
-
-he is very tired
-
-If:
-
-is
-
-is marked as a parasite word,
-
-the generated transitions become:
-
-he -> is  
-he -> very  
-very -> tired
-
-instead of:
-
-is -> very
-
----
-
-## 6. Sentence Boundary Handling
-
-Training is performed sentence-by-sentence.
-
-Sentence delimiters:
-- `.`
-- `!`
-- `?`
-
-are used to prevent invalid cross-sentence transitions.
+Create the database schema before training.
 
 Example:
 
-He is tired. She is happy.
+```bash
+sqlite3 marklex.db
+```
 
-does NOT generate:
+## **Populate Parasite Words**
 
-tired -> she
+To insert the required words from the parasite-word list into the database, run:
+
+```bash
+python parasite_word_inserter.py
+```
+
+## **Run Training**
+
+To train the transition database using the provided corpus:
+
+```bash
+python main_trainer_script.py
+```
+
+## **Database Training Rules**
+
+### **1. Vocabulary Registration**
+All unique words are stored in the `word_list` table.
+
+* **If a word does not already exist:** It is inserted into the database.
+* **If the word already exists:** Insertion is ignored due to the `UNIQUE` constraint.
+
+### **2. Transition Frequency Tracking**
+The `frequency_list` table stores contextual word transitions.
+
+Each row represents:
+```bash
+previous_word -> current_word
+```
+
+### **3. Frequency Update Logic**
+During training:
+
+* **If a transition already exists:** Its frequency is incremented.
+* **Otherwise:** A new transition entry is created with an initial frequency of 1.
 
 ---
 
-## 7. Text Normalization
+### **4. Parasite Word Mechanism**
+Function words such as:
+* Articles
+* Auxiliary verbs
+* Conjunctions
+* Prepositions
 
+Are stored in the `parasite_list` table. These words are treated as contextual bridge words rather than semantic anchors.
+
+### **5. Semantic Anchor Preservation**
+If the current word is identified as a parasite word:
+* The transition is still recorded,
+* **BUT** the contextual anchor (`prev_word`) is not updated.
+
+This preserves longer semantic context across grammatical bridge words.
+
+#### **Example**
+Input sentence:
+```bash
+he is very tired
+```
+"is" is marked as a parasite word, so the generated transitions become:
+```bash
+he -> is
+he -> very
+very -> tired
+```
+instead of
+```bash
+is -> very
+```
+
+### **7. Text Normalization**
 Before training:
+* All text is converted to lowercase.
+* Unnecessary punctuation is removed.
+* Apostrophes are preserved to maintain contractions such as:
+```bash
+  don't
+  i'm
+  he's
+```
+* ".", ",", "!", "?" is used as sentence delimeter 
 
-- all text is converted to lowercase,
-- unnecessary punctuation is removed,
-- apostrophes are preserved to maintain contractions such as:
-  - don't
-  - i'm
-  - he's
+## **Current Goal**
 
----
+The current objective is to build a **sparse probabilistic transition graph** suitable for future lightweight hardware inference.
 
-## 8. Architecture Goal
-
-The database is designed to generate a sparse probabilistic transition graph suitable for lightweight software inference and future hardware acceleration.
+### **Long-Term Target Includes:**
+* **Top-K Prediction Selection:** Optimizing next-token selection efficiency.
+* **Sparse Lookup Acceleration:** Reducing memory access overhead for hardware.
+* **RTL Implementation:** Translating the transition logic into hardware description languages.
+* **ASIC-Oriented Predictive Text Inference:** Designing dedicated silicon-level architectures for low-power predictive text.
