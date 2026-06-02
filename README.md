@@ -1,8 +1,12 @@
-# MarkLex
-A hardware-oriented lightweight predictive text system using probabilistic Markov-chain inference.
+# MarkovChip
+A Multi-Step Markov Transition Matrix IP Block
 
-Teammates: 1. Mushfiq Raiyun
-           2. Arnob Pal
-           3. Sajid Ibn Jaman
-           4. Sheikh Rahiqul Islam Swapnil
-           5. Diganto Saha
+## 👥 Team Members
+
+| Name | Department | Institution |
+| :--- | :---: | :---: |
+| **Mushfiq Raiyun** | CSE | BUET |
+| **Arnob Pal** | EEE | BUET |
+| **Sajid Ibn Jaman** | CSE | BUET |
+| **Sheikh Rahiqul Islam Swapnil** | CSE | BUET |
+| **Diganto Saha** | EEE | BUET |
