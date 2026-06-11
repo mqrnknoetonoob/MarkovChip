@@ -1,5 +1,5 @@
 # MarkovChip
-A Multi-Step Markov Transition Matrix IP Block with Integrated Sorter
+A Multi-Step Markov Transition Matrix IP Block
 
 ###### Custom Area-Optimized AI Accelerator Designed for Chipathon (GF180MCU)
 ## 👥 Team Members
