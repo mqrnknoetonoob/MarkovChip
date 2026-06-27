@@ -1,0 +1,22 @@
+# VS Code
+.vscode/
+**/.vscode/
+
+# Verilator build output
+obj_dir/
+**/obj_dir/
+
+# Object files
+*.o
+*.a
+*.d
+
+# Executables
+*.exe
+
+# Waveform files
+*.vcd
+*.fst
+
+# Other generated files (optional)
+*.log
