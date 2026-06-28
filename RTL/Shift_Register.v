@@ -1,4 +1,4 @@
-module shift_register_12bit (
+module Shift_Register (
     input clk,                // Clock signal
     input reset,              // Reset to clear registers
     input [1:0] mode,         // Control signal (00, 01, 10)

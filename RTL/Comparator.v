@@ -27,6 +27,6 @@ module Comparator (
     );
 
     // Final comparison logic: Output 1 if A > B, else 0
-    assign x = (GL_index > GR_index) ? 1'b1 : 1'b0;
+    assign x = (GL_index > GR_index) ? 1'b0 : 1'b1;
 
 endmodule
