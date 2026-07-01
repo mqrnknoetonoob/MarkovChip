@@ -20,7 +20,7 @@ Results were written to `Verification/Report/seed_ver_report.csv`, covering all 
 
 ---
 
-## 2. Top 16 candidate seeds
+## 2. Top 32 candidate seeds
 
 Ranked by lowest Average Error, then lowest Correlation Score:
 
@@ -42,5 +42,21 @@ Ranked by lowest Average Error, then lowest Correlation Score:
 | 14 | 1471 | `12'h5BF` | 0.0000 | 0 | 0.1099 |
 | 15 | 2783 | `12'hADF` | 0.0000 | 0 | 0.1099 |
 | 16 | 2879 | `12'hB3F` | 0.0000 | 0 | 0.1099 |
+| 17 | 3263 | `12'hCBF` | 0.0000 | 0 | 0.1099 |
+| 18 | 1535 | `12'h5FF` | 0.0000 | 0 | 0.1100 |
+| 19 | 1631 | `12'h65F` | 0.0000 | 0 | 0.1100 |
+| 20 | 3327 | `12'hCFF` | 0.0000 | 0 | 0.1100 |
+| 21 | 63   | `12'h03F` | 0.0000 | 0 | 0.1101 |
+| 22 | 127  | `12'h07F` | 0.0000 | 0 | 0.1101 |
+| 23 | 479  | `12'h1DF` | 0.0000 | 0 | 0.1101 |
+| 24 | 2047 | `12'h7FF` | 0.0000 | 0 | 0.1101 |
+| 25 | 2367 | `12'h93F` | 0.0000 | 0 | 0.1101 |
+| 26 | 2431 | `12'h97F` | 0.0000 | 0 | 0.1101 |
+| 27 | 3839 | `12'hEFF` | 0.0000 | 0 | 0.1101 |
+| 28 | 959  | `12'h3BF` | 0.0000 | 0 | 0.1102 |
+| 29 | 2271 | `12'h8DF` | 0.0000 | 0 | 0.1102 |
+| 30 | 2751 | `12'hABF` | 0.0000 | 0 | 0.1102 |
+| 31 | 2943 | `12'hB7F` | 0.0000 | 0 | 0.1102 |
+| 32 | 3423 | `12'hD5F` | 0.0000 | 0 | 0.1102 |
 
-These 16 seeds achieved perfect Average/Highest Error scores across all 32 threshold tests, with the lowest Correlation Scores among that group.
+These 32 seeds achieved perfect Average/Highest Error scores across all 32 threshold tests, with the lowest Correlation Scores among that group.
