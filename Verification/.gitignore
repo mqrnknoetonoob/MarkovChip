@@ -1,20 +1,11 @@
-# Verilator build output
-obj_dir/
-**/obj_dir_cmp/
-**/obj_dir_bitgen/
-**/obj_dir_sweep/
+obj_dir_cmp/
+obj_dir_bitgen/
+obj_dir_sweep/
 
-# Object files
 *.o
 *.a
 *.d
-
-# Executables
 *.exe
-
-# Waveform files
 *.vcd
 *.fst
-
-# Other generated files (optional)
 *.log
