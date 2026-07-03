@@ -8,6 +8,6 @@ A Multi-Step Markov Transition Matrix IP Block
 | :--- | :---: | :---: |
 | **Mushfiq Raiyun** | CSE | BUET |
 | **Arnob Pal** | EEE | BUET |
-| **Sajid Ibn Jaman** | CSE | BUET |
+| **Sajid Ibne Zaman** | CSE | BUET |
 | **Sheikh Rahiqul Islam Swapnil** | CSE | BUET |
 | **Diganto Saha** | EEE | BUET |
