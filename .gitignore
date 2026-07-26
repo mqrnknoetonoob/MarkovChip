@@ -1,17 +1,3 @@
-# Step 1: Ignore everything completely
-*
-
-# Step 2: Un-ignore the RTL folder and its contents
-!RTL/
-!RTL/**
-
-# Step 3: Explicitly ignore PDK inside RTL or main folder
-GF180MCU_PDK/
-**/GF180MCU_PDK/
-
-# Step 4: Un-ignore the root .gitignore file itself
-!.gitignore
-
 # Global Ignore Rules (Log/Build Files)
 *.vcd
 *.fst
@@ -21,3 +7,7 @@ GF180MCU_PDK/
 *.d
 *.exe
 .vscode/
+*.lib
+*.txt
+/GF180MCU_PDK
+/Synthesized_Verilog_Files
