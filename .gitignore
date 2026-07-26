@@ -1,22 +1,23 @@
-# VS Code
-.vscode/
-**/.vscode/
+# Step 1: Ignore everything completely
+*
 
-# Verilator build output
-obj_dir/
-**/obj_dir/
+# Step 2: Un-ignore the RTL folder and its contents
+!RTL/
+!RTL/**
 
-# Object files
+# Step 3: Explicitly ignore PDK inside RTL or main folder
+GF180MCU_PDK/
+**/GF180MCU_PDK/
+
+# Step 4: Un-ignore the root .gitignore file itself
+!.gitignore
+
+# Global Ignore Rules (Log/Build Files)
+*.vcd
+*.fst
+*.log
 *.o
 *.a
 *.d
-
-# Executables
 *.exe
-
-# Waveform files
-*.vcd
-*.fst
-
-# Other generated files (optional)
-*.log
+.vscode/

@@ -1,0 +1,7 @@
+GF180MCU_PDK/
+.vscode/
+.obj_dir/
+*.cpp
+*.exe
+*.log
+*.txt

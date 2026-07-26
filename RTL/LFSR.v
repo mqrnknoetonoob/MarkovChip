@@ -6,6 +6,7 @@ module LFSR (
     output reg [11:0] seed_mem
 );
     wire feedback;
+    wire row_or_col; // 1 = Column, 0 = Row
 
     // Feedback polynomial: x^12 + x^7 + x^4 + x^3 + 1
     assign feedback = seed_mem[11] ^ seed_mem[6] ^ seed_mem[3] ^ seed_mem[2];
