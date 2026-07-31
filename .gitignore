@@ -10,4 +10,4 @@
 *.lib
 *.txt
 /GF180MCU_PDK
-/Synthesized_Verilog_Files
+/*/obj_dir*/

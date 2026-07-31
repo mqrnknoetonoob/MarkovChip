@@ -4,8 +4,7 @@ module Result_Output_Shifter (
     input  wire output_valid,           // Host-driven, 1-cycle pulse: "I've counted enough output_ready pulses, give me the results now"
     input  wire [16*12-1:0] stored_results_flat,
 
-    output wire out0, out1, out2, out3,    // Serial output lines (mirrors spi_in0..3)
-    output wire output_shifting            // High for the 48 cycles while shifting out
+    output wire out0, out1, out2, out3    // Serial output lines (mirrors spi_in0..3)
 );
 
     // ----------------------------------------------------
@@ -33,7 +32,9 @@ module Result_Output_Shifter (
         end
     end
 
-    assign output_shifting = shift_active;
+    // shift_active stays internal now -- the host doesn't need a status
+    // flag since the protocol is deterministic: exactly 48 cycles after
+    // output_valid, all the data has been shifted out.
 
     // ----------------------------------------------------
     // Group round-robin selector (own instance -- independent of the
@@ -41,8 +42,10 @@ module Result_Output_Shifter (
     // ----------------------------------------------------
     wire [3:0] out_en; // out_en[3]=Group0(0-3) out_en[2]=Group1(4-7)
                         // out_en[1]=Group2(8-11) out_en[0]=Group3(12-15)
+    /* verilator lint_off UNUSED */
     wire [1:0] out_active_select;
-
+    /* verilator lint_off UNUSED */
+    
     memory_enable_decoder out_dec_inst (
         .clk(clk),
         .rst_n(rst_n),

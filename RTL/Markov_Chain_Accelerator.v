@@ -7,15 +7,12 @@ module Markov_Chain_Accelerator (
     input wire spi_in3,
     input wire input_ready,
     input wire load_row_or_col,
-    input wire on_switch,
-    input wire count_en,
     input wire output_valid,   // Host pulses this once it's counted the desired number of output_ready pulses
     output wire output_ready,
     output wire spi_out0,
     output wire spi_out1,
     output wire spi_out2,
-    output wire spi_out3,
-    output wire output_shifting   // 1 while the 4 lines carry valid shifted-out bits
+    output wire spi_out3
 );
 
     wire lfsr_en;
@@ -32,16 +29,16 @@ module Markov_Chain_Accelerator (
 
     // Hardcoded seeds
     wire [16*12-1:0] seeds_row_flat = {
-        12'h7BF, 12'h23F, 12'hAFF, 12'h67F,
-        12'h47F, 12'h5BF, 12'h8FF, 12'hB3F,
-        12'h7FF, 12'h97F, 12'h07F, 12'h3BF,
-        12'hCFF, 12'hABF, 12'h5FF, 12'hD5F
+        12'h85D, 12'hC7C, 12'h555, 12'h574,
+        12'hE17, 12'hE37, 12'hA17, 12'hC5D,
+        12'h73F, 12'h31F, 12'h8F8, 12'hCDC,
+        12'h79E, 12'h31A, 12'hAB7, 12'hA96
     };
     wire [16*12-1:0] seeds_col_flat = {
-        12'hF7F, 12'h3FF, 12'h3DF, 12'hEBF,
-        12'hF5F, 12'hD7F, 12'hADF, 12'h1FF,
-        12'h93F, 12'h1DF, 12'hEFF, 12'h03F,
-        12'h8DF, 12'h65F, 12'hB7F, 12'hCBF
+        12'hE36, 12'h155, 12'h174, 12'h87C,
+        12'hC7D, 12'hA36, 12'h33E, 12'h71F,
+        12'h73E, 12'hA12, 12'hAE8, 12'h3BA,
+        12'h3BF, 12'hAB2, 12'h79B, 12'h33B
     };
 
     // ----------------------------------------------------
@@ -69,19 +66,19 @@ module Markov_Chain_Accelerator (
     // ----------------------------------------------------
     
     // Group 0 Mode Selection (States 0, 1, 2, 3)
-    wire [1:0] mode_row_g0 = (load_row_or_col && en_out[3]) ? 2'b01 : 2'b00;
+    wire [1:0] mode_row_g0 = (input_ready && load_row_or_col && en_out[3]) ? 2'b01 : 2'b00;
     wire [1:0] mode_col_g0 = (!output_ready && input_ready && !load_row_or_col && en_out[3]) ? 2'b01 : 2'b00;
 
     // Group 1 Mode Selection (States 4, 5, 6, 7)
-    wire [1:0] mode_row_g1 = (load_row_or_col && en_out[2]) ? 2'b01 : 2'b00;
+    wire [1:0] mode_row_g1 = (input_ready && load_row_or_col && en_out[2]) ? 2'b01 : 2'b00;
     wire [1:0] mode_col_g1 = (!output_ready && input_ready && !load_row_or_col && en_out[2]) ? 2'b01 : 2'b00;
 
     // Group 2 Mode Selection (States 8, 9, 10, 11)
-    wire [1:0] mode_row_g2 = (load_row_or_col && en_out[1]) ? 2'b01 : 2'b00;
+    wire [1:0] mode_row_g2 = (input_ready && load_row_or_col && en_out[1]) ? 2'b01 : 2'b00;
     wire [1:0] mode_col_g2 = (!output_ready && input_ready && !load_row_or_col && en_out[1]) ? 2'b01 : 2'b00;
 
     // Group 3 Mode Selection (States 12, 13, 14, 15)
-    wire [1:0] mode_row_g3 = (load_row_or_col && en_out[0]) ? 2'b01 : 2'b00;
+    wire [1:0] mode_row_g3 = (input_ready && load_row_or_col && en_out[0]) ? 2'b01 : 2'b00;
     wire [1:0] mode_col_g3 = (!output_ready && input_ready && !load_row_or_col && en_out[0]) ? 2'b01 : 2'b00;
     
     // ----------------------------------------------------
@@ -101,8 +98,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g0),
         .mode_row(mode_row_g0),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[0*12 +: 12]),
         .seed_col(seeds_col_flat[0*12 +: 12]),
         .output_ready(output_ready),
@@ -116,8 +113,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g0),
         .mode_row(mode_row_g0),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[1*12 +: 12]),
         .seed_col(seeds_col_flat[1*12 +: 12]),
         .output_ready(output_ready),
@@ -131,8 +128,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g0),
         .mode_row(mode_row_g0),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[2*12 +: 12]),
         .seed_col(seeds_col_flat[2*12 +: 12]),
         .output_ready(output_ready),
@@ -146,8 +143,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g0),
         .mode_row(mode_row_g0),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[3*12 +: 12]),
         .seed_col(seeds_col_flat[3*12 +: 12]),
         .output_ready(output_ready),
@@ -163,8 +160,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g1),
         .mode_row(mode_row_g1),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[4*12 +: 12]),
         .seed_col(seeds_col_flat[4*12 +: 12]),
         .output_ready(output_ready),
@@ -178,8 +175,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g1),
         .mode_row(mode_row_g1),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[5*12 +: 12]),
         .seed_col(seeds_col_flat[5*12 +: 12]),
         .output_ready(output_ready),
@@ -193,8 +190,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g1),
         .mode_row(mode_row_g1),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[6*12 +: 12]),
         .seed_col(seeds_col_flat[6*12 +: 12]),
         .output_ready(output_ready),
@@ -208,8 +205,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g1),
         .mode_row(mode_row_g1),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[7*12 +: 12]),
         .seed_col(seeds_col_flat[7*12 +: 12]),
         .output_ready(output_ready),
@@ -225,8 +222,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g2),
         .mode_row(mode_row_g2),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[8*12 +: 12]),
         .seed_col(seeds_col_flat[8*12 +: 12]),
         .output_ready(output_ready),
@@ -240,8 +237,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g2),
         .mode_row(mode_row_g2),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[9*12 +: 12]),
         .seed_col(seeds_col_flat[9*12 +: 12]),
         .output_ready(output_ready),
@@ -255,8 +252,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g2),
         .mode_row(mode_row_g2),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[10*12 +: 12]),
         .seed_col(seeds_col_flat[10*12 +: 12]),
         .output_ready(output_ready),
@@ -270,8 +267,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g2),
         .mode_row(mode_row_g2),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[11*12 +: 12]),
         .seed_col(seeds_col_flat[11*12 +: 12]),
         .output_ready(output_ready),
@@ -287,8 +284,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g3),
         .mode_row(mode_row_g3),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[12*12 +: 12]),
         .seed_col(seeds_col_flat[12*12 +: 12]),
         .output_ready(output_ready),
@@ -302,8 +299,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g3),
         .mode_row(mode_row_g3),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[13*12 +: 12]),
         .seed_col(seeds_col_flat[13*12 +: 12]),
         .output_ready(output_ready),
@@ -317,8 +314,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g3),
         .mode_row(mode_row_g3),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[14*12 +: 12]),
         .seed_col(seeds_col_flat[14*12 +: 12]),
         .output_ready(output_ready),
@@ -332,8 +329,8 @@ module Markov_Chain_Accelerator (
         .mode_col(mode_col_g3),
         .mode_row(mode_row_g3),
         .lfsr_en(lfsr_en),
-        .on_switch(on_switch),
-        .count_en(count_en && active_count_en),
+        .on_switch(lfsr_en),
+        .count_en(active_count_en),
         .seed_row(seeds_row_flat[15*12 +: 12]),
         .seed_col(seeds_col_flat[15*12 +: 12]),
         .output_ready(output_ready),
@@ -373,8 +370,8 @@ module Markov_Chain_Accelerator (
         .step_done_trigger(lfsr_en & timer_done),
         .sum_in(instant_sum[11:0]),
         .stored_results_flat(stored_results_flat),
-        .output_ready(output_ready_sig),
-        .active_write_index()
+        .output_ready(output_ready_sig)
+        // .active_write_index()
     );
 
     assign output_ready = output_ready_sig;
@@ -394,8 +391,7 @@ module Markov_Chain_Accelerator (
         .out0(spi_out0),
         .out1(spi_out1),
         .out2(spi_out2),
-        .out3(spi_out3),
-        .output_shifting(output_shifting)
+        .out3(spi_out3)
     );
 
 endmodule
