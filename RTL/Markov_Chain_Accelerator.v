@@ -45,7 +45,10 @@ module Markov_Chain_Accelerator (
     // 1. Memory Enable Decoder (existing module, as-is)
     // ----------------------------------------------------
     wire [3:0] en_out;
+    
+    /* verilator lint_off UNUSED */
     wire [1:0] active_select;
+    /* verilator lint_off UNUSED */
 
     memory_enable_decoder dec_inst (
         .clk(clk),
@@ -364,34 +367,26 @@ module Markov_Chain_Accelerator (
 
     wire output_ready_sig;
 
+    // ----------------------------------------------------
+    // 5+6 combined: storage/feedback memory AND output shifting now live
+    // in one module -- the 16 state slots do double duty (write during
+    // normal operation, shift during host readout) instead of keeping a
+    // separate duplicate set of 16 registers just for shifting out.
+    // ----------------------------------------------------
     Result_Shift_Memory res_mem_inst (
         .clk(clk),
         .rst_n(rst_n),
         .step_done_trigger(lfsr_en & timer_done),
         .sum_in(instant_sum[11:0]),
-        .stored_results_flat(stored_results_flat),
-        .output_ready(output_ready_sig)
-        // .active_write_index()
-    );
-
-    assign output_ready = output_ready_sig;
-
-    // ----------------------------------------------------
-    // 6. Shifting the 16 stored results back out, 4 lines at a time,
-    //    mirroring the input-loading scheme (round-robin groups, LSB->MSB).
-    //    Triggered by the host, not automatically every round -- the host
-    //    counts output_ready pulses itself and pulses output_valid once
-    //    it's done enough steps.
-    // ----------------------------------------------------
-    Result_Output_Shifter out_shifter_inst (
-        .clk(clk),
-        .rst_n(rst_n),
         .output_valid(output_valid),
+        .output_ready(output_ready_sig),
         .stored_results_flat(stored_results_flat),
         .out0(spi_out0),
         .out1(spi_out1),
         .out2(spi_out2),
         .out3(spi_out3)
     );
+
+    assign output_ready = output_ready_sig;
 
 endmodule

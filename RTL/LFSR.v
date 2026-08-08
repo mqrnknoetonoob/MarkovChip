@@ -22,7 +22,7 @@ module LFSR (
     end
 
     // =========================================================================
-    // MATHEMATICAL WHITENING LAYER (Shatters the 10.9% correlation matrix)
+    // MATHEMATICAL WHITENING LAYER 
     // =========================================================================
     
     // Step 1: 12-bit wide XOR-Shift (Calculates instantly, minimal gate overhead)
