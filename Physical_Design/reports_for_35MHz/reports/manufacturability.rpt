@@ -1,0 +1,19 @@
+Design Name: Markov_Chain_Accelerator
+Run Directory: /openlane/designs/Markov_Chain_Accelerator/runs/RUN_for_35MHz
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/Markov_Chain_Accelerator/runs/RUN_for_35MHz/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/Markov_Chain_Accelerator/runs/RUN_for_35MHz/logs/signoff/41-Markov_Chain_Accelerator.lef.lvs.log
+Number of nets: 12293                      |Number of nets: 12293                      
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/Markov_Chain_Accelerator/runs/RUN_for_35MHz/logs/signoff/43-arc.log
+Pin violations: 0
+Net violations: 0

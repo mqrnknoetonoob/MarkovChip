@@ -1,10 +1,25 @@
-// Build:
+// ============================================================================
+// GATE-LEVEL verification harness for Markov_Chain_Accelerator.
+//
+// This is the SAME driver/checker logic as the RTL testbench
+// (Markov_Chain_Accelerator.cpp) -- unchanged, because the gate-level
+// netlist's top module has the identical port list/order:
+//   clk, rst_n, spi_in0-3, input_ready, load_row_or_col,
+//   output_valid, output_ready, spi_out0-3
+//
+// The ONLY thing that changes is what we hand to Verilator at build time:
+// the gate-level netlist + the PDK standard-cell functional models,
+// instead of the individual RTL .v files.
+//
+// Build (fill in the PDK functional-model path):
 //   verilator --cc --exe --build -Wall --top-module Markov_Chain_Accelerator \
-//     sim_main.cpp Markov_Chain_Accelerator.v LFSR_Enabler.v Stochastic_Timer.v \
-//     Row_Col_BGC.v Shift_Register.v LFSR.v Comparator.v priority_encoder.v \
-//     counter.v Adder_Tree_16in.v Result_Memory_Shift.v memory_enable_decoder.v \
+//     sim_main_gatelevel.cpp \
+//     Markov_Chain_Accelerator_Netlist.v \
+//     <path-to-pdk>/gf180mcu_fd_sc_mcu7t5v0.v      \  <-- functional models, NOT liberty
+//     -Wno-fatal
+//
 // Run: ./obj_dir/VMarkov_Chain_Accelerator [matrix_file] [p] [r]
-//      (if p/r omitted, prompts interactively -- matches the original C++ style)
+// ============================================================================
 
 #include <verilated.h>
 #include "VMarkov_Chain_Accelerator.h"
@@ -51,11 +66,6 @@ void drive_one_pulse(const std::array<uint16_t,16>& vals, int bit_idx, bool load
     group_turn = (group_turn + 1) % 4;
 }
 
-// Loads a full set of 16 12-bit values (a "column" or a "row") -- 48 pulses
-// total (12 bits x 4 groups, round-robin). Bits sent LSB(0)->MSB(11), since
-// the shift register's q <= {serial_in, q[11:1]} puts the newest bit at the
-// MSB each cycle -- so the value's own LSB must arrive first to end up at
-// the register's bit 0 after all 12 shifts.
 void load_16values(const std::array<uint16_t,16>& vals, bool load_row) {
     group_turn = 0;
     for (int bit_idx = 0; bit_idx <= 11; bit_idx++) {
@@ -67,9 +77,6 @@ void load_16values(const std::array<uint16_t,16>& vals, bool load_row) {
     tick();
 }
 
-// After a row load finishes, one compute round takes exactly 4096 cycles.
-// This is a fixed, known protocol timing (not something the host has to
-// guess) -- but we still watch output_ready throughout as a sanity check.
 bool wait_round_done() {
     bool saw_output_ready = false;
     for (int i = 0; i < 4096; i++) {
@@ -79,15 +86,10 @@ bool wait_round_done() {
     return saw_output_ready;
 }
 
-// Pulses output_valid and captures the 48-cycle shift-out, reconstructing
-// the 16 stored 12-bit results (LSB->MSB, same group order as input).
 std::array<uint16_t,16> read_output() {
     std::array<uint16_t,16> result{};
     dut->output_valid = 1;
-    tick();  // load tick: all 16 regs parallel-load AND this is already the
-             // first valid sample (group0's freshly-loaded LSB, out_en
-             // hasn't advanced yet since shift_active was 0 going into
-             // this very edge).
+    tick();
     dut->output_valid = 0;
 
     int turn = 0;
@@ -100,7 +102,7 @@ std::array<uint16_t,16> read_output() {
         turn = (turn + 1) % 4;
     };
 
-    sample(); // sample #0, right after the load tick (group0's first bit)
+    sample();
     for (int c = 1; c < 48; c++) {
         tick();
         sample();
@@ -113,7 +115,6 @@ int main(int argc, char** argv) {
     Verilated::commandArgs(argc, argv);
     dut = new VMarkov_Chain_Accelerator;
 
-    // ---- 1. Get matrix file, p (starting row), r (steps) ---------------------
     std::string filename;
     int p, r;
     if (argc >= 4) {
@@ -134,20 +135,16 @@ int main(int argc, char** argv) {
     Matrix16 A;
     if (!read_matrix(filename, A)) return 1;
 
-    // ---- 2. Golden model (pure floating point, matches original code) -------
     Vec16 golden = run_golden(A, p, r);
 
-    // ---- 3. Quantize for hardware ---------------------------------------------
-    Matrix16 dummy;
     std::array<QVec16, 16> A_q;
     QVec16 B0_q;
     for (int i = 0; i < 16; i++) {
-        B0_q[i] = quantize(A[p][i]);   // B0 = row p of A
+        B0_q[i] = quantize(A[p][i]);
         for (int j = 0; j < 16; j++)
             A_q[i][j] = quantize(A[i][j]);
     }
 
-    // ---- 4. Reset ---------------------------------------------------------------
     dut->rst_n = 0;
     dut->input_ready = 0;
     dut->load_row_or_col = 0;
@@ -155,14 +152,8 @@ int main(int argc, char** argv) {
     for (int i = 0; i < 5; i++) tick();
     dut->rst_n = 1;
 
-    // ---- 5. Load initial column = B0 (row p of A), quantized -------------------
     load_16values(B0_q, /*load_row=*/false);
 
-    // ---- 6. Run r steps. Each step = 16 rounds; round j loads column j of A ----
-    //         (spread across the 16 lanes) into the "row" registers.
-    //         load_row_or_col stays 1 for every row load, including across step
-    //         boundaries -- the column (state vector) reloads automatically in
-    //         hardware via feedback once output_ready pulses.
     int done_steps = 0;
     for (int step = 0; step < r; step++) {
         for (int round = 0; round < 16; round++) {
@@ -173,12 +164,12 @@ int main(int argc, char** argv) {
 
             if (round == 15) {
                 done_steps++;
-                std::cout << "[step " << (step + 1) << "/" << r << "] "
+                std::cout << "[GATE-LEVEL step " << (step + 1) << "/" << r << "] "
                           << "16 rounds complete, output_ready seen=" << oready
                           << ", done_steps=" << done_steps << "\n";
                 if (!oready) {
                     std::cerr << "  *** WARNING: output_ready did not pulse "
-                                 "when expected! Check timing. ***\n";
+                                 "when expected! Check timing (dff reset polarity?). ***\n";
                 }
             } else if (oready) {
                 std::cerr << "  *** WARNING: output_ready pulsed early "
@@ -187,7 +178,6 @@ int main(int argc, char** argv) {
         }
     }
 
-    // ---- 7. done_steps matches required r -> start reading output ------------
     std::array<uint16_t,16> hw_result{};
     if (done_steps == r) {
         std::cout << "\ndone_steps (" << done_steps << ") == required steps (" << r
@@ -199,28 +189,32 @@ int main(int argc, char** argv) {
         dut->final(); delete dut; return 1;
     }
 
-    // ---- 8. Compare hw_result (dequantized) against golden (pure floating) ----
     std::cout << std::fixed << std::setprecision(6);
-    std::cout << "\nResults after " << r << " step(s), starting from state " << p << ":\n";
+    std::cout << "\n[GATE-LEVEL] Results after " << r << " step(s), starting from state " << p << ":\n";
     std::cout << std::setw(4) << "idx" << std::setw(12) << "golden"
               << std::setw(12) << "hw(deq)" << std::setw(12) << "hw(raw)"
               << std::setw(14) << "abs_err" << std::setw(12) << "rel_err%\n";
 
     double max_abs_err = 0.0, max_rel_err = 0.0;
+    int overflow_flags = 0;
     for (int k = 0; k < 16; k++) {
         double hw_prob = dequantize(hw_result[k]);
         double abs_err = std::abs(hw_prob - golden[k]);
         double rel_err = (golden[k] > 1e-9) ? (abs_err / golden[k] * 100.0) : 0.0;
         max_abs_err = std::max(max_abs_err, abs_err);
         max_rel_err = std::max(max_rel_err, rel_err);
+        // hw_result is only ever populated from a 12-bit shift-out, so it
+        // can never itself signal "> 4095" -- this raw value is exactly
+        // what the 12-bit-truncated adder tree produced. A silently wrapped
+        // (overflowed) sum will just look like an unusually large abs_err
+        // here rather than an explicit flag; that's why the abs_err column
+        // is the thing to watch closely, especially vs the RTL-sim numbers
+        // for the SAME matrix file.
         std::cout << std::setw(4) << k << std::setw(12) << golden[k]
                   << std::setw(12) << hw_prob << std::setw(12) << hw_result[k]
                   << std::setw(14) << abs_err << std::setw(11) << rel_err << "%\n";
     }
 
-    // Tolerance: stochastic computing has inherent sampling noise (~1/sqrt(4096)
-    // ~ 1.5% standard deviation per stage, compounding slightly over steps).
-    // Tune ABS_TOL based on measured variance across multiple seeds/matrices.
     const double ABS_TOL = 0.03;
     std::cout << "\nmax_abs_err=" << max_abs_err << "  max_rel_err=" << max_rel_err << "%\n";
     std::cout << (max_abs_err < ABS_TOL ? "PASS (within tolerance)\n"
