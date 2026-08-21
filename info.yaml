@@ -1,19 +1,91 @@
 # info.yaml
+# =============================================================================
+# Chipathon 2026: Project Configuration
+# LICENSE: Apache License Version 2.0 — http://www.apache.org/licenses/
+# =============================================================================
+# NOTE: Data is pulled from the main branch of the repository.
+#       Ensure main branch is up-to-date before submission.
+# =============================================================================
 
-# ----- ------ ----- ----- ------ ----- ----- ------ -----
-# Chipathon 2026: Project configuration
-# LICENSE: Apache License Version 2.0
-# http://www.apache.org/licenses/
-# ----- ------ ----- ----- ------ ----- ----- ------ -----
-# data will be pulled from main branch of the repo.
-# please be sure that the main branch contains the data you want to submit.
-# This file will be updated with more information later
-# ======================================================
-# Project metadata (used for documentation / review)
-# ======================================================
 project:
-  title: "MarkovChip"
-  team: "BUETCHIP"
-  discord: "AlFateh_36"
-  description: "DRC DRY RUN FOR MARKOVCHIP" 
-  lvs_config: "lvs_config.json"
+  title:       "MarkovChip"
+  team:        "BUETCHIP"
+  discord:     "AlFateh_36"
+  description: "16-State 12-bit Stochastic Multi-Step Markov Transition Matrix Accelerator IP Block"
+  lvs_config:  "lvs_config.json"
+
+# =============================================================================
+# Pin Definitions
+# -----------------------------------------------------------------------------
+# Placement order: clockwise starting bottom-left, per organizer spec.
+# Order derived from RUN_for_35MHz/.../4-io.def PLACED coordinates.
+#
+# vdd/vss: left at default padframe positions (confirmed with Diganto —
+#   no custom placement needed).
+#
+# io_type for chip-driven (output) pins: set to "output" reflecting actual
+#   netlist direction. No inout/bidirectional ports exist in the synthesized
+#   netlist. If the organizer's padframe requires "bidirectional" instead,
+#   these should be changed accordingly before final submission.
+#
+# Signal directions verified against synthesized netlist
+#   (Markov_Chain_Accelerator.v, Yosys 0.30+48):
+#   - input_ready  : driven by external host controller → input  ✓
+#   - output_valid : driven by external host controller → input  ✓
+#     (host asserts this to acknowledge/validate chip output)
+#   - output_ready : driven by chip → bidirectional (output)     ✓
+# =============================================================================
+
+pins:
+  # Power rails
+  - name: vdd
+    io_type: power
+
+  - name: vss
+    io_type: ground
+
+  # ---- Bottom edge (left → right) ----
+  - name: rst_n               # Active-low reset; Schmitt for noise immunity
+    io_type: input_schmitt
+
+  - name: clk                 # System clock
+    io_type: input_cmos
+
+  - name: spi_out0            # SPI output bit 0 (chip → host)
+    io_type: output
+
+  - name: load_row_or_col     # Selects row (0) or column (1) for SPI load
+    io_type: input_cmos
+
+  - name: spi_in1             # SPI input bit 1 (host → chip)
+    io_type: input_cmos
+
+  # ---- Right edge (bottom → top) ----
+  - name: spi_out3            # SPI output bit 3 (chip → host)
+    io_type: output
+
+  - name: input_ready         # Host signals data is ready on SPI inputs
+    io_type: input_cmos
+
+  # ---- Top edge (right → left) ----
+  - name: spi_in3             # SPI input bit 3 (host → chip)
+    io_type: input_cmos
+
+  - name: spi_in0             # SPI input bit 0 (host → chip)
+    io_type: input_cmos
+
+  - name: spi_in2             # SPI input bit 2 (host → chip)
+    io_type: input_cmos
+
+  - name: spi_out2            # SPI output bit 2 (chip → host)
+    io_type: output
+
+  - name: spi_out1            # SPI output bit 1 (chip → host)
+    io_type: output
+
+  # ---- Left edge (top → bottom) ----
+  - name: output_valid        # Host acknowledges chip output is valid/consumed
+    io_type: input_cmos
+
+  - name: output_ready        # Chip signals output data is ready (chip → host)
+    io_type: output
