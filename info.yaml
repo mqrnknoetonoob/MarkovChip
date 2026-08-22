@@ -6,14 +6,12 @@
 # NOTE: Data is pulled from the main branch of the repository.
 #       Ensure main branch is up-to-date before submission.
 # =============================================================================
-
 project:
   title:       "MarkovChip"
   team:        "BUETCHIP"
   discord:     "AlFateh_36"
   description: "16-State 12-bit Stochastic Multi-Step Markov Transition Matrix Accelerator IP Block"
   lvs_config:  "lvs_config.json"
-
 # =============================================================================
 # Pin Definitions
 # -----------------------------------------------------------------------------
@@ -23,63 +21,72 @@ project:
 # vdd/vss: left at default padframe positions (confirmed with Diganto —
 #   no custom placement needed).
 #
-# io_type for chip-driven (output) pins: set to "output" reflecting actual
-#   netlist direction. No inout/bidirectional ports exist in the synthesized
-#   netlist. If the organizer's padframe requires "bidirectional" instead,
-#   these should be changed accordingly before final submission.
+# io_type for chip-driven (output) pins: CONFIRMED as "bidirectional" —
+#   the official Chipathon padframe spec has no "output" io_type; the
+#   allowed list is: input_cmos | input_schmitt | bidirectional |
+#   bidirectional_24ma | analog | power | ground. "bidirectional" is the
+#   correct/final choice for all chip-driven pins below, even though the
+#   synthesized netlist itself has no true inout ports (unidirectional
+#   drive only) — this is a padframe-spec naming convention, not a
+#   functional bidirectional signal. Do not change before submission.
+#
+# Port list cross-checked and CONFIRMED against netgen LVS (final.gds vs
+#   gate-level netlist, "Circuits match uniquely"): exactly these 14
+#   signal pins + vdd/vss are the true top-level ports. No other pins
+#   (e.g. mode_col_g0-3 / mode_row_g0-3, which are internal-only wires)
+#   belong here.
 #
 # =============================================================================
-
 pins:
   # Power rails
   - name: vdd
     io_type: power
-
+ 
   - name: vss
     io_type: ground
-
+ 
   # ---- Bottom edge (left → right) ----
   - name: rst_n               # Active-low reset; Schmitt for noise immunity
     io_type: input_schmitt
-
+ 
   - name: clk                 # System clock
     io_type: input_cmos
-
+ 
   - name: spi_out0            # SPI output bit 0 (chip → host)
     io_type: bidirectional
-
+ 
   - name: load_row_or_col     # Selects row (0) or column (1) for SPI load
     io_type: input_cmos
-
+  
   - name: spi_in1             # SPI input bit 1 (host → chip)
     io_type: input_cmos
 
   # ---- Right edge (bottom → top) ----
   - name: spi_out3            # SPI output bit 3 (chip → host)
     io_type: bidirectional
-
+  
   - name: input_ready         # Host signals data is ready on SPI inputs
     io_type: input_cmos
-
+ 
   # ---- Top edge (right → left) ----
   - name: spi_in3             # SPI input bit 3 (host → chip)
     io_type: input_cmos
-
+ 
   - name: spi_in0             # SPI input bit 0 (host → chip)
     io_type: input_cmos
-
+ 
   - name: spi_in2             # SPI input bit 2 (host → chip)
     io_type: input_cmos
-
+  
   - name: spi_out2            # SPI output bit 2 (chip → host)
     io_type: bidirectional
-
+ 
   - name: spi_out1            # SPI output bit 1 (chip → host)
     io_type: bidirectional
-
+ 
   # ---- Left edge (top → bottom) ----
   - name: output_valid        # Host acknowledges chip output is valid/consumed
     io_type: input_cmos
-
+    
   - name: output_ready        # Chip signals output data is ready (chip → host)
     io_type: bidirectional
