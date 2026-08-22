@@ -41,7 +41,7 @@ Sign-off metrics extracted directly from OpenLane run reports (`manufacturabilit
 | **Clock Cycles per Step** | 66,500 | 66,500 | Identical |
 | **Step Execution Time ($T_{exec}$)** | **3.325 ms** | **1.900 ms** | **1.75× Speedup (75% reduction)** |
 | **Total Power ($P_{total}$)** | 63.2 mW | 110.0 mW | Linear Dynamic Power Scaling |
-| **Energy per Step ($E_{step}$)** | **210.13 $\mu$J** | **209.00 $\mu$J** | **Iso-Energy ($\sim 0.5\%$ reduction)** |
+| **Energy per Step ($E_{step}$)** | **210.13 $\mu$J** | 209.00 $\mu$J | **Iso-Energy ($\sim 0.5\%$ reduction)** |
 | **Worst Setup Slack (SS, $125^\circ\text{C}$)** | +22.24 ns | **+2.16 ns** | Clean Timing Closure ($\text{Slack} > 0$) |
 | **Worst Hold Slack (FF, $-40^\circ\text{C}$)** | +0.13 ns | **+0.21 ns** | Clean Hold Closure |
 | **Magic / KLayout DRC Violations** | 0 | **0** | Clean |
