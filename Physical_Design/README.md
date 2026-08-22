@@ -1,6 +1,8 @@
-# MarkovChip: 16-State Multistep Markov Chain Accelerator
+# MarkovChip: 16-State Multistep Markov Chain Accelerator with 12-bit stochastic multiplication
 ### 35 MHz Physical Design & Sign-Off Report (GF180MCU 5.0V 7-Track Node)
 
+---
+> Selected frequency: 35MHz
 ---
 
 > [!IMPORTANT]
