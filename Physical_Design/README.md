@@ -1,10 +1,6 @@
 # MarkovChip: 16-State Multistep Markov Chain Accelerator
 ### 35 MHz Physical Design & Sign-Off Report (GF180MCU 5.0V 7-Track Node)
 
-**Authors:** Mushfiq Raiyun and Diganto Saha  
-**Team:** BUETCHIP — IEEE SSCS PICO CHIPATHON 2026  
-**Technology:** GlobalFoundries 180nm MCU (`gf180mcu_fd_sc_mcu7t5v0` 5.0V 7-Track SC Library)  
-
 ---
 
 > [!IMPORTANT]
@@ -99,10 +95,3 @@ $$E_{step} = P_{total} \times T_{exec}$$
 * **I/O Connectivity:** All top-level signals (`clk`, `rst_n`, `spi_in0..3`, `spi_out0..3`, `input_ready`, `output_ready`, `output_valid`, `load_row_or_col`) are routed to the core boundary, ready for final pad ring wrapper integration.
 
 ---
-
-## 👥 Authors & Credits
-
-| Name | Department | Institution | Role / Contribution |
-| :--- | :---: | :---: | :--- |
-| **Mushfiq Raiyun** | CSE | BUET | Architecture & Verification |
-| **Diganto Saha** | EEE | BUET | Physical Design & STA Sign-Off |
