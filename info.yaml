@@ -28,12 +28,6 @@ project:
 #   netlist. If the organizer's padframe requires "bidirectional" instead,
 #   these should be changed accordingly before final submission.
 #
-# Signal directions verified against synthesized netlist
-#   (Markov_Chain_Accelerator.v, Yosys 0.30+48):
-#   - input_ready  : driven by external host controller → input  ✓
-#   - output_valid : driven by external host controller → input  ✓
-#     (host asserts this to acknowledge/validate chip output)
-#   - output_ready : driven by chip → bidirectional (output)     ✓
 # =============================================================================
 
 pins:
@@ -52,7 +46,7 @@ pins:
     io_type: input_cmos
 
   - name: spi_out0            # SPI output bit 0 (chip → host)
-    io_type: output
+    io_type: bidirectional
 
   - name: load_row_or_col     # Selects row (0) or column (1) for SPI load
     io_type: input_cmos
@@ -62,7 +56,7 @@ pins:
 
   # ---- Right edge (bottom → top) ----
   - name: spi_out3            # SPI output bit 3 (chip → host)
-    io_type: output
+    io_type: bidirectional
 
   - name: input_ready         # Host signals data is ready on SPI inputs
     io_type: input_cmos
@@ -78,14 +72,14 @@ pins:
     io_type: input_cmos
 
   - name: spi_out2            # SPI output bit 2 (chip → host)
-    io_type: output
+    io_type: bidirectional
 
   - name: spi_out1            # SPI output bit 1 (chip → host)
-    io_type: output
+    io_type: bidirectional
 
   # ---- Left edge (top → bottom) ----
   - name: output_valid        # Host acknowledges chip output is valid/consumed
     io_type: input_cmos
 
   - name: output_ready        # Chip signals output data is ready (chip → host)
-    io_type: output
+    io_type: bidirectional
