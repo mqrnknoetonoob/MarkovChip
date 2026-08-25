@@ -25,8 +25,8 @@ routing_blockage_layers:
 - Metal4
 - Metal5
 pins:
-- user_pin_name: VDD
-  default_project_pin: VDD
+- user_pin_name: vdd
+  default_project_pin: vdd
   project_pin: VDD
   cell_terminal: DVDD
   padring_instance: W18
@@ -131,8 +131,8 @@ pins:
     - 9272
     - 200
     - 11172
-- user_pin_name: VSS
-  default_project_pin: VSS
+- user_pin_name: vss
+  default_project_pin: vss
   project_pin: VSS
   cell_terminal: DVSS
   padring_instance: W19
@@ -393,19 +393,123 @@ pins:
     - 69752
     - 200
     - 69828
-- user_pin_name: load_row_or_col
-  default_project_pin: load_row_or_col_PU
-  project_pin: load_row_or_col_PU
-  cell_terminal: PU
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_CS
+  project_pin: spi_out0_CS
+  cell_terminal: CS
   padring_instance: W22
   physical_pad_slot: W22
-  cell: gf180mcu_fd_io__in_c
+  cell: gf180mcu_fd_io__bi_t
   direction: OUTPUT
   use: SIGNAL
   rectangles:
   - routing_layer: Metal2
     top_level:
-    - 66054
+    - 65709
+    - 510252
+    - 70000
+    - 510328
+    extended_top_level:
+    - 70000
+    - 510252
+    - 70200
+    - 510328
+    translated_user:
+    - 0
+    - 103252
+    - 200
+    - 103328
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_SL
+  project_pin: spi_out0_SL
+  cell_terminal: SL
+  padring_instance: W22
+  physical_pad_slot: W22
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 53028
+    - 497190
+    - 70000
+    - 497266
+    extended_top_level:
+    - 70000
+    - 497190
+    - 70200
+    - 497266
+    translated_user:
+    - 0
+    - 90190
+    - 200
+    - 90266
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_IE
+  project_pin: spi_out0_IE
+  cell_terminal: IE
+  padring_instance: W22
+  physical_pad_slot: W22
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 66984
+    - 508647
+    - 70000
+    - 508723
+    extended_top_level:
+    - 70000
+    - 508647
+    - 70200
+    - 508723
+    translated_user:
+    - 0
+    - 101647
+    - 200
+    - 101723
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_OE
+  project_pin: spi_out0_OE
+  cell_terminal: OE
+  padring_instance: W22
+  physical_pad_slot: W22
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 53268
+    - 496898
+    - 70000
+    - 496974
+    extended_top_level:
+    - 70000
+    - 496898
+    - 70200
+    - 496974
+    translated_user:
+    - 0
+    - 89898
+    - 200
+    - 89974
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_PU
+  project_pin: spi_out0_PU
+  cell_terminal: PU
+  padring_instance: W22
+  physical_pad_slot: W22
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 66084
     - 509731
     - 70000
     - 509807
@@ -419,19 +523,19 @@ pins:
     - 102731
     - 200
     - 102807
-- user_pin_name: load_row_or_col
-  default_project_pin: load_row_or_col_PD
-  project_pin: load_row_or_col_PD
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_PD
+  project_pin: spi_out0_PD
   cell_terminal: PD
   padring_instance: W22
   physical_pad_slot: W22
-  cell: gf180mcu_fd_io__in_c
+  cell: gf180mcu_fd_io__bi_t
   direction: OUTPUT
   use: SIGNAL
   rectangles:
   - routing_layer: Metal2
     top_level:
-    - 65990
+    - 66020
     - 508858
     - 70000
     - 508934
@@ -445,19 +549,97 @@ pins:
     - 101858
     - 200
     - 101934
-- user_pin_name: load_row_or_col
-  default_project_pin: load_row_or_col
-  project_pin: load_row_or_col
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_OUT
+  project_pin: spi_out0_OUT
+  cell_terminal: A
+  padring_instance: W22
+  physical_pad_slot: W22
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 52892
+    - 497044
+    - 70000
+    - 497120
+    extended_top_level:
+    - 70000
+    - 497044
+    - 70200
+    - 497120
+    translated_user:
+    - 0
+    - 90044
+    - 200
+    - 90120
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_PDRV0
+  project_pin: spi_out0_PDRV0
+  cell_terminal: PDRV0
+  padring_instance: W22
+  physical_pad_slot: W22
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 52933
+    - 509502
+    - 70000
+    - 509578
+    extended_top_level:
+    - 70000
+    - 509502
+    - 70200
+    - 509578
+    translated_user:
+    - 0
+    - 102502
+    - 200
+    - 102578
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_PDRV1
+  project_pin: spi_out0_PDRV1
+  cell_terminal: PDRV1
+  padring_instance: W22
+  physical_pad_slot: W22
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 52998
+    - 509360
+    - 70000
+    - 509436
+    extended_top_level:
+    - 70000
+    - 509360
+    - 70200
+    - 509436
+    translated_user:
+    - 0
+    - 102360
+    - 200
+    - 102436
+- user_pin_name: spi_out0
+  default_project_pin: spi_out0_IN
+  project_pin: spi_out0_IN
   cell_terminal: Y
   padring_instance: W22
   physical_pad_slot: W22
-  cell: gf180mcu_fd_io__in_c
+  cell: gf180mcu_fd_io__bi_t
   direction: INPUT
   use: SIGNAL
   rectangles:
   - routing_layer: Metal2
     top_level:
-    - 63950
+    - 63980
     - 496752
     - 70000
     - 496828
@@ -471,9 +653,9 @@ pins:
     - 89752
     - 200
     - 89828
-- user_pin_name: output_valid
-  default_project_pin: output_valid_PU
-  project_pin: output_valid_PU
+- user_pin_name: load_row_or_col
+  default_project_pin: load_row_or_col_PU
+  project_pin: load_row_or_col_PU
   cell_terminal: PU
   padring_instance: N01
   physical_pad_slot: N01
@@ -497,9 +679,9 @@ pins:
     - 109800
     - 19807
     - 110000
-- user_pin_name: output_valid
-  default_project_pin: output_valid_PD
-  project_pin: output_valid_PD
+- user_pin_name: load_row_or_col
+  default_project_pin: load_row_or_col_PD
+  project_pin: load_row_or_col_PD
   cell_terminal: PD
   padring_instance: N01
   physical_pad_slot: N01
@@ -523,9 +705,9 @@ pins:
     - 109800
     - 18934
     - 110000
-- user_pin_name: output_valid
-  default_project_pin: output_valid
-  project_pin: output_valid
+- user_pin_name: load_row_or_col
+  default_project_pin: load_row_or_col
+  project_pin: load_row_or_col
   cell_terminal: Y
   padring_instance: N01
   physical_pad_slot: N01
@@ -549,9 +731,9 @@ pins:
     - 109800
     - 6828
     - 110000
-- user_pin_name: input_ready
-  default_project_pin: input_ready_PU
-  project_pin: input_ready_PU
+- user_pin_name: spi_in1
+  default_project_pin: spi_in1_PU
+  project_pin: spi_in1_PU
   cell_terminal: PU
   padring_instance: N02
   physical_pad_slot: N02
@@ -575,9 +757,9 @@ pins:
     - 109800
     - 39807
     - 110000
-- user_pin_name: input_ready
-  default_project_pin: input_ready_PD
-  project_pin: input_ready_PD
+- user_pin_name: spi_in1
+  default_project_pin: spi_in1_PD
+  project_pin: spi_in1_PD
   cell_terminal: PD
   padring_instance: N02
   physical_pad_slot: N02
@@ -601,9 +783,9 @@ pins:
     - 109800
     - 38934
     - 110000
-- user_pin_name: input_ready
-  default_project_pin: input_ready
-  project_pin: input_ready
+- user_pin_name: spi_in1
+  default_project_pin: spi_in1
+  project_pin: spi_in1
   cell_terminal: Y
   padring_instance: N02
   physical_pad_slot: N02
@@ -627,13 +809,117 @@ pins:
     - 109800
     - 26828
     - 110000
-- user_pin_name: spi_in0
-  default_project_pin: spi_in0_PU
-  project_pin: spi_in0_PU
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_CS
+  project_pin: spi_out3_CS
+  cell_terminal: CS
+  padring_instance: N03
+  physical_pad_slot: N03
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 130252
+    - 517000
+    - 130328
+    - 521291
+    extended_top_level:
+    - 130252
+    - 516800
+    - 130328
+    - 517000
+    translated_user:
+    - 60252
+    - 109800
+    - 60328
+    - 110000
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_SL
+  project_pin: spi_out3_SL
+  cell_terminal: SL
+  padring_instance: N03
+  physical_pad_slot: N03
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 117190
+    - 517000
+    - 117266
+    - 533972
+    extended_top_level:
+    - 117190
+    - 516800
+    - 117266
+    - 517000
+    translated_user:
+    - 47190
+    - 109800
+    - 47266
+    - 110000
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_IE
+  project_pin: spi_out3_IE
+  cell_terminal: IE
+  padring_instance: N03
+  physical_pad_slot: N03
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 128647
+    - 517000
+    - 128723
+    - 520016
+    extended_top_level:
+    - 128647
+    - 516800
+    - 128723
+    - 517000
+    translated_user:
+    - 58647
+    - 109800
+    - 58723
+    - 110000
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_OE
+  project_pin: spi_out3_OE
+  cell_terminal: OE
+  padring_instance: N03
+  physical_pad_slot: N03
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 116898
+    - 517000
+    - 116974
+    - 533732
+    extended_top_level:
+    - 116898
+    - 516800
+    - 116974
+    - 517000
+    translated_user:
+    - 46898
+    - 109800
+    - 46974
+    - 110000
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_PU
+  project_pin: spi_out3_PU
   cell_terminal: PU
   padring_instance: N03
   physical_pad_slot: N03
-  cell: gf180mcu_fd_io__in_c
+  cell: gf180mcu_fd_io__bi_t
   direction: OUTPUT
   use: SIGNAL
   rectangles:
@@ -642,7 +928,7 @@ pins:
     - 129731
     - 517000
     - 129807
-    - 520946
+    - 520916
     extended_top_level:
     - 129731
     - 516800
@@ -653,13 +939,13 @@ pins:
     - 109800
     - 59807
     - 110000
-- user_pin_name: spi_in0
-  default_project_pin: spi_in0_PD
-  project_pin: spi_in0_PD
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_PD
+  project_pin: spi_out3_PD
   cell_terminal: PD
   padring_instance: N03
   physical_pad_slot: N03
-  cell: gf180mcu_fd_io__in_c
+  cell: gf180mcu_fd_io__bi_t
   direction: OUTPUT
   use: SIGNAL
   rectangles:
@@ -668,7 +954,7 @@ pins:
     - 128858
     - 517000
     - 128934
-    - 521010
+    - 520980
     extended_top_level:
     - 128858
     - 516800
@@ -679,13 +965,91 @@ pins:
     - 109800
     - 58934
     - 110000
-- user_pin_name: spi_in0
-  default_project_pin: spi_in0
-  project_pin: spi_in0
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_OUT
+  project_pin: spi_out3_OUT
+  cell_terminal: A
+  padring_instance: N03
+  physical_pad_slot: N03
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 117044
+    - 517000
+    - 117120
+    - 534108
+    extended_top_level:
+    - 117044
+    - 516800
+    - 117120
+    - 517000
+    translated_user:
+    - 47044
+    - 109800
+    - 47120
+    - 110000
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_PDRV0
+  project_pin: spi_out3_PDRV0
+  cell_terminal: PDRV0
+  padring_instance: N03
+  physical_pad_slot: N03
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 129502
+    - 517000
+    - 129578
+    - 534067
+    extended_top_level:
+    - 129502
+    - 516800
+    - 129578
+    - 517000
+    translated_user:
+    - 59502
+    - 109800
+    - 59578
+    - 110000
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_PDRV1
+  project_pin: spi_out3_PDRV1
+  cell_terminal: PDRV1
+  padring_instance: N03
+  physical_pad_slot: N03
+  cell: gf180mcu_fd_io__bi_t
+  direction: OUTPUT
+  use: SIGNAL
+  rectangles:
+  - routing_layer: Metal2
+    top_level:
+    - 129360
+    - 517000
+    - 129436
+    - 534002
+    extended_top_level:
+    - 129360
+    - 516800
+    - 129436
+    - 517000
+    translated_user:
+    - 59360
+    - 109800
+    - 59436
+    - 110000
+- user_pin_name: spi_out3
+  default_project_pin: spi_out3_IN
+  project_pin: spi_out3_IN
   cell_terminal: Y
   padring_instance: N03
   physical_pad_slot: N03
-  cell: gf180mcu_fd_io__in_c
+  cell: gf180mcu_fd_io__bi_t
   direction: INPUT
   use: SIGNAL
   rectangles:
@@ -694,7 +1058,7 @@ pins:
     - 116752
     - 517000
     - 116828
-    - 523050
+    - 523020
     extended_top_level:
     - 116752
     - 516800
@@ -705,9 +1069,9 @@ pins:
     - 109800
     - 46828
     - 110000
-- user_pin_name: spi_in1
-  default_project_pin: spi_in1_PU
-  project_pin: spi_in1_PU
+- user_pin_name: input_ready
+  default_project_pin: input_ready_PU
+  project_pin: input_ready_PU
   cell_terminal: PU
   padring_instance: N04
   physical_pad_slot: N04
@@ -731,9 +1095,9 @@ pins:
     - 109800
     - 79807
     - 110000
-- user_pin_name: spi_in1
-  default_project_pin: spi_in1_PD
-  project_pin: spi_in1_PD
+- user_pin_name: input_ready
+  default_project_pin: input_ready_PD
+  project_pin: input_ready_PD
   cell_terminal: PD
   padring_instance: N04
   physical_pad_slot: N04
@@ -757,9 +1121,9 @@ pins:
     - 109800
     - 78934
     - 110000
-- user_pin_name: spi_in1
-  default_project_pin: spi_in1
-  project_pin: spi_in1
+- user_pin_name: input_ready
+  default_project_pin: input_ready
+  project_pin: input_ready
   cell_terminal: Y
   padring_instance: N04
   physical_pad_slot: N04
@@ -783,9 +1147,9 @@ pins:
     - 109800
     - 66828
     - 110000
-- user_pin_name: spi_in2
-  default_project_pin: spi_in2_PU
-  project_pin: spi_in2_PU
+- user_pin_name: spi_in3
+  default_project_pin: spi_in3_PU
+  project_pin: spi_in3_PU
   cell_terminal: PU
   padring_instance: N05
   physical_pad_slot: N05
@@ -809,9 +1173,9 @@ pins:
     - 109800
     - 99807
     - 110000
-- user_pin_name: spi_in2
-  default_project_pin: spi_in2_PD
-  project_pin: spi_in2_PD
+- user_pin_name: spi_in3
+  default_project_pin: spi_in3_PD
+  project_pin: spi_in3_PD
   cell_terminal: PD
   padring_instance: N05
   physical_pad_slot: N05
@@ -835,9 +1199,9 @@ pins:
     - 109800
     - 98934
     - 110000
-- user_pin_name: spi_in2
-  default_project_pin: spi_in2
-  project_pin: spi_in2
+- user_pin_name: spi_in3
+  default_project_pin: spi_in3
+  project_pin: spi_in3
   cell_terminal: Y
   padring_instance: N05
   physical_pad_slot: N05
@@ -861,9 +1225,9 @@ pins:
     - 109800
     - 86828
     - 110000
-- user_pin_name: spi_in3
-  default_project_pin: spi_in3_PU
-  project_pin: spi_in3_PU
+- user_pin_name: spi_in0
+  default_project_pin: spi_in0_PU
+  project_pin: spi_in0_PU
   cell_terminal: PU
   padring_instance: N06
   physical_pad_slot: N06
@@ -887,9 +1251,9 @@ pins:
     - 109800
     - 119807
     - 110000
-- user_pin_name: spi_in3
-  default_project_pin: spi_in3_PD
-  project_pin: spi_in3_PD
+- user_pin_name: spi_in0
+  default_project_pin: spi_in0_PD
+  project_pin: spi_in0_PD
   cell_terminal: PD
   padring_instance: N06
   physical_pad_slot: N06
@@ -913,9 +1277,9 @@ pins:
     - 109800
     - 118934
     - 110000
-- user_pin_name: spi_in3
-  default_project_pin: spi_in3
-  project_pin: spi_in3
+- user_pin_name: spi_in0
+  default_project_pin: spi_in0
+  project_pin: spi_in0
   cell_terminal: Y
   padring_instance: N06
   physical_pad_slot: N06
@@ -939,117 +1303,13 @@ pins:
     - 109800
     - 106828
     - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_CS
-  project_pin: spi_out0_CS
-  cell_terminal: CS
-  padring_instance: N07
-  physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 210252
-    - 517000
-    - 210328
-    - 521291
-    extended_top_level:
-    - 210252
-    - 516800
-    - 210328
-    - 517000
-    translated_user:
-    - 140252
-    - 109800
-    - 140328
-    - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_SL
-  project_pin: spi_out0_SL
-  cell_terminal: SL
-  padring_instance: N07
-  physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 197190
-    - 517000
-    - 197266
-    - 533972
-    extended_top_level:
-    - 197190
-    - 516800
-    - 197266
-    - 517000
-    translated_user:
-    - 127190
-    - 109800
-    - 127266
-    - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_IE
-  project_pin: spi_out0_IE
-  cell_terminal: IE
-  padring_instance: N07
-  physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 208647
-    - 517000
-    - 208723
-    - 520016
-    extended_top_level:
-    - 208647
-    - 516800
-    - 208723
-    - 517000
-    translated_user:
-    - 138647
-    - 109800
-    - 138723
-    - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_OE
-  project_pin: spi_out0_OE
-  cell_terminal: OE
-  padring_instance: N07
-  physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 196898
-    - 517000
-    - 196974
-    - 533732
-    extended_top_level:
-    - 196898
-    - 516800
-    - 196974
-    - 517000
-    translated_user:
-    - 126898
-    - 109800
-    - 126974
-    - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_PU
-  project_pin: spi_out0_PU
+- user_pin_name: spi_in2
+  default_project_pin: spi_in2_PU
+  project_pin: spi_in2_PU
   cell_terminal: PU
   padring_instance: N07
   physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
+  cell: gf180mcu_fd_io__in_c
   direction: OUTPUT
   use: SIGNAL
   rectangles:
@@ -1058,7 +1318,7 @@ pins:
     - 209731
     - 517000
     - 209807
-    - 520916
+    - 520946
     extended_top_level:
     - 209731
     - 516800
@@ -1069,13 +1329,13 @@ pins:
     - 109800
     - 139807
     - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_PD
-  project_pin: spi_out0_PD
+- user_pin_name: spi_in2
+  default_project_pin: spi_in2_PD
+  project_pin: spi_in2_PD
   cell_terminal: PD
   padring_instance: N07
   physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
+  cell: gf180mcu_fd_io__in_c
   direction: OUTPUT
   use: SIGNAL
   rectangles:
@@ -1084,7 +1344,7 @@ pins:
     - 208858
     - 517000
     - 208934
-    - 520980
+    - 521010
     extended_top_level:
     - 208858
     - 516800
@@ -1095,91 +1355,13 @@ pins:
     - 109800
     - 138934
     - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_OUT
-  project_pin: spi_out0_OUT
-  cell_terminal: A
-  padring_instance: N07
-  physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 197044
-    - 517000
-    - 197120
-    - 534108
-    extended_top_level:
-    - 197044
-    - 516800
-    - 197120
-    - 517000
-    translated_user:
-    - 127044
-    - 109800
-    - 127120
-    - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_PDRV0
-  project_pin: spi_out0_PDRV0
-  cell_terminal: PDRV0
-  padring_instance: N07
-  physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 209502
-    - 517000
-    - 209578
-    - 534067
-    extended_top_level:
-    - 209502
-    - 516800
-    - 209578
-    - 517000
-    translated_user:
-    - 139502
-    - 109800
-    - 139578
-    - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_PDRV1
-  project_pin: spi_out0_PDRV1
-  cell_terminal: PDRV1
-  padring_instance: N07
-  physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 209360
-    - 517000
-    - 209436
-    - 534002
-    extended_top_level:
-    - 209360
-    - 516800
-    - 209436
-    - 517000
-    translated_user:
-    - 139360
-    - 109800
-    - 139436
-    - 110000
-- user_pin_name: spi_out0
-  default_project_pin: spi_out0_IN
-  project_pin: spi_out0_IN
+- user_pin_name: spi_in2
+  default_project_pin: spi_in2
+  project_pin: spi_in2
   cell_terminal: Y
   padring_instance: N07
   physical_pad_slot: N07
-  cell: gf180mcu_fd_io__bi_t
+  cell: gf180mcu_fd_io__in_c
   direction: INPUT
   use: SIGNAL
   rectangles:
@@ -1188,7 +1370,7 @@ pins:
     - 196752
     - 517000
     - 196828
-    - 523020
+    - 523050
     extended_top_level:
     - 196752
     - 516800
@@ -1199,9 +1381,9 @@ pins:
     - 109800
     - 126828
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_CS
-  project_pin: spi_out1_CS
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_CS
+  project_pin: spi_out2_CS
   cell_terminal: CS
   padring_instance: N08
   physical_pad_slot: N08
@@ -1225,9 +1407,9 @@ pins:
     - 109800
     - 160328
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_SL
-  project_pin: spi_out1_SL
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_SL
+  project_pin: spi_out2_SL
   cell_terminal: SL
   padring_instance: N08
   physical_pad_slot: N08
@@ -1251,9 +1433,9 @@ pins:
     - 109800
     - 147266
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_IE
-  project_pin: spi_out1_IE
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_IE
+  project_pin: spi_out2_IE
   cell_terminal: IE
   padring_instance: N08
   physical_pad_slot: N08
@@ -1277,9 +1459,9 @@ pins:
     - 109800
     - 158723
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_OE
-  project_pin: spi_out1_OE
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_OE
+  project_pin: spi_out2_OE
   cell_terminal: OE
   padring_instance: N08
   physical_pad_slot: N08
@@ -1303,9 +1485,9 @@ pins:
     - 109800
     - 146974
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_PU
-  project_pin: spi_out1_PU
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_PU
+  project_pin: spi_out2_PU
   cell_terminal: PU
   padring_instance: N08
   physical_pad_slot: N08
@@ -1329,9 +1511,9 @@ pins:
     - 109800
     - 159807
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_PD
-  project_pin: spi_out1_PD
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_PD
+  project_pin: spi_out2_PD
   cell_terminal: PD
   padring_instance: N08
   physical_pad_slot: N08
@@ -1355,9 +1537,9 @@ pins:
     - 109800
     - 158934
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_OUT
-  project_pin: spi_out1_OUT
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_OUT
+  project_pin: spi_out2_OUT
   cell_terminal: A
   padring_instance: N08
   physical_pad_slot: N08
@@ -1381,9 +1563,9 @@ pins:
     - 109800
     - 147120
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_PDRV0
-  project_pin: spi_out1_PDRV0
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_PDRV0
+  project_pin: spi_out2_PDRV0
   cell_terminal: PDRV0
   padring_instance: N08
   physical_pad_slot: N08
@@ -1407,9 +1589,9 @@ pins:
     - 109800
     - 159578
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_PDRV1
-  project_pin: spi_out1_PDRV1
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_PDRV1
+  project_pin: spi_out2_PDRV1
   cell_terminal: PDRV1
   padring_instance: N08
   physical_pad_slot: N08
@@ -1433,9 +1615,9 @@ pins:
     - 109800
     - 159436
     - 110000
-- user_pin_name: spi_out1
-  default_project_pin: spi_out1_IN
-  project_pin: spi_out1_IN
+- user_pin_name: spi_out2
+  default_project_pin: spi_out2_IN
+  project_pin: spi_out2_IN
   cell_terminal: Y
   padring_instance: N08
   physical_pad_slot: N08
@@ -1459,9 +1641,9 @@ pins:
     - 109800
     - 146828
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_CS
-  project_pin: spi_out2_CS
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_CS
+  project_pin: spi_out1_CS
   cell_terminal: CS
   padring_instance: N09
   physical_pad_slot: N09
@@ -1485,9 +1667,9 @@ pins:
     - 109800
     - 180328
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_SL
-  project_pin: spi_out2_SL
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_SL
+  project_pin: spi_out1_SL
   cell_terminal: SL
   padring_instance: N09
   physical_pad_slot: N09
@@ -1511,9 +1693,9 @@ pins:
     - 109800
     - 167266
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_IE
-  project_pin: spi_out2_IE
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_IE
+  project_pin: spi_out1_IE
   cell_terminal: IE
   padring_instance: N09
   physical_pad_slot: N09
@@ -1537,9 +1719,9 @@ pins:
     - 109800
     - 178723
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_OE
-  project_pin: spi_out2_OE
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_OE
+  project_pin: spi_out1_OE
   cell_terminal: OE
   padring_instance: N09
   physical_pad_slot: N09
@@ -1563,9 +1745,9 @@ pins:
     - 109800
     - 166974
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_PU
-  project_pin: spi_out2_PU
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_PU
+  project_pin: spi_out1_PU
   cell_terminal: PU
   padring_instance: N09
   physical_pad_slot: N09
@@ -1589,9 +1771,9 @@ pins:
     - 109800
     - 179807
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_PD
-  project_pin: spi_out2_PD
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_PD
+  project_pin: spi_out1_PD
   cell_terminal: PD
   padring_instance: N09
   physical_pad_slot: N09
@@ -1615,9 +1797,9 @@ pins:
     - 109800
     - 178934
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_OUT
-  project_pin: spi_out2_OUT
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_OUT
+  project_pin: spi_out1_OUT
   cell_terminal: A
   padring_instance: N09
   physical_pad_slot: N09
@@ -1641,9 +1823,9 @@ pins:
     - 109800
     - 167120
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_PDRV0
-  project_pin: spi_out2_PDRV0
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_PDRV0
+  project_pin: spi_out1_PDRV0
   cell_terminal: PDRV0
   padring_instance: N09
   physical_pad_slot: N09
@@ -1667,9 +1849,9 @@ pins:
     - 109800
     - 179578
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_PDRV1
-  project_pin: spi_out2_PDRV1
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_PDRV1
+  project_pin: spi_out1_PDRV1
   cell_terminal: PDRV1
   padring_instance: N09
   physical_pad_slot: N09
@@ -1693,9 +1875,9 @@ pins:
     - 109800
     - 179436
     - 110000
-- user_pin_name: spi_out2
-  default_project_pin: spi_out2_IN
-  project_pin: spi_out2_IN
+- user_pin_name: spi_out1
+  default_project_pin: spi_out1_IN
+  project_pin: spi_out1_IN
   cell_terminal: Y
   padring_instance: N09
   physical_pad_slot: N09
@@ -1719,117 +1901,13 @@ pins:
     - 109800
     - 166828
     - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_CS
-  project_pin: spi_out3_CS
-  cell_terminal: CS
-  padring_instance: N10
-  physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 270252
-    - 517000
-    - 270328
-    - 521291
-    extended_top_level:
-    - 270252
-    - 516800
-    - 270328
-    - 517000
-    translated_user:
-    - 200252
-    - 109800
-    - 200328
-    - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_SL
-  project_pin: spi_out3_SL
-  cell_terminal: SL
-  padring_instance: N10
-  physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 257190
-    - 517000
-    - 257266
-    - 533972
-    extended_top_level:
-    - 257190
-    - 516800
-    - 257266
-    - 517000
-    translated_user:
-    - 187190
-    - 109800
-    - 187266
-    - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_IE
-  project_pin: spi_out3_IE
-  cell_terminal: IE
-  padring_instance: N10
-  physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 268647
-    - 517000
-    - 268723
-    - 520016
-    extended_top_level:
-    - 268647
-    - 516800
-    - 268723
-    - 517000
-    translated_user:
-    - 198647
-    - 109800
-    - 198723
-    - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_OE
-  project_pin: spi_out3_OE
-  cell_terminal: OE
-  padring_instance: N10
-  physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 256898
-    - 517000
-    - 256974
-    - 533732
-    extended_top_level:
-    - 256898
-    - 516800
-    - 256974
-    - 517000
-    translated_user:
-    - 186898
-    - 109800
-    - 186974
-    - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_PU
-  project_pin: spi_out3_PU
+- user_pin_name: output_valid
+  default_project_pin: output_valid_PU
+  project_pin: output_valid_PU
   cell_terminal: PU
   padring_instance: N10
   physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
+  cell: gf180mcu_fd_io__in_c
   direction: OUTPUT
   use: SIGNAL
   rectangles:
@@ -1838,7 +1916,7 @@ pins:
     - 269731
     - 517000
     - 269807
-    - 520916
+    - 520946
     extended_top_level:
     - 269731
     - 516800
@@ -1849,13 +1927,13 @@ pins:
     - 109800
     - 199807
     - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_PD
-  project_pin: spi_out3_PD
+- user_pin_name: output_valid
+  default_project_pin: output_valid_PD
+  project_pin: output_valid_PD
   cell_terminal: PD
   padring_instance: N10
   physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
+  cell: gf180mcu_fd_io__in_c
   direction: OUTPUT
   use: SIGNAL
   rectangles:
@@ -1864,7 +1942,7 @@ pins:
     - 268858
     - 517000
     - 268934
-    - 520980
+    - 521010
     extended_top_level:
     - 268858
     - 516800
@@ -1875,91 +1953,13 @@ pins:
     - 109800
     - 198934
     - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_OUT
-  project_pin: spi_out3_OUT
-  cell_terminal: A
-  padring_instance: N10
-  physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 257044
-    - 517000
-    - 257120
-    - 534108
-    extended_top_level:
-    - 257044
-    - 516800
-    - 257120
-    - 517000
-    translated_user:
-    - 187044
-    - 109800
-    - 187120
-    - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_PDRV0
-  project_pin: spi_out3_PDRV0
-  cell_terminal: PDRV0
-  padring_instance: N10
-  physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 269502
-    - 517000
-    - 269578
-    - 534067
-    extended_top_level:
-    - 269502
-    - 516800
-    - 269578
-    - 517000
-    translated_user:
-    - 199502
-    - 109800
-    - 199578
-    - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_PDRV1
-  project_pin: spi_out3_PDRV1
-  cell_terminal: PDRV1
-  padring_instance: N10
-  physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
-  direction: OUTPUT
-  use: SIGNAL
-  rectangles:
-  - routing_layer: Metal2
-    top_level:
-    - 269360
-    - 517000
-    - 269436
-    - 534002
-    extended_top_level:
-    - 269360
-    - 516800
-    - 269436
-    - 517000
-    translated_user:
-    - 199360
-    - 109800
-    - 199436
-    - 110000
-- user_pin_name: spi_out3
-  default_project_pin: spi_out3_IN
-  project_pin: spi_out3_IN
+- user_pin_name: output_valid
+  default_project_pin: output_valid
+  project_pin: output_valid
   cell_terminal: Y
   padring_instance: N10
   physical_pad_slot: N10
-  cell: gf180mcu_fd_io__bi_t
+  cell: gf180mcu_fd_io__in_c
   direction: INPUT
   use: SIGNAL
   rectangles:
@@ -1968,7 +1968,7 @@ pins:
     - 256752
     - 517000
     - 256828
-    - 523020
+    - 523050
     extended_top_level:
     - 256752
     - 516800

@@ -8,13 +8,13 @@ pin_count: 16
 user_slot_count: 16
 pads:
 - pin_index: 0
-  pin_name: VDD
+  pin_name: vdd
   slot: W18
   instance: W18
   io_type: power
   cell: gf180mcu_fd_io__dvdd
 - pin_index: 1
-  pin_name: VSS
+  pin_name: vss
   slot: W19
   instance: W19
   io_type: ground
@@ -32,71 +32,71 @@ pads:
   io_type: input_cmos
   cell: gf180mcu_fd_io__in_c
 - pin_index: 4
-  pin_name: load_row_or_col
+  pin_name: spi_out0
   slot: W22
   instance: W22
-  io_type: input_cmos
-  cell: gf180mcu_fd_io__in_c
+  io_type: bidirectional
+  cell: gf180mcu_fd_io__bi_t
 - pin_index: 5
-  pin_name: output_valid
+  pin_name: load_row_or_col
   slot: N01
   instance: N01
   io_type: input_cmos
   cell: gf180mcu_fd_io__in_c
 - pin_index: 6
-  pin_name: input_ready
+  pin_name: spi_in1
   slot: N02
   instance: N02
   io_type: input_cmos
   cell: gf180mcu_fd_io__in_c
 - pin_index: 7
-  pin_name: spi_in0
+  pin_name: spi_out3
   slot: N03
   instance: N03
-  io_type: input_cmos
-  cell: gf180mcu_fd_io__in_c
+  io_type: bidirectional
+  cell: gf180mcu_fd_io__bi_t
 - pin_index: 8
-  pin_name: spi_in1
+  pin_name: input_ready
   slot: N04
   instance: N04
   io_type: input_cmos
   cell: gf180mcu_fd_io__in_c
 - pin_index: 9
-  pin_name: spi_in2
+  pin_name: spi_in3
   slot: N05
   instance: N05
   io_type: input_cmos
   cell: gf180mcu_fd_io__in_c
 - pin_index: 10
-  pin_name: spi_in3
+  pin_name: spi_in0
   slot: N06
   instance: N06
   io_type: input_cmos
   cell: gf180mcu_fd_io__in_c
 - pin_index: 11
-  pin_name: spi_out0
+  pin_name: spi_in2
   slot: N07
   instance: N07
-  io_type: bidirectional
-  cell: gf180mcu_fd_io__bi_t
+  io_type: input_cmos
+  cell: gf180mcu_fd_io__in_c
 - pin_index: 12
-  pin_name: spi_out1
+  pin_name: spi_out2
   slot: N08
   instance: N08
   io_type: bidirectional
   cell: gf180mcu_fd_io__bi_t
 - pin_index: 13
-  pin_name: spi_out2
+  pin_name: spi_out1
   slot: N09
   instance: N09
   io_type: bidirectional
   cell: gf180mcu_fd_io__bi_t
 - pin_index: 14
-  pin_name: spi_out3
+  pin_name: output_valid
   slot: N10
   instance: N10
-  io_type: bidirectional
-  cell: gf180mcu_fd_io__bi_t
+  io_type: input_cmos
+  cell: gf180mcu_fd_io__in_c
 - pin_index: 15
   pin_name: output_ready
   slot: N11

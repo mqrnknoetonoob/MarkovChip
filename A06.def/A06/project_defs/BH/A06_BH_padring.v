@@ -93,8 +93,15 @@ module A06_BH_padring (
     W21_PU,
     W21_PD,
     W21_Y,
+    W22_CS,
+    W22_SL,
+    W22_IE,
+    W22_OE,
     W22_PU,
     W22_PD,
+    W22_A,
+    W22_PDRV0,
+    W22_PDRV1,
     W22_Y,
     N01_PU,
     N01_PD,
@@ -102,8 +109,15 @@ module A06_BH_padring (
     N02_PU,
     N02_PD,
     N02_Y,
+    N03_CS,
+    N03_SL,
+    N03_IE,
+    N03_OE,
     N03_PU,
     N03_PD,
+    N03_A,
+    N03_PDRV0,
+    N03_PDRV1,
     N03_Y,
     N04_PU,
     N04_PD,
@@ -114,15 +128,8 @@ module A06_BH_padring (
     N06_PU,
     N06_PD,
     N06_Y,
-    N07_CS,
-    N07_SL,
-    N07_IE,
-    N07_OE,
     N07_PU,
     N07_PD,
-    N07_A,
-    N07_PDRV0,
-    N07_PDRV1,
     N07_Y,
     N08_CS,
     N08_SL,
@@ -144,15 +151,8 @@ module A06_BH_padring (
     N09_PDRV0,
     N09_PDRV1,
     N09_Y,
-    N10_CS,
-    N10_SL,
-    N10_IE,
-    N10_OE,
     N10_PU,
     N10_PD,
-    N10_A,
-    N10_PDRV0,
-    N10_PDRV1,
     N10_Y,
     N11_CS,
     N11_SL,
@@ -259,8 +259,15 @@ module A06_BH_padring (
   input W21_PU;
   input W21_PD;
   output W21_Y;
+  input W22_CS;
+  input W22_SL;
+  input W22_IE;
+  input W22_OE;
   input W22_PU;
   input W22_PD;
+  input W22_A;
+  input W22_PDRV0;
+  input W22_PDRV1;
   output W22_Y;
   input N01_PU;
   input N01_PD;
@@ -268,8 +275,15 @@ module A06_BH_padring (
   input N02_PU;
   input N02_PD;
   output N02_Y;
+  input N03_CS;
+  input N03_SL;
+  input N03_IE;
+  input N03_OE;
   input N03_PU;
   input N03_PD;
+  input N03_A;
+  input N03_PDRV0;
+  input N03_PDRV1;
   output N03_Y;
   input N04_PU;
   input N04_PD;
@@ -280,15 +294,8 @@ module A06_BH_padring (
   input N06_PU;
   input N06_PD;
   output N06_Y;
-  input N07_CS;
-  input N07_SL;
-  input N07_IE;
-  input N07_OE;
   input N07_PU;
   input N07_PD;
-  input N07_A;
-  input N07_PDRV0;
-  input N07_PDRV1;
   output N07_Y;
   input N08_CS;
   input N08_SL;
@@ -310,15 +317,8 @@ module A06_BH_padring (
   input N09_PDRV0;
   input N09_PDRV1;
   output N09_Y;
-  input N10_CS;
-  input N10_SL;
-  input N10_IE;
-  input N10_OE;
   input N10_PU;
   input N10_PD;
-  input N10_A;
-  input N10_PDRV0;
-  input N10_PDRV1;
   output N10_Y;
   input N11_CS;
   input N11_SL;
@@ -335,14 +335,14 @@ module A06_BH_padring (
 
   gf180mcu_fd_io__in_c N01 (.PU(N01_PU), .PD(N01_PD), .Y(N01_Y), .PAD(N01), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__in_c N02 (.PU(N02_PU), .PD(N02_PD), .Y(N02_Y), .PAD(N02), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
-  gf180mcu_fd_io__in_c N03 (.PU(N03_PU), .PD(N03_PD), .Y(N03_Y), .PAD(N03), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
+  gf180mcu_fd_io__bi_t N03 (.CS(N03_CS), .SL(N03_SL), .IE(N03_IE), .OE(N03_OE), .PU(N03_PU), .PD(N03_PD), .A(N03_A), .PDRV0(N03_PDRV0), .PDRV1(N03_PDRV1), .Y(N03_Y), .PAD(N03), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__in_c N04 (.PU(N04_PU), .PD(N04_PD), .Y(N04_Y), .PAD(N04), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__in_c N05 (.PU(N05_PU), .PD(N05_PD), .Y(N05_Y), .PAD(N05), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__in_c N06 (.PU(N06_PU), .PD(N06_PD), .Y(N06_Y), .PAD(N06), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
-  gf180mcu_fd_io__bi_t N07 (.CS(N07_CS), .SL(N07_SL), .IE(N07_IE), .OE(N07_OE), .PU(N07_PU), .PD(N07_PD), .A(N07_A), .PDRV0(N07_PDRV0), .PDRV1(N07_PDRV1), .Y(N07_Y), .PAD(N07), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
+  gf180mcu_fd_io__in_c N07 (.PU(N07_PU), .PD(N07_PD), .Y(N07_Y), .PAD(N07), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__bi_t N08 (.CS(N08_CS), .SL(N08_SL), .IE(N08_IE), .OE(N08_OE), .PU(N08_PU), .PD(N08_PD), .A(N08_A), .PDRV0(N08_PDRV0), .PDRV1(N08_PDRV1), .Y(N08_Y), .PAD(N08), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__bi_t N09 (.CS(N09_CS), .SL(N09_SL), .IE(N09_IE), .OE(N09_OE), .PU(N09_PU), .PD(N09_PD), .A(N09_A), .PDRV0(N09_PDRV0), .PDRV1(N09_PDRV1), .Y(N09_Y), .PAD(N09), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
-  gf180mcu_fd_io__bi_t N10 (.CS(N10_CS), .SL(N10_SL), .IE(N10_IE), .OE(N10_OE), .PU(N10_PU), .PD(N10_PD), .A(N10_A), .PDRV0(N10_PDRV0), .PDRV1(N10_PDRV1), .Y(N10_Y), .PAD(N10), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
+  gf180mcu_fd_io__in_c N10 (.PU(N10_PU), .PD(N10_PD), .Y(N10_Y), .PAD(N10), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__bi_t N11 (.CS(N11_CS), .SL(N11_SL), .IE(N11_IE), .OE(N11_OE), .PU(N11_PU), .PD(N11_PD), .A(N11_A), .PDRV0(N11_PDRV0), .PDRV1(N11_PDRV1), .Y(N11_Y), .PAD(N11), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__asig_5p0 N12 (.ASIG5V(N12), .VSS(W19), .DVSS(W19), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 N13 (.ASIG5V(N13), .VSS(W19), .DVSS(W19), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
@@ -398,7 +398,7 @@ module A06_BH_padring (
   gf180mcu_fd_io__dvss W19 (.DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__in_s W20 (.PU(W20_PU), .PD(W20_PD), .Y(W20_Y), .PAD(W20), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__in_c W21 (.PU(W21_PU), .PD(W21_PD), .Y(W21_Y), .PAD(W21), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
-  gf180mcu_fd_io__in_c W22 (.PU(W22_PU), .PD(W22_PD), .Y(W22_Y), .PAD(W22), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
+  gf180mcu_fd_io__bi_t W22 (.CS(W22_CS), .SL(W22_SL), .IE(W22_IE), .OE(W22_OE), .PU(W22_PU), .PD(W22_PD), .A(W22_A), .PDRV0(W22_PDRV0), .PDRV1(W22_PDRV1), .Y(W22_Y), .PAD(W22), .VSS(W19), .DVSS(W19), .VDD(W18), .DVDD(W18));
   gf180mcu_fd_io__asig_5p0 E01 (.ASIG5V(E01), .VSS(W19), .DVSS(W19), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 E02 (.ASIG5V(E02), .VSS(W19), .DVSS(W19), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 E03 (.ASIG5V(E03), .VSS(W19), .DVSS(W19), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
