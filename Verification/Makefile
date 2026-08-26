@@ -83,6 +83,10 @@ CPP_FILES_GATE = $(VERIF_CODE)/sim_main_gatelevel.cpp
 OBJ_DIR_PHYS = obj_dir_phys
 PHYS_NETLIST = ../Physical_Design/Markov_Chain_Accelerator.nl.v
 
+MATRIX ?= $(INPUT_DIR)/Matrix3.txt
+P ?= 2
+R ?= 5
+
 PHYS_VERILATOR_FLAGS = --cc --exe --build -Wall -Wno-fatal \
                 --top-module Markov_Chain_Accelerator \
                 --Mdir $(OBJ_DIR_PHYS)

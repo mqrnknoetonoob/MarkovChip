@@ -24,7 +24,7 @@
         ""
     ],
     "LVS_VERILOG_FILES": [
-        "$UPRJ_ROOT/Physical_Design/Markov_Chain_Accelerator.nl.v"
+        "$UPRJ_ROOT/Physical_Design/After_Padring_Integration/RUN_A06_BH_WRAPPED_FINAL/results/final/verilog/gl/A06_BH_top_wrapper.nl.v"
     ],
-    "LAYOUT_FILE": "$UPRJ_ROOT/Physical_Design/Markov_Chain_Accelerator.gds"
+    "LAYOUT_FILE": "$UPRJ_ROOT/Physical_Design/After_Padring_Integration/RUN_A06_BH_WRAPPED_FINAL/results/final/gds/A06_BH_top_wrapper.gds"
 }

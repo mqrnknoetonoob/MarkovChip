@@ -1,0 +1,388 @@
+
+19. Printing statistics.
+
+=== Adder_Tree_16in ===
+
+   Number of wires:                733
+   Number of wire bits:           1111
+   Number of public wires:          18
+   Number of public wire bits:     396
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                727
+     gf180mcu_fd_sc_mcu7t5v0__and2_1     41
+     gf180mcu_fd_sc_mcu7t5v0__aoi21_1     55
+     gf180mcu_fd_sc_mcu7t5v0__aoi221_1      1
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1     46
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1    182
+     gf180mcu_fd_sc_mcu7t5v0__nand3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1     55
+     gf180mcu_fd_sc_mcu7t5v0__nor3_1      4
+     gf180mcu_fd_sc_mcu7t5v0__oai21_1     61
+     gf180mcu_fd_sc_mcu7t5v0__oai31_1      1
+     gf180mcu_fd_sc_mcu7t5v0__oai32_1      1
+     gf180mcu_fd_sc_mcu7t5v0__or2_1     12
+     gf180mcu_fd_sc_mcu7t5v0__xnor2_1     30
+     gf180mcu_fd_sc_mcu7t5v0__xnor3_1     10
+     gf180mcu_fd_sc_mcu7t5v0__xor2_1    159
+     gf180mcu_fd_sc_mcu7t5v0__xor3_1     68
+
+   Chip area for module '\Adder_Tree_16in': 15258.835200
+
+=== Comparator ===
+
+   Number of wires:                 27
+   Number of wire bits:             77
+   Number of public wires:           7
+   Number of public wire bits:      57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 47
+     gf180mcu_fd_sc_mcu7t5v0__and2_1     12
+     gf180mcu_fd_sc_mcu7t5v0__aoi22_1      2
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1     16
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1     12
+     gf180mcu_fd_sc_mcu7t5v0__oai21_1      2
+     gf180mcu_fd_sc_mcu7t5v0__oai22_1      1
+     priority_encoder                2
+
+   Area for cell type \priority_encoder is unknown!
+
+   Chip area for module '\Comparator': 605.875200
+
+=== LFSR ===
+
+   Number of wires:                 34
+   Number of wire bits:             89
+   Number of public wires:           7
+   Number of public wire bits:      51
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 62
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      1
+     gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1     12
+     gf180mcu_fd_sc_mcu7t5v0__mux2_1     12
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1     12
+     gf180mcu_fd_sc_mcu7t5v0__or2_1     12
+     gf180mcu_fd_sc_mcu7t5v0__xor2_1      8
+     gf180mcu_fd_sc_mcu7t5v0__xor3_1      5
+
+   Chip area for module '\LFSR': 2184.224000
+
+=== LFSR_Enabler ===
+
+   Number of wires:                 32
+   Number of wire bits:             42
+   Number of public wires:           7
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     gf180mcu_fd_sc_mcu7t5v0__and2_1      2
+     gf180mcu_fd_sc_mcu7t5v0__and3_1      2
+     gf180mcu_fd_sc_mcu7t5v0__aoi22_1      3
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      5
+     gf180mcu_fd_sc_mcu7t5v0__dffrnq_1      7
+     gf180mcu_fd_sc_mcu7t5v0__mux2_1      2
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1      5
+     gf180mcu_fd_sc_mcu7t5v0__nand3_1      5
+     gf180mcu_fd_sc_mcu7t5v0__nand4_1      2
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1      1
+     gf180mcu_fd_sc_mcu7t5v0__oai21_1      2
+     gf180mcu_fd_sc_mcu7t5v0__xor2_1      1
+
+   Chip area for module '\LFSR_Enabler': 1007.596800
+
+=== Markov_Chain_Accelerator ===
+
+   Number of wires:                 40
+   Number of wire bits:            822
+   Number of public wires:          33
+   Number of public wire bits:     815
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     Adder_Tree_16in                 1
+     LFSR_Enabler                    1
+     Result_Output_Shifter           1
+     Result_Shift_Memory             1
+     Row_Col_BGC                    16
+     Stochastic_Timer                1
+     gf180mcu_fd_sc_mcu7t5v0__and2_1      6
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      5
+     gf180mcu_fd_sc_mcu7t5v0__nor4_1      4
+     memory_enable_decoder           1
+
+   Area for cell type \Adder_Tree_16in is unknown!
+   Area for cell type \LFSR_Enabler is unknown!
+   Area for cell type \memory_enable_decoder is unknown!
+   Area for cell type \Result_Shift_Memory is unknown!
+   Area for cell type \Row_Col_BGC is unknown!
+   Area for cell type \Stochastic_Timer is unknown!
+   Area for cell type \Result_Output_Shifter is unknown!
+
+   Chip area for module '\Markov_Chain_Accelerator': 237.081600
+
+=== Result_Output_Shifter ===
+
+   Number of wires:                 82
+   Number of wire bits:            483
+   Number of public wires:          48
+   Number of public wire bits:     444
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 71
+     Shift_Register                 16
+     gf180mcu_fd_sc_mcu7t5v0__and2_1      3
+     gf180mcu_fd_sc_mcu7t5v0__and3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__aoi211_1      2
+     gf180mcu_fd_sc_mcu7t5v0__aoi21_1      6
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      9
+     gf180mcu_fd_sc_mcu7t5v0__dffrnq_1      7
+     gf180mcu_fd_sc_mcu7t5v0__mux2_1      8
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1      4
+     gf180mcu_fd_sc_mcu7t5v0__nand4_1      1
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1      2
+     gf180mcu_fd_sc_mcu7t5v0__nor3_1      4
+     gf180mcu_fd_sc_mcu7t5v0__oai21_1      3
+     gf180mcu_fd_sc_mcu7t5v0__oai31_1      4
+     memory_enable_decoder           1
+
+   Area for cell type \memory_enable_decoder is unknown!
+   Area for cell type \Shift_Register is unknown!
+
+   Chip area for module '\Result_Output_Shifter': 1363.219200
+
+=== Result_Shift_Memory ===
+
+   Number of wires:                 71
+   Number of wire bits:            646
+   Number of public wires:          24
+   Number of public wire bits:     420
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                423
+     gf180mcu_fd_sc_mcu7t5v0__and2_1      1
+     gf180mcu_fd_sc_mcu7t5v0__and3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      4
+     gf180mcu_fd_sc_mcu7t5v0__dffrnq_1    197
+     gf180mcu_fd_sc_mcu7t5v0__mux2_1    192
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1      6
+     gf180mcu_fd_sc_mcu7t5v0__nand3_1      3
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1      9
+     gf180mcu_fd_sc_mcu7t5v0__nor3_1      3
+     gf180mcu_fd_sc_mcu7t5v0__nor4_1      1
+     gf180mcu_fd_sc_mcu7t5v0__oai211_1      1
+     gf180mcu_fd_sc_mcu7t5v0__or2_1      1
+     gf180mcu_fd_sc_mcu7t5v0__or3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__xor2_1      3
+
+   Chip area for module '\Result_Shift_Memory': 20702.931200
+
+=== Row_Col_BGC ===
+
+   Number of wires:                 27
+   Number of wire bits:            130
+   Number of public wires:          22
+   Number of public wire bits:     125
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     Comparator                      2
+     LFSR                            2
+     Shift_Register                  2
+     counter                         1
+     gf180mcu_fd_sc_mcu7t5v0__and2_1     12
+     gf180mcu_fd_sc_mcu7t5v0__and3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      4
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1      3
+     gf180mcu_fd_sc_mcu7t5v0__or2_1      1
+
+   Area for cell type \Comparator is unknown!
+   Area for cell type \counter is unknown!
+   Area for cell type \LFSR is unknown!
+   Area for cell type \Shift_Register is unknown!
+
+   Chip area for module '\Row_Col_BGC': 324.889600
+
+=== Shift_Register ===
+
+   Number of wires:                 59
+   Number of wire bits:             93
+   Number of public wires:           6
+   Number of public wire bits:      29
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 76
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1     37
+     gf180mcu_fd_sc_mcu7t5v0__dffrnq_1     12
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1     13
+     gf180mcu_fd_sc_mcu7t5v0__oai221_1     12
+     gf180mcu_fd_sc_mcu7t5v0__or2_1      1
+     gf180mcu_fd_sc_mcu7t5v0__xnor2_1      1
+
+   Chip area for module '\Shift_Register': 1725.427200
+
+=== Stochastic_Timer ===
+
+   Number of wires:                 34
+   Number of wire bits:             56
+   Number of public wires:           6
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 53
+     gf180mcu_fd_sc_mcu7t5v0__and2_1      1
+     gf180mcu_fd_sc_mcu7t5v0__and3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__and4_1      3
+     gf180mcu_fd_sc_mcu7t5v0__aoi21_1      4
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      3
+     gf180mcu_fd_sc_mcu7t5v0__dffrnq_1     14
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1      5
+     gf180mcu_fd_sc_mcu7t5v0__nand3_1      2
+     gf180mcu_fd_sc_mcu7t5v0__nand4_1      1
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1      2
+     gf180mcu_fd_sc_mcu7t5v0__oai21_1      9
+     gf180mcu_fd_sc_mcu7t5v0__oai31_1      2
+     gf180mcu_fd_sc_mcu7t5v0__xnor2_1      2
+     gf180mcu_fd_sc_mcu7t5v0__xor2_1      4
+
+   Chip area for module '\Stochastic_Timer': 1753.964800
+
+=== counter ===
+
+   Number of wires:                 34
+   Number of wire bits:             56
+   Number of public wires:           5
+   Number of public wire bits:      16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     gf180mcu_fd_sc_mcu7t5v0__and2_1      2
+     gf180mcu_fd_sc_mcu7t5v0__and3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__and4_1      3
+     gf180mcu_fd_sc_mcu7t5v0__aoi21_1      7
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      4
+     gf180mcu_fd_sc_mcu7t5v0__dffrnq_1     12
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1      3
+     gf180mcu_fd_sc_mcu7t5v0__nand3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__nand4_1      1
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1      6
+     gf180mcu_fd_sc_mcu7t5v0__nor3_1      3
+     gf180mcu_fd_sc_mcu7t5v0__oai21_1      7
+     gf180mcu_fd_sc_mcu7t5v0__oai31_1      1
+     gf180mcu_fd_sc_mcu7t5v0__or4_1      1
+
+   Chip area for module '\counter': 1556.396800
+
+=== memory_enable_decoder ===
+
+   Number of wires:                  9
+   Number of wire bits:             15
+   Number of public wires:           6
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     gf180mcu_fd_sc_mcu7t5v0__and2_1      2
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      1
+     gf180mcu_fd_sc_mcu7t5v0__dffrnq_1      2
+     gf180mcu_fd_sc_mcu7t5v0__mux2_1      1
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1      2
+     gf180mcu_fd_sc_mcu7t5v0__xor2_1      2
+
+   Chip area for module '\memory_enable_decoder': 300.742400
+
+=== priority_encoder ===
+
+   Number of wires:                 21
+   Number of wire bits:             66
+   Number of public wires:           3
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     gf180mcu_fd_sc_mcu7t5v0__aoi211_1      1
+     gf180mcu_fd_sc_mcu7t5v0__aoi21_1      4
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1      7
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1      1
+     gf180mcu_fd_sc_mcu7t5v0__nand3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1      3
+     gf180mcu_fd_sc_mcu7t5v0__nor4_1      1
+     gf180mcu_fd_sc_mcu7t5v0__oai21_1      3
+     gf180mcu_fd_sc_mcu7t5v0__oai31_1      1
+
+   Chip area for module '\priority_encoder': 318.304000
+
+=== design hierarchy ===
+
+   Markov_Chain_Accelerator          1
+     Adder_Tree_16in                 1
+     LFSR_Enabler                    1
+     Result_Output_Shifter           1
+       Shift_Register               16
+       memory_enable_decoder         1
+     Result_Shift_Memory             1
+     Row_Col_BGC                    16
+       Comparator                    2
+         priority_encoder            2
+       LFSR                          2
+       Shift_Register                2
+       counter                       1
+     Stochastic_Timer                1
+     memory_enable_decoder           1
+
+   Number of wires:               8114
+   Number of wire bits:          20166
+   Number of public wires:        1508
+   Number of public wire bits:   12302
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              10977
+     gf180mcu_fd_sc_mcu7t5v0__and2_1    666
+     gf180mcu_fd_sc_mcu7t5v0__and3_1     37
+     gf180mcu_fd_sc_mcu7t5v0__and4_1     51
+     gf180mcu_fd_sc_mcu7t5v0__aoi211_1     66
+     gf180mcu_fd_sc_mcu7t5v0__aoi21_1    433
+     gf180mcu_fd_sc_mcu7t5v0__aoi221_1      1
+     gf180mcu_fd_sc_mcu7t5v0__aoi22_1     67
+     gf180mcu_fd_sc_mcu7t5v0__clkinv_1   2970
+     gf180mcu_fd_sc_mcu7t5v0__dffrnq_1    997
+     gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1    384
+     gf180mcu_fd_sc_mcu7t5v0__mux2_1    588
+     gf180mcu_fd_sc_mcu7t5v0__nand2_1   1322
+     gf180mcu_fd_sc_mcu7t5v0__nand3_1     91
+     gf180mcu_fd_sc_mcu7t5v0__nand4_1     20
+     gf180mcu_fd_sc_mcu7t5v0__nor2_1    793
+     gf180mcu_fd_sc_mcu7t5v0__nor3_1     59
+     gf180mcu_fd_sc_mcu7t5v0__nor4_1     69
+     gf180mcu_fd_sc_mcu7t5v0__oai211_1      1
+     gf180mcu_fd_sc_mcu7t5v0__oai21_1    443
+     gf180mcu_fd_sc_mcu7t5v0__oai221_1    576
+     gf180mcu_fd_sc_mcu7t5v0__oai22_1     32
+     gf180mcu_fd_sc_mcu7t5v0__oai31_1     87
+     gf180mcu_fd_sc_mcu7t5v0__oai32_1      1
+     gf180mcu_fd_sc_mcu7t5v0__or2_1    461
+     gf180mcu_fd_sc_mcu7t5v0__or3_1      1
+     gf180mcu_fd_sc_mcu7t5v0__or4_1     16
+     gf180mcu_fd_sc_mcu7t5v0__xnor2_1     80
+     gf180mcu_fd_sc_mcu7t5v0__xnor3_1     10
+     gf180mcu_fd_sc_mcu7t5v0__xor2_1    427
+     gf180mcu_fd_sc_mcu7t5v0__xor3_1    228
+
+   Chip area for top module '\Markov_Chain_Accelerator': 263500.832000
+

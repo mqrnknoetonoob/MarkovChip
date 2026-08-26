@@ -8,6 +8,9 @@
 *.exe
 .vscode/
 *.lib
-*.txt
+*._.DS_Store
+
+
+
 /GF180MCU_PDK
 /*/obj_dir*/

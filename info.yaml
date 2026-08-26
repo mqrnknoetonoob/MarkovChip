@@ -22,12 +22,8 @@ project:
 #
 # vdd/vss: left at default padframe positions (confirmed with Diganto —
 #   no custom placement needed).
-#
-# io_type for chip-driven (output) pins: set to "output" reflecting actual
-#   netlist direction. No inout/bidirectional ports exist in the synthesized
-#   netlist. If the organizer's padframe requires "bidirectional" instead,
-#   these should be changed accordingly before final submission.
-#
+#----------------------------------------------------------------------------
+# All outputs are bidirectional to allow for host-driven tri-state control.
 # =============================================================================
 
 pins:
@@ -38,7 +34,6 @@ pins:
   - name: vss
     io_type: ground
 
-  # ---- Bottom edge (left → right) ----
   - name: rst_n               # Active-low reset; Schmitt for noise immunity
     io_type: input_schmitt
 
@@ -54,14 +49,12 @@ pins:
   - name: spi_in1             # SPI input bit 1 (host → chip)
     io_type: input_cmos
 
-  # ---- Right edge (bottom → top) ----
   - name: spi_out3            # SPI output bit 3 (chip → host)
     io_type: bidirectional
 
   - name: input_ready         # Host signals data is ready on SPI inputs
     io_type: input_cmos
 
-  # ---- Top edge (right → left) ----
   - name: spi_in3             # SPI input bit 3 (host → chip)
     io_type: input_cmos
 
@@ -77,7 +70,6 @@ pins:
   - name: spi_out1            # SPI output bit 1 (chip → host)
     io_type: bidirectional
 
-  # ---- Left edge (top → bottom) ----
   - name: output_valid        # Host acknowledges chip output is valid/consumed
     io_type: input_cmos
 

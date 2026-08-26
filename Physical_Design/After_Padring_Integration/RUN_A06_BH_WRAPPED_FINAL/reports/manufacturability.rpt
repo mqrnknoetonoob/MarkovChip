@@ -1,0 +1,19 @@
+Design Name: A06_BH_top_wrapper
+Run Directory: /openlane/designs/Markov_Chain_Accelerator/runs/RUN_A06_BH_WRAPPED_FINAL
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/Markov_Chain_Accelerator/runs/RUN_A06_BH_WRAPPED_FINAL/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/Markov_Chain_Accelerator/runs/RUN_A06_BH_WRAPPED_FINAL/logs/signoff/41-A06_BH_top_wrapper.lef.lvs.log
+Number of nets: 12389                      |Number of nets: 12389                      
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/Markov_Chain_Accelerator/runs/RUN_A06_BH_WRAPPED_FINAL/logs/signoff/43-arc.log
+Pin violations: 0
+Net violations: 0

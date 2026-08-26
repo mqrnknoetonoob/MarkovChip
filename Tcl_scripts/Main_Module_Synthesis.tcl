@@ -9,7 +9,6 @@ read_verilog \
     ../RTL/memory_enable_decoder.v \
     ../RTL/priority_encoder.v \
     ../RTL/Result_Shift_Memory.v \
-    ../RTL/Result_Output_Shifter.v \
     ../RTL/Row_Col_BGC.v \
     ../RTL/Shift_Register.v \
     ../RTL/Stochastic_Timer.v
@@ -30,7 +29,7 @@ abc -liberty ../gf180mcu_fd_sc_mcu7t5v0__tt_025C_1v80.lib
 clean
 
 # 7. Write the synthesized netlist
-write_verilog -noattr ../Synthesized_Files/Netlist_Files/Markov_Chain_Accelerator_Netlist.v
+write_verilog -noattr ../Synthesized_Files/Netlist_Files/Markov_Chain_Accelerator_Netlist_Final.v
 
 # 8. Generate and save area/cell statistics report
-tee -o ../Synthesized_Files/Yosys_Output_Log/stat_report.txt stat -liberty ../gf180mcu_fd_sc_mcu7t5v0__tt_025C_1v80.lib
+tee -o ../Synthesized_Files/Yosys_Output_Log/stat_report_final.txt stat -liberty ../gf180mcu_fd_sc_mcu7t5v0__tt_025C_1v80.lib

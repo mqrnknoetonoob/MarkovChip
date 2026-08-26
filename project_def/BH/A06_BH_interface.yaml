@@ -25,8 +25,8 @@ routing_blockage_layers:
 - Metal4
 - Metal5
 pins:
-- user_pin_name: vdd
-  default_project_pin: vdd
+- user_pin_name: VDD
+  default_project_pin: VDD
   project_pin: VDD
   cell_terminal: DVDD
   padring_instance: W18
@@ -131,8 +131,8 @@ pins:
     - 9272
     - 200
     - 11172
-- user_pin_name: vss
-  default_project_pin: vss
+- user_pin_name: VSS
+  default_project_pin: VSS
   project_pin: VSS
   cell_terminal: DVSS
   padring_instance: W19

@@ -8,13 +8,13 @@ pin_count: 16
 user_slot_count: 16
 pads:
 - pin_index: 0
-  pin_name: vdd
+  pin_name: VDD
   slot: W18
   instance: W18
   io_type: power
   cell: gf180mcu_fd_io__dvdd
 - pin_index: 1
-  pin_name: vss
+  pin_name: VSS
   slot: W19
   instance: W19
   io_type: ground

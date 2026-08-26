@@ -1,0 +1,253 @@
+
+21. Printing statistics.
+
+=== Adder_Tree_16in ===
+
+   Number of wires:                 32
+   Number of wire bits:            564
+   Number of public wires:          18
+   Number of public wire bits:     396
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $add                           15
+
+=== Comparator ===
+
+   Number of wires:                 10
+   Number of wire bits:             82
+   Number of public wires:           7
+   Number of public wire bits:      57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $and                            2
+     $gt                             1
+     $mux                            1
+     $not                            2
+     priority_encoder                2
+
+=== LFSR ===
+
+   Number of wires:                 15
+   Number of wire bits:            114
+   Number of public wires:           8
+   Number of public wire bits:      52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $dffsr                          1
+     $mux                            3
+     $not                            1
+     $xor                            5
+
+=== LFSR_Enabler ===
+
+   Number of wires:                 18
+   Number of wire bits:             48
+   Number of public wires:           7
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $add                            1
+     $adff                           2
+     $eq                             1
+     $logic_and                      1
+     $mux                            8
+
+=== Markov_Chain_Accelerator ===
+
+   Number of wires:                 47
+   Number of wire bits:            834
+   Number of public wires:          33
+   Number of public wire bits:     820
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 44
+     $and                            1
+     $logic_and                     11
+     $logic_not                      2
+     $mux                            8
+     Adder_Tree_16in                 1
+     LFSR_Enabler                    1
+     Result_Output_Shifter           1
+     Result_Shift_Memory             1
+     Row_Col_BGC                    16
+     Stochastic_Timer                1
+     memory_enable_decoder           1
+
+=== Result_Output_Shifter ===
+
+   Number of wires:                 77
+   Number of wire bits:            497
+   Number of public wires:          48
+   Number of public wire bits:     444
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 56
+     $add                            1
+     $adff                           2
+     $eq                             1
+     $logic_and                      4
+     $mux                           30
+     $not                            1
+     Shift_Register                 16
+     memory_enable_decoder           1
+
+=== Result_Shift_Memory ===
+
+   Number of wires:                 92
+   Number of wire bits:            846
+   Number of public wires:          24
+   Number of public wire bits:     420
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                102
+     $add                            1
+     $adff                          18
+     $eq                            15
+     $logic_not                      1
+     $mux                           35
+     $pmux                          16
+     $reduce_or                     16
+
+=== Row_Col_BGC ===
+
+   Number of wires:                 25
+   Number of wire bits:            128
+   Number of public wires:          23
+   Number of public wire bits:     126
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     $and                            1
+     $logic_and                      1
+     $mux                            3
+     $not                            1
+     Comparator                      2
+     LFSR                            2
+     Shift_Register                  2
+     counter                         1
+
+=== Shift_Register ===
+
+   Number of wires:                  9
+   Number of wire bits:             43
+   Number of public wires:           6
+   Number of public wire bits:      29
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $adff                           1
+     $eq                             2
+     $pmux                           1
+
+=== Stochastic_Timer ===
+
+   Number of wires:                 14
+   Number of wire bits:             58
+   Number of public wires:           6
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add                            1
+     $adff                           3
+     $lt                             1
+     $mux                            6
+
+=== counter ===
+
+   Number of wires:                  8
+   Number of wire bits:             52
+   Number of public wires:           5
+   Number of public wire bits:      16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add                            1
+     $adff                           1
+     $mux                            2
+
+=== memory_enable_decoder ===
+
+   Number of wires:                 13
+   Number of wire bits:             21
+   Number of public wires:           6
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add                            1
+     $adff                           1
+     $eq                             3
+     $logic_not                      1
+     $mux                            2
+     $pmux                           1
+
+=== priority_encoder ===
+
+   Number of wires:                 14
+   Number of wire bits:             92
+   Number of public wires:           3
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $mux                           12
+
+=== design hierarchy ===
+
+   Markov_Chain_Accelerator          1
+     Adder_Tree_16in                 1
+     LFSR_Enabler                    1
+     Result_Output_Shifter           1
+       Shift_Register               16
+       memory_enable_decoder         1
+     Result_Shift_Memory             1
+     Row_Col_BGC                    16
+       Comparator                    2
+         priority_encoder            2
+       LFSR                          2
+       Shift_Register                2
+       counter                       1
+     Stochastic_Timer                1
+     memory_enable_decoder           1
+
+   Number of wires:               2962
+   Number of wire bits:          19993
+   Number of public wires:        1556
+   Number of public wire bits:   12355
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1852
+     $add                           37
+     $adff                          91
+     $and                           81
+     $dffsr                         32
+     $eq                           119
+     $gt                            32
+     $logic_and                     32
+     $logic_not                      5
+     $lt                             1
+     $mux                         1067
+     $not                          113
+     $pmux                          66
+     $reduce_or                     16
+     $xor                          160
+

@@ -7,7 +7,9 @@ A Multi-Step Markov Transition Matrix IP Block
 | Name | Department | Institution |
 | :--- | :---: | :---: |
 | **Mushfiq Raiyun** | CSE | BUET |
-| **Arnob Pal** | EEE | BUET |
-| **Sajid Ibne Zaman** | CSE | BUET |
-| **Sheikh Rahiqul Islam Swapnil** | CSE | BUET |
 | **Diganto Saha** | EEE | BUET |
+| **Arnob Pal** | EEE | BUET |
+| **Sheikh Rahiqul Islam Swapnil** | CSE | BUET |
+| **Sajid Ibne Zaman** | CSE | BUET |
+
+
