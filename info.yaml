@@ -28,10 +28,10 @@ project:
 
 pins:
   # Power rails
-  - name: vdd
+  - name: VDD
     io_type: power
 
-  - name: vss
+  - name: VSS
     io_type: ground
 
   - name: rst_n               # Active-low reset; Schmitt for noise immunity
