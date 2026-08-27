@@ -3,7 +3,7 @@
     "INCLUDE_CONFIGS": [
         "$LVS_ROOT/tech/$PDK/lvs_config.base.json"
     ],
-    "TOP_SOURCE": "Markov_Chain_Accelerator",
+    "TOP_SOURCE": "A06_BH_top_wrapper",
     "TOP_LAYOUT": "$TOP_SOURCE",
     "EXTRACT_FLATGLOB": [
         ""

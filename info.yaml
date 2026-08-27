@@ -27,11 +27,10 @@ project:
 # =============================================================================
 
 pins:
-  # Power rails
-  - name: vdd
+  - name: VDD
     io_type: power
 
-  - name: vss
+  - name: VSS
     io_type: ground
 
   - name: rst_n               # Active-low reset; Schmitt for noise immunity
@@ -40,34 +39,34 @@ pins:
   - name: clk                 # System clock
     io_type: input_cmos
 
-  - name: spi_out0            # SPI output bit 0 (chip → host)
-    io_type: bidirectional
-
-  - name: load_row_or_col     # Selects row (0) or column (1) for SPI load
+  - name: spi_in0             # SPI input bit 0 (host → chip)
     io_type: input_cmos
 
   - name: spi_in1             # SPI input bit 1 (host → chip)
     io_type: input_cmos
 
-  - name: spi_out3            # SPI output bit 3 (chip → host)
-    io_type: bidirectional
-
-  - name: input_ready         # Host signals data is ready on SPI inputs
+  - name: spi_in2             # SPI input bit 2 (host → chip)
     io_type: input_cmos
 
   - name: spi_in3             # SPI input bit 3 (host → chip)
     io_type: input_cmos
 
-  - name: spi_in0             # SPI input bit 0 (host → chip)
+  - name: load_row_or_col     # Selects row (0) or column (1) for SPI load
     io_type: input_cmos
 
-  - name: spi_in2             # SPI input bit 2 (host → chip)
+  - name: input_ready         # Host signals data is ready on SPI inputs
     io_type: input_cmos
+
+  - name: spi_out0            # SPI output bit 0 (chip → host)
+    io_type: bidirectional
+
+  - name: spi_out1            # SPI output bit 1 (chip → host)
+    io_type: bidirectional
 
   - name: spi_out2            # SPI output bit 2 (chip → host)
     io_type: bidirectional
 
-  - name: spi_out1            # SPI output bit 1 (chip → host)
+  - name: spi_out3            # SPI output bit 3 (chip → host)
     io_type: bidirectional
 
   - name: output_valid        # Host acknowledges chip output is valid/consumed
