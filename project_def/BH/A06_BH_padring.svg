@@ -59,7 +59,7 @@
 <polyline points="579 4.64102e-08 580 1" style="stroke:#F25844;stroke-width:0.75" />
 <polyline points="655 0 655 350 580 350 580 3.48077e-06 655 0" style="fill:#FAAD35;stroke:#F25844;stroke-width:0.5" />
 <polyline points="640 6.96153e-07 655 15" style="stroke:#F25844;stroke-width:0.75" />
-<text text-anchor="middle" x="617.5" y="175" class="small">gf180mcu_fd_io__bi_t</text>
+<text text-anchor="middle" x="617.5" y="175" class="small">gf180mcu_fd_io__in_c</text>
 <text text-anchor="middle" x="617.5" y="195" class="small">N03</text>
 <polyline points="660 0 660 350 655 350 655 2.32051e-07 660 0" style="fill:#BFE1F3;stroke:#179AA9;stroke-width:0.25" />
 <polyline points="659 4.64102e-08 660 1" style="stroke:#F25844;stroke-width:0.75" />
@@ -101,7 +101,7 @@
 <polyline points="879 4.64102e-08 880 1" style="stroke:#F25844;stroke-width:0.75" />
 <polyline points="955 0 955 350 880 350 880 3.48077e-06 955 0" style="fill:#FAAD35;stroke:#F25844;stroke-width:0.5" />
 <polyline points="940 6.96153e-07 955 15" style="stroke:#F25844;stroke-width:0.75" />
-<text text-anchor="middle" x="917.5" y="175" class="small">gf180mcu_fd_io__in_c</text>
+<text text-anchor="middle" x="917.5" y="175" class="small">gf180mcu_fd_io__bi_t</text>
 <text text-anchor="middle" x="917.5" y="195" class="small">N06</text>
 <polyline points="960 0 960 350 955 350 955 2.32051e-07 960 0" style="fill:#BFE1F3;stroke:#179AA9;stroke-width:0.25" />
 <polyline points="959 4.64102e-08 960 1" style="stroke:#F25844;stroke-width:0.75" />
@@ -115,7 +115,7 @@
 <polyline points="979 4.64102e-08 980 1" style="stroke:#F25844;stroke-width:0.75" />
 <polyline points="1055 0 1055 350 980 350 980 3.48077e-06 1055 0" style="fill:#FAAD35;stroke:#F25844;stroke-width:0.5" />
 <polyline points="1040 6.96153e-07 1055 15" style="stroke:#F25844;stroke-width:0.75" />
-<text text-anchor="middle" x="1017.5" y="175" class="small">gf180mcu_fd_io__in_c</text>
+<text text-anchor="middle" x="1017.5" y="175" class="small">gf180mcu_fd_io__bi_t</text>
 <text text-anchor="middle" x="1017.5" y="195" class="small">N07</text>
 <polyline points="1060 0 1060 350 1055 350 1055 2.32051e-07 1060 0" style="fill:#BFE1F3;stroke:#179AA9;stroke-width:0.25" />
 <polyline points="1059 4.64102e-08 1060 1" style="stroke:#F25844;stroke-width:0.75" />
@@ -961,7 +961,7 @@
 <polyline points="6.96153e-08 456 1 455" style="stroke:#F25844;stroke-width:0.75" />
 <polyline points="0 380 350 380 350 455 5.22115e-06 455 0 380" style="fill:#FAAD35;stroke:#F25844;stroke-width:0.5" />
 <polyline points="1.04423e-06 395 15 380" style="stroke:#F25844;stroke-width:0.75" />
-<text text-anchor="middle" x="175" y="417.5" class="small">gf180mcu_fd_io__bi_t</text>
+<text text-anchor="middle" x="175" y="417.5" class="small">gf180mcu_fd_io__in_c</text>
 <text text-anchor="middle" x="175" y="437.5" class="small">W22</text>
 <polyline points="0 375 350 375 350 380 3.48077e-07 380 0 375" style="fill:#BFE1F3;stroke:#179AA9;stroke-width:0.25" />
 <polyline points="6.96153e-08 376 1 375" style="stroke:#F25844;stroke-width:0.75" />
