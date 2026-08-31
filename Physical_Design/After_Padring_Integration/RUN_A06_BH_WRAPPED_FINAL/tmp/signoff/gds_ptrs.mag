@@ -1,6 +1,6 @@
 << properties >>
 string FIXED_BBOX 0 0 222000 110000
 string GDS_END 19234338
-string GDS_FILE /openlane/designs/Markov_Chain_Accelerator/runs/RUN_Def_Latest_2nd/results/signoff/A06_BH_top_wrapper.magic.gds
+string GDS_FILE /openlane/designs/Markov_Chain_Accelerator/runs/31Aug_run_corrected_def/results/signoff/A06_BH_top_wrapper.magic.gds
 string GDS_START 449292
 << end >>
