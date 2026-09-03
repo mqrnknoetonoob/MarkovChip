@@ -1,65 +1,43 @@
-# Fanout Violation Waiver — Justification README
+﻿# Padring Power Delivery Network (PDN) Integration & Core Ring Fix
 
-## Summary
+## 1. Overview & Problem Background
+In earlier wrapped integration runs, visual inspection in KLayout revealed a physical discontinuity/gap between the padring's digital power pads (**DVDD / DVSS** on the West edge) and the internal core power grid. 
 
-STA sign-off checks report **70 max-fanout DRC violations** (limit = 35) across
-all three analyzed PVT corners (min, typ/nom, max). This document records the
-analysis performed and the justification for accepting these as a **non-blocking
-waiver** for the current tapeout.
+Although internal cell-level rails and stripes were placed, `FP_PDN_CORE_RING` had remained disabled (`0`), preventing the power distribution network from physically bridging across the core-to-pad boundary. Furthermore, the West edge shares both VDD and VSS pins on Metal2 with a corner blockage (`RECT (0 0) (400 4200)`), making coplanar single-layer routing prone to spacing violations or shorts.
 
 ---
 
-## 1. Scope of the Violation
+## 2. Implemented Configuration Changes
+To resolve this issue, the core power ring was enabled and configured in `config.tcl` with proper geometry and spacing rules:
 
-- **Violation type:** `max_fanout` (structural/connectivity DRC), not a timing
-  path failure.
-- **Violation count:** 70, identical across `rcx_min_sta_checks.rpt`,
-  `rcx_nom_sta_checks.rpt`, and `rcx_max_sta_checks.rpt`.
-- **Location:** Exclusively on the **reset (`rst_n`) distribution buffer tree**
-  (`fanout20`, `fanout21`, ... `fanout75`) and related global control nets
-  (`bgc_0._08_` ... `bgc_15._08_`).
-- **Fanout range observed:** 36–70 against a limit of 35.
+```tcl
+# Enable Core Power Ring
+set ::env(FP_PDN_CORE_RING) "1"
 
----
+# Ring Dimensions and Spacing
+set ::env(FP_PDN_CORE_RING_VWIDTH) "1.6"
+set ::env(FP_PDN_CORE_RING_HWIDTH) "1.6"
+set ::env(FP_PDN_CORE_RING_VSPACING) "1.7"
+set ::env(FP_PDN_CORE_RING_HSPACING) "1.7"
 
-## 2. Electrical / Timing Analysis
-
-| Corner | Max Slew Violations | Max Cap Violations | Reset Path Slack |
-|--------|---------------------|---------------------|-------------------|
-| Min    | 0                   | 0                   | 21.60 ns (MET)    |
-| Nom    | 0                   | 0                   | 21.56 ns (MET)    |
-| Max    | 0                   | 0                   | 21.05 ns (MET)    |
-
-Key observations:
-
-- **Zero slew and zero capacitance violations** in all three corners, including
-  the worst-case **max** corner (slowest process, highest temp, lowest
-  voltage) — confirming existing buffers adequately drive the actual load
-  even under worst-case conditions.
-- The affected net sits on the **asynchronous reset recovery/removal check**
-  (`Path Group: asynchronous`), which shows **21+ ns of positive slack** in
-  every corner — far from failing.
-- Reset is a **static, low-switching-activity signal**, not part of any
-  functional clock or data timing path, so the elevated fanout carries no
-  measurable performance risk.
-- The tightest slack anywhere in the design (0.48 ns, max corner) occurs on
-  an unrelated `adder_tree` logic path and has no connection to the
-  fanout-violated nets.
-
-**Conclusion:** The fanout count exceeds the DRC limit, but this is a
-structural/rule-of-thumb margin violation — it does not translate into an
-actual electrical or timing failure in any analyzed corner.
+# Ring Offsets from Core Boundary
+set ::env(FP_PDN_CORE_RING_VOFFSET) "6"
+set ::env(FP_PDN_CORE_RING_HOFFSET) "6"
+```
 
 ---
 
-## 3. Disposition
+## 3. Physical Changes in the Design
 
-- **Status:** Accepted as a **known, low-risk, non-blocking waiver**.
-- **Rationale:** No slew/cap violations, 21+ ns positive slack on the
-  affected async path, and the signal is low-activity/non-critical (not on
-  any functional clock/data timing path).
+1. **Generation of a Dual-Layer Power Ring (Metal4 & Metal5):**
+   * Two dedicated power rings were automatically instantiated in the floorplan DEF:
+     * **Metal4 (Vertical Ring Legs):** Width of 3.2 um (3200 DBU).
+     * **Metal5 (Horizontal Ring Legs):** Width of 3.2 um (3200 DBU).
+   * Robust electrical connectivity across the entire power grid is established at the ring corners using standard `via4_5_3200_3200_3_3_1040_1040` via arrays.
 
----
+2. **Metal Extension to the Padring Boundary (Eliminating the Physical Gap):**
+   * The power ring now physically extends past the standard-cell core boundary to reach the padring interface (reaching down to offsets of X = -3.52 um and Y = -5.12 um in the DEF).
+   * This ensures the core power grid is physically stitched to the padring's **DVDD / DVSS** pads, eliminating the visible separation/gap previously observed in KLayout.
 
-*Reports referenced: `33-rcx_sta_checks.rpt`, `rcx_min_sta_checks.rpt`,
-`rcx_nom_sta_checks.rpt`, `rcx_max_sta_checks.rpt`*
+3. **Safe Multi-Layer Power Hookup (Avoiding Shorts and Blockages):**
+   * By routing the power ring and hookups on the upper metal layers (**Metal4 and Metal5**), the power delivery path safely hops over the bottom-left **Metal2 blockage** `RECT (0 0) (400 4200)` and avoids any risk of Metal2 shorts against adjacent VSS ring legs.
