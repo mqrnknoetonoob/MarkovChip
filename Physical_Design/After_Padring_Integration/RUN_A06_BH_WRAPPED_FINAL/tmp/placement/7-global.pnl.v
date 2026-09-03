@@ -75,8 +75,8 @@ module A06_BH_top_wrapper (clk,
     spi_out3_PDRV1,
     spi_out3_PU,
     spi_out3_SL,
-    VDD,
-    VSS);
+    VSS,
+    VDD);
  input clk;
  output clk_PD;
  output clk_PU;
@@ -154,8 +154,8 @@ module A06_BH_top_wrapper (clk,
  output spi_out3_PDRV1;
  output spi_out3_PU;
  output spi_out3_SL;
- input VDD;
  input VSS;
+ input VDD;
 
  wire _0000_;
  wire _0001_;

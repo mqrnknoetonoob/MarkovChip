@@ -12,51 +12,67 @@ MACRO A06_BH_top_wrapper
     USE POWER ;
     PORT
       LAYER Metal4 ;
-        RECT 20.560 7.540 22.160 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 174.160 7.540 175.760 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 327.760 7.540 329.360 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 481.360 7.540 482.960 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 634.960 7.540 636.560 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 788.560 7.540 790.160 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 942.160 7.540 943.760 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 1095.760 7.540 1097.360 545.180 ;
+        RECT -2.560 0.240 -0.960 552.480 ;
     END
     PORT
       LAYER Metal5 ;
-        RECT 4.740 23.690 1105.180 25.290 ;
+        RECT -2.560 0.240 1112.480 1.840 ;
     END
     PORT
       LAYER Metal5 ;
-        RECT 4.740 176.870 1105.180 178.470 ;
+        RECT -2.560 550.880 1112.480 552.480 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 1110.880 0.240 1112.480 552.480 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 20.560 -3.060 22.160 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 174.160 -3.060 175.760 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 327.760 -3.060 329.360 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 481.360 -3.060 482.960 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 634.960 -3.060 636.560 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 788.560 -3.060 790.160 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 942.160 -3.060 943.760 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 1095.760 -3.060 1097.360 555.780 ;
     END
     PORT
       LAYER Metal5 ;
-        RECT 4.740 330.050 1105.180 331.650 ;
+        RECT -5.860 23.690 1115.780 25.290 ;
     END
     PORT
       LAYER Metal5 ;
-        RECT 4.740 483.230 1105.180 484.830 ;
+        RECT -5.860 176.870 1115.780 178.470 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT -5.860 330.050 1115.780 331.650 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT -5.860 483.230 1115.780 484.830 ;
     END
   END VDD
   PIN VSS
@@ -64,51 +80,67 @@ MACRO A06_BH_top_wrapper
     USE GROUND ;
     PORT
       LAYER Metal4 ;
-        RECT 23.860 7.540 25.460 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 177.460 7.540 179.060 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 331.060 7.540 332.660 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 484.660 7.540 486.260 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 638.260 7.540 639.860 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 791.860 7.540 793.460 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 945.460 7.540 947.060 545.180 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 1099.060 7.540 1100.660 545.180 ;
+        RECT -5.860 -3.060 -4.260 555.780 ;
     END
     PORT
       LAYER Metal5 ;
-        RECT 4.740 26.990 1105.180 28.590 ;
+        RECT -5.860 -3.060 1115.780 -1.460 ;
     END
     PORT
       LAYER Metal5 ;
-        RECT 4.740 180.170 1105.180 181.770 ;
+        RECT -5.860 554.180 1115.780 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 1114.180 -3.060 1115.780 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 23.860 -3.060 25.460 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 177.460 -3.060 179.060 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 331.060 -3.060 332.660 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 484.660 -3.060 486.260 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 638.260 -3.060 639.860 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 791.860 -3.060 793.460 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 945.460 -3.060 947.060 555.780 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 1099.060 -3.060 1100.660 555.780 ;
     END
     PORT
       LAYER Metal5 ;
-        RECT 4.740 333.350 1105.180 334.950 ;
+        RECT -5.860 26.990 1115.780 28.590 ;
     END
     PORT
       LAYER Metal5 ;
-        RECT 4.740 486.530 1105.180 488.130 ;
+        RECT -5.860 180.170 1115.780 181.770 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT -5.860 333.350 1115.780 334.950 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT -5.860 486.530 1115.780 488.130 ;
     END
   END VSS
   PIN clk

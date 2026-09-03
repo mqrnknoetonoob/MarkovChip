@@ -1,0 +1,1520 @@
+
+Magic 8.3 revision 413 - Compiled on Wed Jul 12 10:04:40 UTC 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology gf180mcuC ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuC Device Generator Menu ...
+Loading "/openlane/scripts/magic/gds/drc_batch.tcl" from command line.
+Input style ProgName: scaleFactor=5, multiplier=1
+The following types are not handled by extraction and will be treated as non-electrical types:
+    NWELL COMP DUALGATE POLY2 NPLUS ESD SAB PPLUS CONTACT METAL1 VIA1 METAL2 VIA2 METAL3 VIA3 METAL4 VIA4 METAL5 VIA5 METAL6 VIA6 METAL7 VIATV METALMT PAD HVT DNWELL RES FUSEBOT FUSETOP LVT NAT BJT DIODE RESDEF CAPDEF V5DEF SRAMDEF BOUND PWELL 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: A06_BH_top_wrapper
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_32" (byte position 9632): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_32" (byte position 10148): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_32" (byte position 10212): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32.
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fill_1" (byte position 10856): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fill_1" (byte position 11372): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fill_1" (byte position 11436): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fill_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fill_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fill_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_64".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_64" (byte position 30004): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_64" (byte position 30520): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_64" (byte position 30584): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64.
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__endcap" (byte position 31908): Label on unknown layer/datatype, layer=34 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__endcap.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__endcap.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__endcap.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__endcap.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__endcap.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__endcap.
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__filltie" (byte position 33684): Label on unknown layer/datatype, layer=34 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__filltie.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__filltie.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__filltie.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__filltie.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__filltie.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__filltie.
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_4" (byte position 35902): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_4" (byte position 36418): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_4" (byte position 36482): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__mux2_1" (byte position 39718): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__mux2_1" (byte position 40482): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__mux2_1" (byte position 40546): Label on unknown layer/datatype, layer=204 type=10
+Moving label "S" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "I0" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "I1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__mux2_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fill_2" (byte position 41190): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fill_2" (byte position 41706): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fill_2" (byte position 41770): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fill_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fill_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fill_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fill_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_16" (byte position 46898): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_16" (byte position 47414): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_16" (byte position 47478): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16.
+Reading "gf180mcu_fd_sc_mcu7t5v0__antenna".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__antenna" (byte position 48442): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__antenna" (byte position 49020): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__antenna" (byte position 49084): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__antenna.
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_8" (byte position 52034): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_8" (byte position 52550): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_8" (byte position 52614): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8.
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_1" (byte position 54888): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_1" (byte position 55590): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_1" (byte position 55654): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1" (byte position 64652): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1" (byte position 65482): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1" (byte position 65546): Label on unknown layer/datatype, layer=204 type=10
+Moving label "RN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "D" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "Q" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "CLK" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "SETN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__tiel".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__tiel" (byte position 67052): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__tiel" (byte position 67630): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__tiel" (byte position 67694): Label on unknown layer/datatype, layer=204 type=10
+Moving label "ZN" from space to COMP in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tiel.
+Reading "gf180mcu_fd_sc_mcu7t5v0__tieh".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__tieh" (byte position 69200): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__tieh" (byte position 69778): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__tieh" (byte position 69842): Label on unknown layer/datatype, layer=204 type=10
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__tieh.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_1" (byte position 71814): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_1" (byte position 72516): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_1" (byte position 72580): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai21_1" (byte position 74808): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai21_1" (byte position 75572): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai21_1" (byte position 75636): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "B" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai31_1" (byte position 78328): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai31_1" (byte position 79154): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai31_1" (byte position 79218): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "B" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_1" (byte position 80712): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_1" (byte position 81352): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_1" (byte position 81416): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi21_1" (byte position 83788): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi21_1" (byte position 84552): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi21_1" (byte position 84616): Label on unknown layer/datatype, layer=204 type=10
+Moving label "B" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "ZN" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_1" (byte position 86604): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_1" (byte position 87306): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_1" (byte position 87370): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_3".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_3" (byte position 89724): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_3" (byte position 90364): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_3" (byte position 90428): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_3.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai221_1" (byte position 93618): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai221_1" (byte position 94506): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai221_1" (byte position 94570): Label on unknown layer/datatype, layer=204 type=10
+Moving label "B1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "C" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "B2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1" (byte position 102480): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1" (byte position 103246): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1" (byte position 103310): Label on unknown layer/datatype, layer=204 type=10
+Moving label "D" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "Q" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "RN" from space to COMP in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "CLK" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor2_1" (byte position 106210): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor2_1" (byte position 106912): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor2_1" (byte position 106976): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "Z" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2" (byte position 116422): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2" (byte position 117252): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2" (byte position 117316): Label on unknown layer/datatype, layer=204 type=10
+Moving label "RN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "D" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "Q" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "CLK" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "SETN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor3_1" (byte position 119448): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor3_1" (byte position 120212): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor3_1" (byte position 120276): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "ZN" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_4" (byte position 122874): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_4" (byte position 123514): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_4" (byte position 123578): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_2" (byte position 127486): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_2" (byte position 128312): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_2" (byte position 128376): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "A4" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "ZN" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi211_1" (byte position 131070): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi211_1" (byte position 131896): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi211_1" (byte position 131960): Label on unknown layer/datatype, layer=204 type=10
+Moving label "B" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "C" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "ZN" from space to COMP in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_1" (byte position 134156): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_1" (byte position 134920): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_1" (byte position 134984): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_1" (byte position 137212): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_1" (byte position 137914): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_1" (byte position 137978): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor3_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_1" (byte position 143278): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_1" (byte position 144042): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_1" (byte position 144106): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "Z" from space to COMP in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or4_1" (byte position 147036): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or4_1" (byte position 147862): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or4_1" (byte position 147926): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "A4" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or4_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16" (byte position 158940): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16" (byte position 159580): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16" (byte position 159644): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai21_2" (byte position 162880): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai21_2" (byte position 163644): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai21_2" (byte position 163708): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "ZN" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "B" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai21_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi22_1" (byte position 166288): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi22_1" (byte position 167114): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi22_1" (byte position 167178): Label on unknown layer/datatype, layer=204 type=10
+Moving label "B1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "B2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai22_1" (byte position 169742): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai22_1" (byte position 170568): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai22_1" (byte position 170632): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "B1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "B2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai22_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor2_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor2_1" (byte position 173756): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor2_1" (byte position 174458): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor2_1" (byte position 174522): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_2" (byte position 177486): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_2" (byte position 178250): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_2" (byte position 178314): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "ZN" from space to COMP in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_2" (byte position 180782): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_2" (byte position 181484): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_2" (byte position 181548): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_1" (byte position 184128): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_1" (byte position 184892): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_1" (byte position 184956): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2" (byte position 193362): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2" (byte position 194128): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2" (byte position 194192): Label on unknown layer/datatype, layer=204 type=10
+Moving label "D" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "Q" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "RN" from space to COMP in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "CLK" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_2" (byte position 197796): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_2" (byte position 198622): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_2" (byte position 198686): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "A4" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and4_2" (byte position 201858): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and4_2" (byte position 202684): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and4_2" (byte position 202748): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "A4" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and4_1" (byte position 205664): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and4_1" (byte position 206490): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and4_1" (byte position 206554): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "A4" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and4_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi21_2" (byte position 209646): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi21_2" (byte position 210410): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi21_2" (byte position 210474): Label on unknown layer/datatype, layer=204 type=10
+Moving label "B" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_8".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_8" (byte position 215040): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_8" (byte position 215680): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_8" (byte position 215744): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor2_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor2_4" (byte position 220772): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor2_4" (byte position 221474): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor2_4" (byte position 221538): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_4" (byte position 225524): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_4" (byte position 226226): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_4" (byte position 226290): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8" (byte position 232408): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8" (byte position 233048): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8" (byte position 233112): Label on unknown layer/datatype, layer=204 type=10
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_12".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_12" (byte position 242012): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_12" (byte position 242652): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_12" (byte position 242716): Label on unknown layer/datatype, layer=204 type=10
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_12.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_12".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_12" (byte position 251282): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_12" (byte position 251922): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_12" (byte position 251986): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_1" (byte position 253540): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_1" (byte position 254180): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_1" (byte position 254244): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_20".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_20" (byte position 267578): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_20" (byte position 268218): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_20" (byte position 268282): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_4" (byte position 274382): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_4" (byte position 275208): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_4" (byte position 275272): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "A4" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_1" (byte position 277146): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_1" (byte position 277786): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_1" (byte position 277850): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "Z" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "I" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor3_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_2" (byte position 284430): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_2" (byte position 285194): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_2" (byte position 285258): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_2" (byte position 288094): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_2" (byte position 288858): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_2" (byte position 288922): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_8".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_8" (byte position 295132): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_8" (byte position 295772): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_8" (byte position 295836): Label on unknown layer/datatype, layer=204 type=10
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_8.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor3_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor3_1" (byte position 301184): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor3_1" (byte position 301948): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor3_1" (byte position 302012): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_2" (byte position 304622): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_2" (byte position 305324): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__or2_2" (byte position 305388): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__or2_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_2" (byte position 307362): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_2" (byte position 308002): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_2" (byte position 308066): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_4" (byte position 311974): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_4" (byte position 312676): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_4" (byte position 312740): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi221_2" (byte position 317466): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi221_2" (byte position 318354): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__aoi221_2" (byte position 318418): Label on unknown layer/datatype, layer=204 type=10
+Moving label "B1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "B2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "C" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai32_1" (byte position 321286): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai32_1" (byte position 322174): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai32_1" (byte position 322238): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "B1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "B2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai32_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor3_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_4" (byte position 329506): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_4" (byte position 330270): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor3_4" (byte position 330334): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "Z" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor3_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor3_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor3_4" (byte position 337618): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor3_4" (byte position 338382): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xnor3_4" (byte position 338446): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1" (byte position 340452): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1" (byte position 341092): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1" (byte position 341156): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "Z" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "I" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor2_4" (byte position 346200): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor2_4" (byte position 346902): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__xor2_4" (byte position 346966): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__xor2_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_16".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_16" (byte position 358362): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_16" (byte position 359002): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_16" (byte position 359066): Label on unknown layer/datatype, layer=204 type=10
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_16.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2" (byte position 361456): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2" (byte position 362096): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2" (byte position 362160): Label on unknown layer/datatype, layer=204 type=10
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "I" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_4" (byte position 365940): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_4" (byte position 366642): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor2_4" (byte position 366706): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor2_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_4" (byte position 370436): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_4" (byte position 371076): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_4" (byte position 371140): Label on unknown layer/datatype, layer=204 type=10
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai31_2" (byte position 375112): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai31_2" (byte position 375938): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai31_2" (byte position 376002): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "B" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai31_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_4" (byte position 380630): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_4" (byte position 381394): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and3_4" (byte position 381458): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and3_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_2" (byte position 383380): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_2" (byte position 384020): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__inv_2" (byte position 384084): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__inv_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_3".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_3" (byte position 386378): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_3" (byte position 387018): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkinv_3" (byte position 387082): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_2" (byte position 389598): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_2" (byte position 390300): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand2_2" (byte position 390364): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand2_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_4" (byte position 394528): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_4" (byte position 395230): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_4" (byte position 395294): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_2" (byte position 397648): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_2" (byte position 398288): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_2" (byte position 398352): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "I" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_4" (byte position 404900): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_4" (byte position 405726): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_4" (byte position 405790): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "A4" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "ZN" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_2" (byte position 408450): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_2" (byte position 409152): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__and2_2" (byte position 409216): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__and2_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_4" (byte position 414852): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_4" (byte position 415616): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand3_4" (byte position 415680): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand3_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai211_1" (byte position 418342): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai211_1" (byte position 419168): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai211_1" (byte position 419232): Label on unknown layer/datatype, layer=204 type=10
+Moving label "B" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "C" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "A1" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai211_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_1" (byte position 421700): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_1" (byte position 422526): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nor4_1" (byte position 422590): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "A4" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "ZN" from space to COMP in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nor4_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_2".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai221_2" (byte position 427460): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai221_2" (byte position 428348): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__oai221_2" (byte position 428412): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A2" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "B1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "C" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "B2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__oai221_2.
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4" (byte position 437474): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4" (byte position 438240): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4" (byte position 438304): Label on unknown layer/datatype, layer=204 type=10
+Moving label "D" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "Q" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "RN" from space to COMP in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "CLK" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_1".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_1" (byte position 440676): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_1" (byte position 441502): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__nand4_1" (byte position 441566): Label on unknown layer/datatype, layer=204 type=10
+Moving label "A3" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "A4" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "ZN" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "A1" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "A2" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__nand4_1.
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3" (byte position 445012): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3" (byte position 445652): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3" (byte position 445716): Label on unknown layer/datatype, layer=204 type=10
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "I" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_3".
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_3" (byte position 448486): Label on unknown layer/datatype, layer=34 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_3" (byte position 449126): Label on unknown layer/datatype, layer=21 type=10
+Error while reading cell "gf180mcu_fd_sc_mcu7t5v0__buf_3" (byte position 449190): Label on unknown layer/datatype, layer=204 type=10
+Moving label "VSS" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "Z" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "I" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "VDD" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "& Vendor GLOBALFOUNDRIES" from BOUND to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "& Product GF018hv5v_mcu_sc7" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "& Version 2015q2v1" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "& Metric 1.00" from BOUND to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "VNW" from space to NWELL in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Moving label "VPW" from space to DUALGATE in cell gf180mcu_fd_sc_mcu7t5v0__buf_3.
+Reading "A06_BH_top_wrapper".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+Error while reading cell "A06_BH_top_wrapper" (byte position 18481476): Label on unknown layer/datatype, layer=81 type=10
+Error while reading cell "A06_BH_top_wrapper" (byte position 18481988): Label on unknown layer/datatype, layer=46 type=10
+Error while reading cell "A06_BH_top_wrapper" (byte position 18485812): Label on unknown layer/datatype, layer=36 type=10
+Moving label "VDD" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL3 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL3 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VDD" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL3 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL5 in cell A06_BH_top_wrapper.
+Moving label "VSS" from space to METAL4 in cell A06_BH_top_wrapper.
+Moving label "clk" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "clk_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "clk_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "input_ready" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "input_ready_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "input_ready_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "load_row_or_col" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "load_row_or_col_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "load_row_or_col_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_CS" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_IE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_IN" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_OE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_OUT" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_PDRV0" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_PDRV1" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_ready_SL" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_valid" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_valid_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "output_valid_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "rst_n" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "rst_n_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "rst_n_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in0" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in0_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in0_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in1" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in1_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in1_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in2" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in2_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in2_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in3" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in3_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_in3_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_CS" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_IE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_IN" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_OE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_OUT" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_PDRV0" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_PDRV1" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out0_SL" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_CS" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_IE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_IN" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_OE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_OUT" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_PDRV0" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_PDRV1" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out1_SL" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_CS" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_IE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_IN" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_OE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_OUT" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_PDRV0" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_PDRV1" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out2_SL" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_CS" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_IE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_IN" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_OE" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_OUT" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_PD" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_PDRV0" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_PDRV1" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_PU" from space to METAL2 in cell A06_BH_top_wrapper.
+Moving label "spi_out3_SL" from space to METAL2 in cell A06_BH_top_wrapper.
+[INFO]: Loading A06_BH_top_wrapper
+
+Loading DRC CIF style.
+/home/user/.ciel/gf180mcuC/libs.tech/magic/gf180mcuC-GDS.tech: line 319: section cifoutput:
+	No valid scale factor was given for ÀëV3 CIF.
+No errors found.
+[INFO]: DONE with drc_report.rpt
+
+Using technology "GF018MCU_GDS", version 1.0.532-2-gc6d73a3
+% % % % 

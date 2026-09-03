@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "A06_BH_top_wrapper")
- (DATE "Wed Sep  2 19:12:40 2026")
+ (DATE "Thu Sep  3 09:56:20 2026")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -14,7 +14,7 @@
    (ABSOLUTE
     (INTERCONNECT clk clkbuf_0_clk.I (0.450:0.450:0.450) (0.279:0.279:0.279))
     (INTERCONNECT input_ready input1.I (0.108:0.108:0.108) (0.066:0.066:0.066))
-    (INTERCONNECT load_row_or_col input2.I (0.164:0.164:0.164) (0.101:0.101:0.101))
+    (INTERCONNECT load_row_or_col input2.I (0.165:0.165:0.165) (0.102:0.102:0.102))
     (INTERCONNECT output_valid input3.I (0.060:0.060:0.060) (0.037:0.037:0.037))
     (INTERCONNECT rst_n input4.I (0.076:0.076:0.076) (0.046:0.046:0.046))
     (INTERCONNECT spi_in0 input5.I (0.166:0.166:0.166) (0.102:0.102:0.102))
@@ -189068,17 +189068,17 @@
   (INSTANCE core\.res_mem_inst\._096_)
   (DELAY
    (ABSOLUTE
-    (IOPATH I0 Z (1.372:1.373:1.373) (1.408:1.409:1.410))
+    (IOPATH I0 Z (1.373:1.373:1.373) (1.408:1.409:1.410))
     (COND I1===1'b1
-     (IOPATH I0 Z (1.372:1.373:1.373) (1.408:1.409:1.410)))
+     (IOPATH I0 Z (1.373:1.373:1.373) (1.408:1.409:1.410)))
     (COND I1===1'b0
-     (IOPATH I0 Z (1.372:1.373:1.373) (1.408:1.409:1.410)))
+     (IOPATH I0 Z (1.373:1.373:1.373) (1.408:1.409:1.410)))
     (IOPATH I1 Z (1.368:1.368:1.368) (1.387:1.387:1.387))
     (COND I0===1'b1
      (IOPATH I1 Z (1.368:1.368:1.368) (1.387:1.387:1.387)))
     (COND I0===1'b0
      (IOPATH I1 Z (1.368:1.368:1.368) (1.387:1.387:1.387)))
-    (IOPATH S Z (1.465:1.465:1.465) (1.450:1.467:1.484))
+    (IOPATH S Z (1.465:1.465:1.465) (1.450:1.467:1.485))
     (IOPATH S Z (1.763:1.778:1.793) (1.559:1.559:1.559))
    )
   )
@@ -215961,7 +215961,7 @@
   (INSTANCE output11)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.876:0.876:0.876) (0.931:0.931:0.932))
+    (IOPATH I Z (0.876:0.876:0.876) (0.931:0.932:0.932))
    )
   )
  )

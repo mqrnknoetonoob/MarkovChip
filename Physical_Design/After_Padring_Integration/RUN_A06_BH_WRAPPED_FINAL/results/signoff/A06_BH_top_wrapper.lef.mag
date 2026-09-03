@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1788376433
+timestamp 1788429444
 << obsm1 >>
 rect 1008 1508 220976 109842
 << metal2 >>
@@ -154,22 +154,26 @@ rect 28 1530 220500 49692
 << obsm3 >>
 rect 130 1540 220114 109284
 << metal4 >>
-rect 4112 1508 4432 109036
-rect 4772 1508 5092 109036
-rect 34832 1508 35152 109036
-rect 35492 1508 35812 109036
-rect 65552 1508 65872 109036
-rect 66212 1508 66532 109036
-rect 96272 1508 96592 109036
-rect 96932 1508 97252 109036
-rect 126992 1508 127312 109036
-rect 127652 1508 127972 109036
-rect 157712 1508 158032 109036
-rect 158372 1508 158692 109036
-rect 188432 1508 188752 109036
-rect 189092 1508 189412 109036
-rect 219152 1508 219472 109036
-rect 219812 1508 220132 109036
+rect -1172 -612 -852 111156
+rect -512 48 -192 110496
+rect 4112 -612 4432 111156
+rect 4772 -612 5092 111156
+rect 34832 -612 35152 111156
+rect 35492 -612 35812 111156
+rect 65552 -612 65872 111156
+rect 66212 -612 66532 111156
+rect 96272 -612 96592 111156
+rect 96932 -612 97252 111156
+rect 126992 -612 127312 111156
+rect 127652 -612 127972 111156
+rect 157712 -612 158032 111156
+rect 158372 -612 158692 111156
+rect 188432 -612 188752 111156
+rect 189092 -612 189412 111156
+rect 219152 -612 219472 111156
+rect 219812 -612 220132 111156
+rect 222176 48 222496 110496
+rect 222836 -612 223156 111156
 << obsm4 >>
 rect 4508 2930 4712 108510
 rect 5152 2930 34772 108510
@@ -186,14 +190,18 @@ rect 158752 2930 188372 108510
 rect 188812 2930 189032 108510
 rect 189472 2930 197428 108510
 << metal5 >>
-rect 948 97306 221036 97626
-rect 948 96646 221036 96966
-rect 948 66670 221036 66990
-rect 948 66010 221036 66330
-rect 948 36034 221036 36354
-rect 948 35374 221036 35694
-rect 948 5398 221036 5718
-rect 948 4738 221036 5058
+rect -1172 110836 223156 111156
+rect -512 110176 222496 110496
+rect -1172 97306 223156 97626
+rect -1172 96646 223156 96966
+rect -1172 66670 223156 66990
+rect -1172 66010 223156 66330
+rect -1172 36034 223156 36354
+rect -1172 35374 223156 35694
+rect -1172 5398 223156 5718
+rect -1172 4738 223156 5058
+rect -512 48 222496 368
+rect -1172 -612 223156 -292
 << obsm5 >>
 rect 4492 97746 197444 100574
 rect 4492 97086 197444 97186
@@ -203,53 +211,69 @@ rect 4492 36474 197444 65890
 rect 4492 35814 197444 35914
 rect 4492 6526 197444 35254
 << labels >>
-rlabel metal4 s 4112 1508 4432 109036 6 VDD
+rlabel metal4 s -512 48 -192 110496 4 VDD
 port 1 nsew power bidirectional
-rlabel metal4 s 34832 1508 35152 109036 6 VDD
+rlabel metal5 s -512 48 222496 368 6 VDD
 port 1 nsew power bidirectional
-rlabel metal4 s 65552 1508 65872 109036 6 VDD
+rlabel metal5 s -512 110176 222496 110496 6 VDD
 port 1 nsew power bidirectional
-rlabel metal4 s 96272 1508 96592 109036 6 VDD
+rlabel metal4 s 222176 48 222496 110496 6 VDD
 port 1 nsew power bidirectional
-rlabel metal4 s 126992 1508 127312 109036 6 VDD
+rlabel metal4 s 4112 -612 4432 111156 6 VDD
 port 1 nsew power bidirectional
-rlabel metal4 s 157712 1508 158032 109036 6 VDD
+rlabel metal4 s 34832 -612 35152 111156 6 VDD
 port 1 nsew power bidirectional
-rlabel metal4 s 188432 1508 188752 109036 6 VDD
+rlabel metal4 s 65552 -612 65872 111156 6 VDD
 port 1 nsew power bidirectional
-rlabel metal4 s 219152 1508 219472 109036 6 VDD
+rlabel metal4 s 96272 -612 96592 111156 6 VDD
 port 1 nsew power bidirectional
-rlabel metal5 s 948 4738 221036 5058 6 VDD
+rlabel metal4 s 126992 -612 127312 111156 6 VDD
 port 1 nsew power bidirectional
-rlabel metal5 s 948 35374 221036 35694 6 VDD
+rlabel metal4 s 157712 -612 158032 111156 6 VDD
 port 1 nsew power bidirectional
-rlabel metal5 s 948 66010 221036 66330 6 VDD
+rlabel metal4 s 188432 -612 188752 111156 6 VDD
 port 1 nsew power bidirectional
-rlabel metal5 s 948 96646 221036 96966 6 VDD
+rlabel metal4 s 219152 -612 219472 111156 6 VDD
 port 1 nsew power bidirectional
-rlabel metal4 s 4772 1508 5092 109036 6 VSS
+rlabel metal5 s -1172 4738 223156 5058 6 VDD
+port 1 nsew power bidirectional
+rlabel metal5 s -1172 35374 223156 35694 6 VDD
+port 1 nsew power bidirectional
+rlabel metal5 s -1172 66010 223156 66330 6 VDD
+port 1 nsew power bidirectional
+rlabel metal5 s -1172 96646 223156 96966 6 VDD
+port 1 nsew power bidirectional
+rlabel metal4 s -1172 -612 -852 111156 4 VSS
 port 2 nsew ground bidirectional
-rlabel metal4 s 35492 1508 35812 109036 6 VSS
+rlabel metal5 s -1172 -612 223156 -292 8 VSS
 port 2 nsew ground bidirectional
-rlabel metal4 s 66212 1508 66532 109036 6 VSS
+rlabel metal5 s -1172 110836 223156 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal4 s 96932 1508 97252 109036 6 VSS
+rlabel metal4 s 222836 -612 223156 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal4 s 127652 1508 127972 109036 6 VSS
+rlabel metal4 s 4772 -612 5092 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal4 s 158372 1508 158692 109036 6 VSS
+rlabel metal4 s 35492 -612 35812 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal4 s 189092 1508 189412 109036 6 VSS
+rlabel metal4 s 66212 -612 66532 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal4 s 219812 1508 220132 109036 6 VSS
+rlabel metal4 s 96932 -612 97252 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal5 s 948 5398 221036 5718 6 VSS
+rlabel metal4 s 127652 -612 127972 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal5 s 948 36034 221036 36354 6 VSS
+rlabel metal4 s 158372 -612 158692 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal5 s 948 66670 221036 66990 6 VSS
+rlabel metal4 s 189092 -612 189412 111156 6 VSS
 port 2 nsew ground bidirectional
-rlabel metal5 s 948 97306 221036 97626 6 VSS
+rlabel metal4 s 219812 -612 220132 111156 6 VSS
+port 2 nsew ground bidirectional
+rlabel metal5 s -1172 5398 223156 5718 6 VSS
+port 2 nsew ground bidirectional
+rlabel metal5 s -1172 36034 223156 36354 6 VSS
+port 2 nsew ground bidirectional
+rlabel metal5 s -1172 66670 223156 66990 6 VSS
+port 2 nsew ground bidirectional
+rlabel metal5 s -1172 97306 223156 97626 6 VSS
 port 2 nsew ground bidirectional
 rlabel metal2 s 0 69752 200 69828 6 clk
 port 3 nsew signal input
@@ -409,8 +433,8 @@ port 79 nsew signal output
 string FIXED_BBOX 0 0 222000 110000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 18463270
-string GDS_FILE /openlane/designs/Markov_Chain_Accelerator/runs/Final_def_Run_3Sept/results/signoff/A06_BH_top_wrapper.magic.gds
+string GDS_END 18497110
+string GDS_FILE /openlane/designs/Markov_Chain_Accelerator/runs/PDN_connect_test_1/results/signoff/A06_BH_top_wrapper.magic.gds
 string GDS_START 449292
 << end >>
 

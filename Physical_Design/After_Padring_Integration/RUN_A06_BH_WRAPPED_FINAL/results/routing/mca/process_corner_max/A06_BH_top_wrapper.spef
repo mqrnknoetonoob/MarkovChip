@@ -54734,13 +54734,13 @@ spi_out3_SL O
 1 *12404:ZN input_ready_PU 7.61071 
 *END
 
-*D_NET *9 0.000844495
+*D_NET *9 0.000897873
 *CONN
 *P load_row_or_col I
 *I *54520:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_4
 *CAP
-1 load_row_or_col 0.000422247
-2 *54520:I 0.000422247
+1 load_row_or_col 0.000448936
+2 *54520:I 0.000448936
 *RES
 1 load_row_or_col *54520:I 7.63857 
 *END
@@ -54838,45 +54838,45 @@ spi_out3_SL O
 1 *12409:ZN output_ready_PD 8.31086 
 *END
 
-*D_NET *18 0.00177576
+*D_NET *18 0.00179877
 *CONN
 *P output_ready_PDRV0 O
 *I *12410:ZN O *D gf180mcu_fd_sc_mcu7t5v0__tiel
 *CAP
-1 output_ready_PDRV0 0.000375306
-2 *12410:ZN 0.000375306
-3 output_ready_PDRV0 output_ready_PDRV1 0.000617256
-4 output_ready_PDRV0 output_ready_PU 0.000143149
+1 output_ready_PDRV0 0.000415505
+2 *12410:ZN 0.000415505
+3 output_ready_PDRV0 output_ready_PDRV1 0.000584347
+4 output_ready_PDRV0 output_ready_PU 0.000118672
 5 output_ready_CS output_ready_PDRV0 0.00026474
 *RES
 1 *12410:ZN output_ready_PDRV0 17.8567 
 *END
 
-*D_NET *19 0.00169491
+*D_NET *19 0.00170357
 *CONN
 *P output_ready_PDRV1 O
 *I *12411:ZN O *D gf180mcu_fd_sc_mcu7t5v0__tiel
 *CAP
-1 output_ready_PDRV1 0.000357512
-2 *12411:ZN 0.000357512
-3 output_ready_PDRV1 output_ready_PU 0.000282761
+1 output_ready_PDRV1 0.0003815
+2 *12411:ZN 0.0003815
+3 output_ready_PDRV1 output_ready_PU 0.000276357
 4 output_ready_PD output_ready_PDRV1 7.98706e-05
-5 output_ready_PDRV0 output_ready_PDRV1 0.000617256
+5 output_ready_PDRV0 output_ready_PDRV1 0.000584347
 *RES
 1 *12411:ZN output_ready_PDRV1 17.7301 
 *END
 
-*D_NET *20 0.00140077
+*D_NET *20 0.00141869
 *CONN
 *P output_ready_PU O
 *I *12412:ZN O *D gf180mcu_fd_sc_mcu7t5v0__tiel
 *CAP
-1 output_ready_PU 0.000437303
-2 *12412:ZN 0.000437303
+1 output_ready_PU 0.000461705
+2 *12412:ZN 0.000461705
 3 output_ready_CS output_ready_PU 3.34787e-05
 4 output_ready_PD output_ready_PU 6.6772e-05
-5 output_ready_PDRV0 output_ready_PU 0.000143149
-6 output_ready_PDRV1 output_ready_PU 0.000282761
+5 output_ready_PDRV0 output_ready_PU 0.000118672
+6 output_ready_PDRV1 output_ready_PU 0.000276357
 *RES
 1 *12412:ZN output_ready_PU 8.75843 
 *END
@@ -55255,30 +55255,30 @@ spi_out3_SL O
 1 *12434:ZN spi_out1_IE 7.51414 
 *END
 
-*D_NET *53 0.000845112
+*D_NET *53 0.000888098
 *CONN
 *P spi_out1_OE O
 *I *12400:Z O *D gf180mcu_fd_sc_mcu7t5v0__tieh
 *CAP
-1 spi_out1_OE 0.000249834
-2 *12400:Z 0.000249834
-3 spi_out1_OE spi_out1_OUT 0.00025676
-4 spi_out1_OE spi_out1_SL 2.61301e-05
+1 spi_out1_OE 0.000286042
+2 *12400:Z 0.000286042
+3 spi_out1_OE spi_out1_OUT 0.000233998
+4 spi_out1_OE spi_out1_SL 1.94618e-05
 5 spi_out1_OE *17378:I 6.25532e-05
 *RES
 1 *12400:Z spi_out1_OE 7.12229 
 *END
 
-*D_NET *54 0.00169949
+*D_NET *54 0.00172252
 *CONN
 *P spi_out1_OUT O
 *I *54534:Z O *D gf180mcu_fd_sc_mcu7t5v0__buf_3
 *CAP
-1 spi_out1_OUT 0.000365775
-2 *54534:Z 0.000365775
-3 spi_out1_OUT spi_out1_SL 0.000600937
-4 spi_out1_OUT *17378:I 0.000110248
-5 spi_out1_OE spi_out1_OUT 0.00025676
+1 spi_out1_OUT 0.000404998
+2 *54534:Z 0.000404998
+3 spi_out1_OUT spi_out1_SL 0.000571468
+4 spi_out1_OUT *17378:I 0.000107062
+5 spi_out1_OE spi_out1_OUT 0.000233998
 *RES
 1 *54534:Z spi_out1_OUT 17.3186 
 *END
@@ -55335,16 +55335,16 @@ spi_out3_SL O
 1 *12438:ZN spi_out1_PU 18.171 
 *END
 
-*D_NET *59 0.00227954
+*D_NET *59 0.00233011
 *CONN
 *P spi_out1_SL O
 *I *12439:ZN O *D gf180mcu_fd_sc_mcu7t5v0__tiel
 *CAP
-1 spi_out1_SL 0.000758884
-2 *12439:ZN 0.000758884
-3 spi_out1_SL *17378:I 0.000134704
-4 spi_out1_OE spi_out1_SL 2.61301e-05
-5 spi_out1_OUT spi_out1_SL 0.000600937
+1 spi_out1_SL 0.000803595
+2 *12439:ZN 0.000803595
+3 spi_out1_SL *17378:I 0.000131986
+4 spi_out1_OE spi_out1_SL 1.94618e-05
+5 spi_out1_OUT spi_out1_SL 0.000571468
 *RES
 1 *12439:ZN spi_out1_SL 19.9367 
 *END
@@ -55362,14 +55362,14 @@ spi_out3_SL O
 1 *12441:ZN spi_out2_CS 18.1144 
 *END
 
-*D_NET *61 0.000896537
+*D_NET *61 0.000956621
 *CONN
 *P spi_out2_IE O
 *I *12442:ZN O *D gf180mcu_fd_sc_mcu7t5v0__tiel
 *CAP
-1 spi_out2_IE 0.000281123
-2 *12442:ZN 0.000281123
-3 spi_out2_IE spi_out2_PD 0.000334291
+1 spi_out2_IE 0.000324938
+2 *12442:ZN 0.000324938
+3 spi_out2_IE spi_out2_PD 0.000306745
 *RES
 1 *12442:ZN spi_out2_IE 7.60329 
 *END
@@ -55399,15 +55399,15 @@ spi_out3_SL O
 1 *54535:Z spi_out2_OUT 17.1739 
 *END
 
-*D_NET *65 0.00105702
+*D_NET *65 0.00106856
 *CONN
 *P spi_out2_PD O
 *I *12443:ZN O *D gf180mcu_fd_sc_mcu7t5v0__tiel
 *CAP
-1 spi_out2_PD 0.000267484
-2 *12443:ZN 0.000267484
+1 spi_out2_PD 0.000287025
+2 *12443:ZN 0.000287025
 3 spi_out2_PD spi_out2_PDRV1 0.000187766
-4 spi_out2_IE spi_out2_PD 0.000334291
+4 spi_out2_IE spi_out2_PD 0.000306745
 *RES
 1 *12443:ZN spi_out2_PD 8.14743 
 *END
@@ -399824,16 +399824,16 @@ spi_out3_SL O
 1 *43665:Z *43664:I0 11.912 
 *END
 
-*D_NET *11036 0.0436474
+*D_NET *11036 0.0436548
 *CONN
 *I *17378:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
 *I *54534:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_3
 *I *53105:Z O *D gf180mcu_fd_sc_mcu7t5v0__mux2_1
 *CAP
-1 *17378:I 0.000686163
+1 *17378:I 0.000692837
 2 *54534:I 0
 3 *53105:Z 0.00136746
-4 *11036:40 0.0020186
+4 *11036:40 0.00202528
 5 *11036:34 0.00611578
 6 *11036:10 0.00615081
 7 *17378:I *50907:A1 0
@@ -399853,8 +399853,8 @@ spi_out3_SL O
 21 *11036:40 *50932:I0 0.000714178
 22 *11036:40 *50932:S 0.000444
 23 spi_out1_OE *17378:I 6.25532e-05
-24 spi_out1_OUT *17378:I 0.000110248
-25 spi_out1_SL *17378:I 0.000134704
+24 spi_out1_OUT *17378:I 0.000107062
+25 spi_out1_SL *17378:I 0.000131986
 26 *15464:I *11036:34 0
 27 *50571:A2 *11036:10 0.000438931
 28 *50574:A2 *11036:34 0.000122777

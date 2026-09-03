@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "A06_BH_top_wrapper")
- (DATE "Wed Sep  2 19:13:10 2026")
+ (DATE "Thu Sep  3 09:56:47 2026")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -14,7 +14,7 @@
    (ABSOLUTE
     (INTERCONNECT clk clkbuf_0_clk.I (0.419:0.419:0.419) (0.259:0.259:0.259))
     (INTERCONNECT input_ready input1.I (0.106:0.106:0.106) (0.065:0.065:0.065))
-    (INTERCONNECT load_row_or_col input2.I (0.163:0.163:0.163) (0.100:0.100:0.100))
+    (INTERCONNECT load_row_or_col input2.I (0.164:0.164:0.164) (0.101:0.101:0.101))
     (INTERCONNECT output_valid input3.I (0.059:0.059:0.059) (0.036:0.036:0.036))
     (INTERCONNECT rst_n input4.I (0.075:0.075:0.075) (0.046:0.046:0.046))
     (INTERCONNECT spi_in0 input5.I (0.165:0.165:0.165) (0.101:0.101:0.101))
@@ -31618,7 +31618,7 @@
   (DELAY
    (ABSOLUTE
     (IOPATH A1 Z (0.802:0.802:0.802) (0.780:0.780:0.780))
-    (IOPATH A2 Z (0.786:0.786:0.786) (0.780:0.780:0.780))
+    (IOPATH A2 Z (0.785:0.785:0.785) (0.780:0.780:0.780))
    )
   )
  )
@@ -215961,7 +215961,7 @@
   (INSTANCE output11)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.866:0.866:0.866) (0.909:0.909:0.910))
+    (IOPATH I Z (0.866:0.866:0.867) (0.909:0.909:0.910))
    )
   )
  )
