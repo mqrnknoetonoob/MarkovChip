@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "A06_BH_top_wrapper")
- (DATE "Thu Sep  3 09:56:20 2026")
+ (DATE "Fri Sep  4 05:21:53 2026")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -12,15 +12,15 @@
   (INSTANCE)
   (DELAY
    (ABSOLUTE
-    (INTERCONNECT clk clkbuf_0_clk.I (0.188:0.188:0.188) (0.117:0.117:0.117))
-    (INTERCONNECT input_ready input1.I (0.044:0.044:0.044) (0.027:0.027:0.027))
-    (INTERCONNECT load_row_or_col input2.I (0.067:0.067:0.067) (0.042:0.042:0.042))
-    (INTERCONNECT output_valid input3.I (0.025:0.025:0.025) (0.015:0.015:0.015))
-    (INTERCONNECT rst_n input4.I (0.031:0.031:0.031) (0.019:0.019:0.019))
-    (INTERCONNECT spi_in0 input5.I (0.068:0.068:0.068) (0.042:0.042:0.042))
+    (INTERCONNECT clk clkbuf_0_clk.I (0.188:0.188:0.188) (0.118:0.118:0.118))
+    (INTERCONNECT input_ready input1.I (0.045:0.045:0.045) (0.028:0.028:0.028))
+    (INTERCONNECT load_row_or_col input2.I (0.068:0.068:0.068) (0.042:0.042:0.042))
+    (INTERCONNECT output_valid input3.I (0.026:0.026:0.026) (0.016:0.016:0.016))
+    (INTERCONNECT rst_n input4.I (0.034:0.034:0.034) (0.021:0.021:0.021))
+    (INTERCONNECT spi_in0 input5.I (0.070:0.070:0.070) (0.043:0.043:0.043))
     (INTERCONNECT spi_in1 input6.I (0.079:0.079:0.079) (0.049:0.049:0.049))
     (INTERCONNECT spi_in2 input7.I (0.082:0.082:0.082) (0.051:0.051:0.051))
-    (INTERCONNECT spi_in3 input8.I (0.087:0.087:0.087) (0.054:0.054:0.054))
+    (INTERCONNECT spi_in3 input8.I (0.088:0.088:0.088) (0.054:0.054:0.054))
     (INTERCONNECT A06_BH_top_wrapper_1352.Z output_ready_OE (0.000:0.000:0.000))
     (INTERCONNECT A06_BH_top_wrapper_1355.Z spi_out0_OE (0.000:0.000:0.000))
     (INTERCONNECT A06_BH_top_wrapper_1356.Z spi_out1_OE (0.000:0.000:0.000))
@@ -29211,7 +29211,7 @@
     (INTERCONNECT fanout81.Z fanout76.I (0.123:0.123:0.123) (0.122:0.122:0.122))
     (INTERCONNECT fanout81.Z fanout78.I (0.143:0.143:0.143) (0.141:0.141:0.141))
     (INTERCONNECT fanout81.Z fanout80.I (0.168:0.168:0.168) (0.165:0.165:0.165))
-    (INTERCONNECT fanout81.Z ANTENNA_fanout76_I.I (0.122:0.122:0.122) (0.121:0.121:0.121))
+    (INTERCONNECT fanout81.Z ANTENNA_fanout76_I.I (0.123:0.123:0.123) (0.121:0.121:0.121))
     (INTERCONNECT fanout81.Z ANTENNA_core\.res_mem_inst\._152__RN.I (0.178:0.178:0.178) (0.175:0.175:0.175))
     (INTERCONNECT fanout81.Z ANTENNA_core\.res_mem_inst\._151__RN.I (0.178:0.178:0.178) (0.175:0.175:0.175))
     (INTERCONNECT fanout81.Z ANTENNA_core\.res_mem_inst\._150__RN.I (0.178:0.178:0.178) (0.175:0.175:0.175))
@@ -42681,7 +42681,7 @@
   (INSTANCE core\.bgc_0\.col_reg\._057_)
   (DELAY
    (ABSOLUTE
-    (IOPATH I ZN (0.105:0.105:0.105) (0.108:0.108:0.108))
+    (IOPATH I ZN (0.106:0.106:0.106) (0.108:0.108:0.108))
    )
   )
  )
@@ -68401,7 +68401,7 @@
   (INSTANCE core\.bgc_10\.row_reg\._077_)
   (DELAY
    (ABSOLUTE
-    (IOPATH I ZN (0.140:0.140:0.140) (0.111:0.111:0.111))
+    (IOPATH I ZN (0.139:0.139:0.139) (0.111:0.111:0.111))
    )
   )
  )
@@ -83498,7 +83498,7 @@
   (TIMINGCHECK
     (REMOVAL (posedge RN) (posedge CLK) (0.273:0.273:0.273))
     (RECOVERY (posedge RN) (posedge CLK) (-0.131:-0.131:-0.131))
-    (SETUP (COND ENABLE_RN === 1'b1 (posedge D)) (COND ENABLE_RN === 1'b1 (posedge CLK)) (0.153:0.154:0.155))
+    (SETUP (COND ENABLE_RN === 1'b1 (posedge D)) (COND ENABLE_RN === 1'b1 (posedge CLK)) (0.153:0.154:0.154))
     (SETUP (COND ENABLE_RN === 1'b1 (negedge D)) (COND ENABLE_RN === 1'b1 (posedge CLK)) (0.058:0.059:0.061))
     (HOLD (COND ENABLE_RN === 1'b1 (posedge D)) (COND ENABLE_RN === 1'b1 (posedge CLK)) (-0.040:-0.040:-0.041))
     (HOLD (COND ENABLE_RN === 1'b1 (negedge D)) (COND ENABLE_RN === 1'b1 (posedge CLK)) (0.124:0.123:0.122))
@@ -83663,7 +83663,7 @@
   (DELAY
    (ABSOLUTE
     (IOPATH A1 Z (0.000:0.000:0.000))
-    (IOPATH A2 Z (0.206:0.206:0.206) (0.292:0.292:0.292))
+    (IOPATH A2 Z (0.206:0.206:0.206) (0.293:0.293:0.293))
    )
   )
  )
@@ -166269,7 +166269,7 @@
     (REMOVAL (COND ENABLE_SETN === 1'b1 (posedge RN)) (COND ENABLE_SETN === 1'b1 (posedge CLK)) (0.330:0.330:0.330))
     (RECOVERY (COND ENABLE_SETN === 1'b1 (posedge RN)) (COND ENABLE_SETN === 1'b1 (posedge CLK)) (-0.218:-0.218:-0.218))
     (SETUP (COND ENABLE_RN_AND_SETN === 1'b1 (posedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (0.099:0.100:0.100))
-    (SETUP (COND ENABLE_RN_AND_SETN === 1'b1 (negedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (0.189:0.190:0.190))
+    (SETUP (COND ENABLE_RN_AND_SETN === 1'b1 (negedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (0.190:0.190:0.190))
     (HOLD (COND ENABLE_RN_AND_SETN === 1'b1 (posedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (-0.003:-0.003:-0.003))
     (HOLD (COND ENABLE_RN_AND_SETN === 1'b1 (negedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (0.014:0.013:0.012))
     (WIDTH (posedge CLK) (1.097:1.097:1.097))
@@ -167005,7 +167005,7 @@
      (IOPATH I1 Z (0.215:0.215:0.215) (0.276:0.276:0.276)))
     (COND I0===1'b0
      (IOPATH I1 Z (0.000:0.000:0.000)))
-    (IOPATH S Z (0.210:0.210:0.210) (0.251:0.251:0.251))
+    (IOPATH S Z (0.210:0.210:0.210) (0.252:0.252:0.252))
     (IOPATH S Z (0.318:0.318:0.318) (0.296:0.296:0.296))
    )
   )
@@ -188996,13 +188996,13 @@
     (COND I1===1'b1
      (IOPATH I0 Z (0.427:0.427:0.428) (0.446:0.447:0.448)))
     (COND I1===1'b0
-     (IOPATH I0 Z (0.427:0.427:0.427) (0.446:0.447:0.448)))
-    (IOPATH I1 Z (0.432:0.432:0.432) (0.451:0.451:0.451))
+     (IOPATH I0 Z (0.427:0.427:0.428) (0.446:0.447:0.448)))
+    (IOPATH I1 Z (0.432:0.432:0.432) (0.452:0.452:0.452))
     (COND I0===1'b1
-     (IOPATH I1 Z (0.432:0.432:0.432) (0.451:0.451:0.451)))
+     (IOPATH I1 Z (0.432:0.432:0.432) (0.452:0.452:0.452)))
     (COND I0===1'b0
-     (IOPATH I1 Z (0.432:0.432:0.432) (0.451:0.451:0.451)))
-    (IOPATH S Z (0.439:0.439:0.439) (0.451:0.458:0.466))
+     (IOPATH I1 Z (0.432:0.432:0.432) (0.452:0.452:0.452)))
+    (IOPATH S Z (0.439:0.439:0.439) (0.451:0.459:0.466))
     (IOPATH S Z (0.558:0.564:0.571) (0.477:0.477:0.477))
    )
   )
@@ -189073,12 +189073,12 @@
      (IOPATH I0 Z (0.492:0.492:0.492) (0.480:0.480:0.481)))
     (COND I1===1'b0
      (IOPATH I0 Z (0.492:0.492:0.492) (0.480:0.480:0.481)))
-    (IOPATH I1 Z (0.490:0.490:0.490) (0.472:0.472:0.472))
+    (IOPATH I1 Z (0.490:0.490:0.490) (0.473:0.473:0.473))
     (COND I0===1'b1
-     (IOPATH I1 Z (0.490:0.490:0.490) (0.472:0.472:0.472)))
+     (IOPATH I1 Z (0.490:0.490:0.490) (0.473:0.473:0.473)))
     (COND I0===1'b0
-     (IOPATH I1 Z (0.490:0.490:0.490) (0.472:0.472:0.472)))
-    (IOPATH S Z (0.511:0.511:0.511) (0.499:0.506:0.514))
+     (IOPATH I1 Z (0.491:0.491:0.491) (0.473:0.473:0.473)))
+    (IOPATH S Z (0.511:0.511:0.511) (0.499:0.507:0.514))
     (IOPATH S Z (0.630:0.637:0.643) (0.525:0.525:0.525))
    )
   )
@@ -215853,7 +215853,7 @@
   (INSTANCE input4)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.260:0.260:0.260) (0.254:0.254:0.254))
+    (IOPATH I Z (0.261:0.261:0.261) (0.255:0.255:0.255))
    )
   )
  )
@@ -215862,7 +215862,7 @@
   (INSTANCE input5)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.374:0.374:0.374) (0.287:0.287:0.287))
+    (IOPATH I Z (0.374:0.374:0.374) (0.288:0.288:0.288))
    )
   )
  )
@@ -215952,7 +215952,7 @@
   (INSTANCE output10)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.319:0.319:0.319) (0.327:0.327:0.327))
+    (IOPATH I Z (0.319:0.319:0.319) (0.327:0.327:0.328))
    )
   )
  )
@@ -215961,7 +215961,7 @@
   (INSTANCE output11)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.326:0.326:0.326) (0.348:0.348:0.348))
+    (IOPATH I Z (0.326:0.326:0.326) (0.348:0.348:0.349))
    )
   )
  )
@@ -215970,7 +215970,7 @@
   (INSTANCE output12)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.317:0.317:0.317) (0.323:0.324:0.324))
+    (IOPATH I Z (0.317:0.318:0.318) (0.323:0.324:0.324))
    )
   )
  )
@@ -215988,7 +215988,7 @@
   (INSTANCE output9)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.339:0.339:0.339) (0.319:0.319:0.319))
+    (IOPATH I Z (0.339:0.339:0.339) (0.320:0.320:0.320))
    )
   )
  )

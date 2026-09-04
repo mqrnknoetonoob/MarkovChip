@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "A06_BH_top_wrapper")
- (DATE "Thu Sep  3 09:56:20 2026")
+ (DATE "Fri Sep  4 05:21:53 2026")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -12,15 +12,15 @@
   (INSTANCE)
   (DELAY
    (ABSOLUTE
-    (INTERCONNECT clk clkbuf_0_clk.I (0.272:0.272:0.272) (0.171:0.171:0.171))
-    (INTERCONNECT input_ready input1.I (0.065:0.065:0.065) (0.040:0.040:0.040))
+    (INTERCONNECT clk clkbuf_0_clk.I (0.273:0.273:0.273) (0.171:0.171:0.171))
+    (INTERCONNECT input_ready input1.I (0.066:0.066:0.066) (0.041:0.041:0.041))
     (INTERCONNECT load_row_or_col input2.I (0.099:0.099:0.099) (0.062:0.062:0.062))
-    (INTERCONNECT output_valid input3.I (0.037:0.037:0.037) (0.023:0.023:0.023))
-    (INTERCONNECT rst_n input4.I (0.046:0.046:0.046) (0.029:0.029:0.029))
-    (INTERCONNECT spi_in0 input5.I (0.099:0.099:0.099) (0.062:0.062:0.062))
+    (INTERCONNECT output_valid input3.I (0.038:0.038:0.038) (0.023:0.023:0.023))
+    (INTERCONNECT rst_n input4.I (0.050:0.050:0.050) (0.031:0.031:0.031))
+    (INTERCONNECT spi_in0 input5.I (0.103:0.103:0.103) (0.064:0.064:0.064))
     (INTERCONNECT spi_in1 input6.I (0.115:0.115:0.115) (0.072:0.072:0.072))
-    (INTERCONNECT spi_in2 input7.I (0.119:0.119:0.119) (0.074:0.074:0.074))
-    (INTERCONNECT spi_in3 input8.I (0.126:0.126:0.126) (0.079:0.079:0.079))
+    (INTERCONNECT spi_in2 input7.I (0.119:0.119:0.119) (0.075:0.075:0.075))
+    (INTERCONNECT spi_in3 input8.I (0.127:0.127:0.127) (0.079:0.079:0.079))
     (INTERCONNECT A06_BH_top_wrapper_1352.Z output_ready_OE (0.000:0.000:0.000))
     (INTERCONNECT A06_BH_top_wrapper_1355.Z spi_out0_OE (0.000:0.000:0.000))
     (INTERCONNECT A06_BH_top_wrapper_1356.Z spi_out1_OE (0.000:0.000:0.000))
@@ -29394,7 +29394,7 @@
   (INSTANCE clkbuf_0_clk)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.473:0.473:0.473) (0.457:0.457:0.457))
+    (IOPATH I Z (0.473:0.473:0.473) (0.458:0.458:0.458))
    )
   )
  )
@@ -30240,7 +30240,7 @@
   (INSTANCE clkbuf_leaf_165_clk)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.313:0.313:0.313) (0.333:0.333:0.333))
+    (IOPATH I Z (0.313:0.313:0.313) (0.332:0.332:0.332))
    )
   )
  )
@@ -32324,7 +32324,7 @@
     (COND A2===1'b1 && A3===1'b1
      (IOPATH A1 Z (0.524:0.533:0.542) (0.560:0.566:0.573)))
     (COND A2===1'b0 && A3===1'b0
-     (IOPATH A1 Z (0.929:0.929:0.930) (1.074:1.080:1.086)))
+     (IOPATH A1 Z (0.929:0.929:0.929) (1.074:1.080:1.086)))
     (IOPATH A1 Z (0.860:0.866:0.872) (0.710:0.710:0.711))
     (COND A2===1'b1 && A3===1'b0
      (IOPATH A1 Z (0.777:0.784:0.790) (0.741:0.751:0.760)))
@@ -188992,18 +188992,18 @@
   (INSTANCE core\.res_mem_inst\._092_)
   (DELAY
    (ABSOLUTE
-    (IOPATH I0 Z (0.669:0.670:0.670) (0.719:0.720:0.720))
+    (IOPATH I0 Z (0.669:0.670:0.670) (0.719:0.720:0.721))
     (COND I1===1'b1
-     (IOPATH I0 Z (0.669:0.670:0.670) (0.719:0.720:0.720)))
+     (IOPATH I0 Z (0.669:0.670:0.670) (0.719:0.720:0.721)))
     (COND I1===1'b0
-     (IOPATH I0 Z (0.669:0.670:0.670) (0.719:0.720:0.720)))
+     (IOPATH I0 Z (0.669:0.670:0.670) (0.719:0.720:0.721)))
     (IOPATH I1 Z (0.677:0.677:0.677) (0.724:0.724:0.724))
     (COND I0===1'b1
      (IOPATH I1 Z (0.677:0.677:0.677) (0.724:0.724:0.724)))
     (COND I0===1'b0
      (IOPATH I1 Z (0.677:0.677:0.677) (0.724:0.724:0.724)))
-    (IOPATH S Z (0.697:0.697:0.697) (0.724:0.734:0.745))
-    (IOPATH S Z (0.872:0.881:0.890) (0.773:0.773:0.773))
+    (IOPATH S Z (0.697:0.697:0.697) (0.724:0.735:0.745))
+    (IOPATH S Z (0.872:0.881:0.890) (0.774:0.774:0.774))
    )
   )
  )
@@ -215583,7 +215583,7 @@
   (INSTANCE fanout55)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.467:0.467:0.467) (0.436:0.436:0.436))
+    (IOPATH I Z (0.467:0.467:0.467) (0.435:0.435:0.435))
    )
   )
  )
@@ -215853,7 +215853,7 @@
   (INSTANCE input4)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.401:0.401:0.401) (0.394:0.394:0.394))
+    (IOPATH I Z (0.402:0.402:0.402) (0.395:0.395:0.395))
    )
   )
  )
@@ -215862,7 +215862,7 @@
   (INSTANCE input5)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.575:0.575:0.575) (0.449:0.449:0.449))
+    (IOPATH I Z (0.576:0.576:0.576) (0.450:0.450:0.450))
    )
   )
  )
@@ -215952,7 +215952,7 @@
   (INSTANCE output10)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.485:0.486:0.486) (0.500:0.501:0.501))
+    (IOPATH I Z (0.486:0.486:0.486) (0.501:0.501:0.501))
    )
   )
  )
@@ -215970,7 +215970,7 @@
   (INSTANCE output12)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.483:0.484:0.484) (0.496:0.496:0.497))
+    (IOPATH I Z (0.484:0.484:0.484) (0.496:0.496:0.497))
    )
   )
  )
