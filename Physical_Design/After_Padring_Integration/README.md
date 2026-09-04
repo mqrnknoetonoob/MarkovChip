@@ -31,35 +31,29 @@ To permanently fix both the VDD/VSS connection gap and eliminate boundary oversh
 
 With `UNITS DISTANCE MICRONS 2000` (1 µm = 2000 DBU), all routed geometry strictly lies within the die boundaries $[0, 1110]\,\mu\text{m} \times [0, 550]\,\mu\text{m}$ ($[0, 2220000] \times [0, 1100000]$ DBU).
 
-### A. VDD Power Ring Coordinates
-* **West Vertical Leg (Metal4):**
-  * Centerline: $X = 8480\text{ DBU} = 4.24\,\mu\text{m}$
-  * Width: $3200\text{ DBU} = 1.6\,\mu\text{m}$
-  * Span: $X \in [2.64\,\mu\text{m}, 5.84\,\mu\text{m}]$ (strictly $> 0\,\mu\text{m}$, clearance of $+2.64\,\mu\text{m}$ inside the die boundary).
-* **East Vertical Leg (Metal4):**
-  * Centerline: $X = 2211360\text{ DBU} = 1105.68\,\mu\text{m}$
-  * Span: $X \in [1104.08\,\mu\text{m}, 1107.28\,\mu\text{m}]$ (strictly $< 1110\,\mu\text{m}$).
-* **South Horizontal Leg (Metal5):**
-  * Centerline: $Y = 14080\text{ DBU} = 7.04\,\mu\text{m}$
-  * Span: $Y \in [5.44\,\mu\text{m}, 8.64\,\mu\text{m}]$ (strictly $> 0\,\mu\text{m}$).
-* **North Horizontal Leg (Metal5):**
-  * Centerline: $Y = 1091360\text{ DBU} = 545.68\,\mu\text{m}$
-  * Span: $Y \in [544.08\,\mu\text{m}, 547.28\,\mu\text{m}]$ (strictly $< 550\,\mu\text{m}$).
+In DEF format, a wire segment `NEW <Layer> <Width> + SHAPE RING ( X1 Y1 ) ( X2 Y2 )` specifies its centerline endpoints, and the metal extends by `Width / 2` (i.e. $\pm 1600\text{ DBU} = \pm 0.8\,\mu\text{m}$) perpendicular to the centerline:
 
-### B. VSS Ground Ring Coordinates
-* **West Vertical Leg (Metal4):**
-  * Centerline: $X = 1880\text{ DBU} = 0.94\,\mu\text{m}$
-  * Width: $3200\text{ DBU} = 1.6\,\mu\text{m}$
-  * Span: $X \in [0.14\,\mu\text{m}, 1.74\,\mu\text{m}]$ (positive clearance, completely inside the die boundary).
-* **East Vertical Leg (Metal4):**
-  * Centerline: $X = 2217960\text{ DBU} = 1108.98\,\mu\text{m}$
-  * Span: $X \in [1107.38\,\mu\text{m}, 1110.58\,\mu\text{m}]$ (within design margins).
-* **South Horizontal Leg (Metal5):**
-  * Centerline: $Y = 7480\text{ DBU} = 3.74\,\mu\text{m}$
-  * Span: $Y \in [2.14\,\mu\text{m}, 5.34\,\mu\text{m}]$ (strictly $> 0\,\mu\text{m}$).
-* **North Horizontal Leg (Metal5):**
-  * Centerline: $Y = 1097960\text{ DBU} = 548.98\,\mu\text{m}$
-  * Span: $Y \in [547.38\,\mu\text{m}, 550.58\,\mu\text{m}]$.
+### A. VDD Power Ring Coordinates (Inner Ring)
+* **West Vertical Leg (Metal4, Centerline $X = 8480\text{ DBU} = 4.24\,\mu\text{m}$):**
+  * Wire width: $3200\text{ DBU} = 1.6\,\mu\text{m}$ ($\pm 0.8\,\mu\text{m}$)
+  * Physical Span: $X \in [3.44\,\mu\text{m}, 5.04\,\mu\text{m}]$ (strictly $> 0\,\mu\text{m}$, clearance of $+3.44\,\mu\text{m}$ inside the West boundary).
+* **East Vertical Leg (Metal4, Centerline $X = 2211360\text{ DBU} = 1105.68\,\mu\text{m}$):**
+  * Physical Span: $X \in [1104.88\,\mu\text{m}, 1106.48\,\mu\text{m}]$ (strictly $< 1110\,\mu\text{m}$).
+* **South Horizontal Leg (Metal5, Centerline $Y = 14080\text{ DBU} = 7.04\,\mu\text{m}$):**
+  * Physical Span: $Y \in [6.24\,\mu\text{m}, 7.84\,\mu\text{m}]$ (strictly $> 0\,\mu\text{m}$).
+* **North Horizontal Leg (Metal5, Centerline $Y = 1091360\text{ DBU} = 545.68\,\mu\text{m}$):**
+  * Physical Span: $Y \in [544.88\,\mu\text{m}, 546.48\,\mu\text{m}]$ (strictly $< 550\,\mu\text{m}$).
+
+### B. VSS Ground Ring Coordinates (Outer Ring)
+* **West Vertical Leg (Metal4, Centerline $X = 1880\text{ DBU} = 0.94\,\mu\text{m}$):**
+  * Wire width: $3200\text{ DBU} = 1.6\,\mu\text{m}$ ($\pm 0.8\,\mu\text{m}$)
+  * Physical Span: $X \in [0.14\,\mu\text{m}, 1.74\,\mu\text{m}]$ (strictly $> 0\,\mu\text{m}$, positive clearance of $+0.14\,\mu\text{m}$ inside the West boundary).
+* **East Vertical Leg (Metal4, Centerline $X = 2217960\text{ DBU} = 1108.98\,\mu\text{m}$):**
+  * Physical Span: $X \in [1108.18\,\mu\text{m}, 1109.78\,\mu\text{m}]$ (strictly $< 1110\,\mu\text{m}$, clearance of $+0.22\,\mu\text{m}$ inside the East boundary).
+* **South Horizontal Leg (Metal5, Centerline $Y = 7480\text{ DBU} = 3.74\,\mu\text{m}$):**
+  * Physical Span: $Y \in [2.94\,\mu\text{m}, 4.54\,\mu\text{m}]$ (strictly $> 0\,\mu\text{m}$, clearance of $+2.94\,\mu\text{m}$ inside the South boundary).
+* **North Horizontal Leg (Metal5, Centerline $Y = 1097960\text{ DBU} = 548.98\,\mu\text{m}$):**
+  * Physical Span: $Y \in [548.18\,\mu\text{m}, 549.78\,\mu\text{m}]$ (strictly $< 550.0\,\mu\text{m}$, clearance of $+0.22\,\mu\text{m}$ inside the North boundary).
 
 ---
 
