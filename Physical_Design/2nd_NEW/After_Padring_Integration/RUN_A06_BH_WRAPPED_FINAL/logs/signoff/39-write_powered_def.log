@@ -1,0 +1,26 @@
+OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/merged.nom.lef
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0223]     Created 15 technology layers
+[INFO ODB-0224]     Created 60 technology vias
+[INFO ODB-0225]     Created 229 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/results/routing/A06_BH_top_wrapper.def
+[INFO ODB-0128] Design: A06_BH_top_wrapper
+[INFO ODB-0130]     Created 79 pins.
+[INFO ODB-0131]     Created 42146 components and 202080 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 160388 connections.
+[INFO ODB-0133]     Created 12395 nets and 41692 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/results/routing/A06_BH_top_wrapper.def
+Top-level design name: A06_BH_top_wrapper
+Found default power net 'VDD'
+Found default ground net 'VSS'
+Found 1 power ports.
+Found 1 ground ports.
+Modified power connections of 42146/42146 cells.

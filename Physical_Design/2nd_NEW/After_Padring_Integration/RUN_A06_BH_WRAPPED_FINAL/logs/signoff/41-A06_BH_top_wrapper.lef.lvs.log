@@ -1,0 +1,2255 @@
+
+Cell gf180mcu_fd_sc_mcu7t5v0__antenna (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__antenna (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__antenna (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__antenna (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__antenna (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__antenna is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__antenn |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__antenn 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__antenna and gf180mcu_fd_sc_mcu7t5v0__antenna are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkinv |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkinv 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkinv_1 and gf180mcu_fd_sc_mcu7t5v0__clkinv_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__and2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__and2_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__and2_1 and gf180mcu_fd_sc_mcu7t5v0__and2_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nor4_2 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nor4_2 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nor4_2 and gf180mcu_fd_sc_mcu7t5v0__nor4_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__tiel (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__tiel (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__tiel (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__tiel (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__tiel (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__tiel is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__tiel   |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__tiel   
+-------------------------------------------|-------------------------------------------
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__tiel and gf180mcu_fd_sc_mcu7t5v0__tiel are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__fillca |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__fillca 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__fillcap_4 and gf180mcu_fd_sc_mcu7t5v0__fillcap_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 (0) disconnected node: I0
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 (0) disconnected node: I1
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 (0) disconnected node: S
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__mux2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__mux2_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__mux2_1 
+-------------------------------------------|-------------------------------------------
+I0                                         |I0                                         
+I1                                         |I1                                         
+S                                          |S                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__mux2_1 and gf180mcu_fd_sc_mcu7t5v0__mux2_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__fillca |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__fillca 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__fillcap_8 and gf180mcu_fd_sc_mcu7t5v0__fillcap_8 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand2_1 and gf180mcu_fd_sc_mcu7t5v0__nand2_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nor2_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nor2_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nor2_1 and gf180mcu_fd_sc_mcu7t5v0__nor2_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__fillca |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__fillca 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__fillcap_16 and gf180mcu_fd_sc_mcu7t5v0__fillcap_16 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand2_4 and gf180mcu_fd_sc_mcu7t5v0__nand2_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (0) disconnected node: D
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (0) disconnected node: RN
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (0) disconnected node: CLK
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (0) disconnected node: Q
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__dffrnq |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__dffrnq 
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+RN                                         |RN                                         
+CLK                                        |CLK                                        
+Q                                          |Q                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 and gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xor3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xor3_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xor3_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xor3_1 and gf180mcu_fd_sc_mcu7t5v0__xor3_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: D
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: RN
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: SETN
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: CLK
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: Q
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__dffrsn |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__dffrsn 
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+RN                                         |RN                                         
+SETN                                       |SETN                                       
+CLK                                        |CLK                                        
+Q                                          |Q                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 and gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand2_2 and gf180mcu_fd_sc_mcu7t5v0__nand2_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__fillca |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__fillca 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__fillcap_32 and gf180mcu_fd_sc_mcu7t5v0__fillcap_32 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__or2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__or2_1  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__or2_1  
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__or2_1 and gf180mcu_fd_sc_mcu7t5v0__or2_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__tieh (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__tieh (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__tieh (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__tieh (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__tieh (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__tieh is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__tieh   |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__tieh   
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__tieh and gf180mcu_fd_sc_mcu7t5v0__tieh are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xnor2_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xnor2_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xnor2_1 and gf180mcu_fd_sc_mcu7t5v0__xnor2_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: B1
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: B2
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__aoi22_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__aoi22_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__aoi22_1 and gf180mcu_fd_sc_mcu7t5v0__aoi22_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__fillca |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__fillca 
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__fillcap_64 and gf180mcu_fd_sc_mcu7t5v0__fillcap_64 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xor2_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xor2_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xor2_1 and gf180mcu_fd_sc_mcu7t5v0__xor2_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkbuf |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkbuf 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 and gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: B
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__aoi21_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__aoi21_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B                                          |B                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__aoi21_1 and gf180mcu_fd_sc_mcu7t5v0__aoi21_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: B1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: B2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: C
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai221 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai221 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+C                                          |C                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai221_1 and gf180mcu_fd_sc_mcu7t5v0__oai221_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: B
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai31_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai31_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B                                          |B                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai31_1 and gf180mcu_fd_sc_mcu7t5v0__oai31_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__and3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__and3_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__and3_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__and3_1 and gf180mcu_fd_sc_mcu7t5v0__and3_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: B
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: C
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__aoi211 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__aoi211 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B                                          |B                                          
+C                                          |C                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__aoi211_1 and gf180mcu_fd_sc_mcu7t5v0__aoi211_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nor3_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nor3_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nor3_1 and gf180mcu_fd_sc_mcu7t5v0__nor3_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 (0) disconnected node: B
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai21_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai21_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B                                          |B                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai21_1 and gf180mcu_fd_sc_mcu7t5v0__oai21_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkbuf |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkbuf 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 and gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: B1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: B2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai22_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai22_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai22_1 and gf180mcu_fd_sc_mcu7t5v0__oai22_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (0) disconnected node: D
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (0) disconnected node: RN
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (0) disconnected node: CLK
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (0) disconnected node: Q
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__dffrnq |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__dffrnq 
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+RN                                         |RN                                         
+CLK                                        |CLK                                        
+Q                                          |Q                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 and gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xnor2_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xnor2_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xnor2_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xnor2_4 and gf180mcu_fd_sc_mcu7t5v0__xnor2_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: B1
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: B2
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: C
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__aoi221 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__aoi221 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+C                                          |C                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__aoi221_2 and gf180mcu_fd_sc_mcu7t5v0__aoi221_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nor2_2 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nor2_2 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nor2_2 and gf180mcu_fd_sc_mcu7t5v0__nor2_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkbuf |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkbuf 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 and gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_2 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__or2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__or2_2  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__or2_2  
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__or2_2 and gf180mcu_fd_sc_mcu7t5v0__or2_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_3 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_3 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_3 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_3 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_3 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_3 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__inv_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__inv_3  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__inv_3  
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__inv_3 and gf180mcu_fd_sc_mcu7t5v0__inv_3 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkinv |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkinv 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkinv_2 and gf180mcu_fd_sc_mcu7t5v0__clkinv_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 (0) disconnected node: B
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai21_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai21_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B                                          |B                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai21_2 and gf180mcu_fd_sc_mcu7t5v0__oai21_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand4_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand4_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand4_2 and gf180mcu_fd_sc_mcu7t5v0__nand4_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand3_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand3_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand3_1 and gf180mcu_fd_sc_mcu7t5v0__nand3_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (0) disconnected node: B
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__aoi21_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__aoi21_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B                                          |B                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__aoi21_2 and gf180mcu_fd_sc_mcu7t5v0__aoi21_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: D
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: RN
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: SETN
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: CLK
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: Q
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__dffrsn |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__dffrsn 
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+RN                                         |RN                                         
+SETN                                       |SETN                                       
+CLK                                        |CLK                                        
+Q                                          |Q                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 and gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkbuf |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkbuf 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 and gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_2 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_2 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__and3_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__and3_2 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__and3_2 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__and3_2 and gf180mcu_fd_sc_mcu7t5v0__and3_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand3_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand3_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand3_2 and gf180mcu_fd_sc_mcu7t5v0__nand3_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_4 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__or2_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__or2_4  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__or2_4  
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__or2_4 and gf180mcu_fd_sc_mcu7t5v0__or2_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand4_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand4_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand4_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand4_4 and gf180mcu_fd_sc_mcu7t5v0__nand4_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__and4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__and4_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__and4_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__and4_1 and gf180mcu_fd_sc_mcu7t5v0__and4_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_3 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_3 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_3 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_3 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_3 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_3 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__buf_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__buf_3  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__buf_3  
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__buf_3 and gf180mcu_fd_sc_mcu7t5v0__buf_3 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkinv_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkinv |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkinv 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkinv_8 and gf180mcu_fd_sc_mcu7t5v0__clkinv_8 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nor4_1 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nor4_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nor4_1 and gf180mcu_fd_sc_mcu7t5v0__nor4_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkbuf |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkbuf 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 and gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__or4_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__or4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__or4_1  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__or4_1  
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__or4_1 and gf180mcu_fd_sc_mcu7t5v0__or4_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nor2_4 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nor2_4 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nor2_4 and gf180mcu_fd_sc_mcu7t5v0__nor2_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkinv_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkinv |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkinv 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkinv_4 and gf180mcu_fd_sc_mcu7t5v0__clkinv_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__and4_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__and4_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__and4_2 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__and4_2 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__and4_2 and gf180mcu_fd_sc_mcu7t5v0__and4_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xor3_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xor3_4 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xor3_4 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xor3_4 and gf180mcu_fd_sc_mcu7t5v0__xor3_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_12 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_12 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_12 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_12 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_12 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_12 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__buf_12 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__buf_12 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__buf_12 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__buf_12 and gf180mcu_fd_sc_mcu7t5v0__buf_12 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand3_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand3_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand3_4 and gf180mcu_fd_sc_mcu7t5v0__nand3_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_16 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_16 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_16 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_16 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_16 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_16 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__buf_16 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__buf_16 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__buf_16 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__buf_16 and gf180mcu_fd_sc_mcu7t5v0__buf_16 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkbuf |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkbuf 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 and gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xnor3_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xnor3_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xnor3_1 and gf180mcu_fd_sc_mcu7t5v0__xnor3_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_8 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_8 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_8 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_8 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_8 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_8 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__buf_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__buf_8  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__buf_8  
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__buf_8 and gf180mcu_fd_sc_mcu7t5v0__buf_8 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkbuf |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkbuf 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 and gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xnor3_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xnor3_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xnor3_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xnor3_4 and gf180mcu_fd_sc_mcu7t5v0__xnor3_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_4 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor2_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xor2_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xor2_4 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xor2_4 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xor2_4 and gf180mcu_fd_sc_mcu7t5v0__xor2_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_4 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_4 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__buf_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__buf_4  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__buf_4  
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__buf_4 and gf180mcu_fd_sc_mcu7t5v0__buf_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__xor3_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__xor3_2 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__xor3_2 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__xor3_2 and gf180mcu_fd_sc_mcu7t5v0__xor3_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_2 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__and2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__and2_2 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__and2_2 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__and2_2 and gf180mcu_fd_sc_mcu7t5v0__and2_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_1 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_1 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__buf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__buf_1  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__buf_1  
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__buf_1 and gf180mcu_fd_sc_mcu7t5v0__buf_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_4 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_4 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__and3_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__and3_4 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__and3_4 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__and3_4 and gf180mcu_fd_sc_mcu7t5v0__and3_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_2 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_2 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__buf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__buf_2  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__buf_2  
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__buf_2 and gf180mcu_fd_sc_mcu7t5v0__buf_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_4 (0) disconnected node: Z
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__and2_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__and2_4 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__and2_4 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+Z                                          |Z                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__and2_4 and gf180mcu_fd_sc_mcu7t5v0__and2_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nor4_4 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nor4_4 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nor4_4 and gf180mcu_fd_sc_mcu7t5v0__nor4_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: B
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai31_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai31_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B                                          |B                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai31_2 and gf180mcu_fd_sc_mcu7t5v0__oai31_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: A4
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__nand4_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__nand4_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__nand4_1 and gf180mcu_fd_sc_mcu7t5v0__nand4_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_1 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__inv_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__inv_1 and gf180mcu_fd_sc_mcu7t5v0__inv_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (0) disconnected node: D
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (0) disconnected node: RN
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (0) disconnected node: CLK
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (0) disconnected node: Q
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__dffrnq |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__dffrnq 
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+RN                                         |RN                                         
+CLK                                        |CLK                                        
+Q                                          |Q                                          
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 and gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: A3
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: B1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: B2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai32_ |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai32_ 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai32_1 and gf180mcu_fd_sc_mcu7t5v0__oai32_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_2 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__inv_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__inv_2  |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__inv_2  
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__inv_2 and gf180mcu_fd_sc_mcu7t5v0__inv_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: B
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: C
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai211 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai211 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B                                          |B                                          
+C                                          |C                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai211_1 and gf180mcu_fd_sc_mcu7t5v0__oai211_1 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: A1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: A2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: B1
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: B2
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: C
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__oai221 |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__oai221 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+C                                          |C                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__oai221_2 and gf180mcu_fd_sc_mcu7t5v0__oai221_2 are equivalent.
+
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3 (0) disconnected node: I
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3 (0) disconnected node: ZN
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3 (0) disconnected node: VDD
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3 (0) disconnected node: VNW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3 (0) disconnected node: VPW
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3 (0) disconnected node: VSS
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__clkinv |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__clkinv 
+-------------------------------------------|-------------------------------------------
+I                                          |I                                          
+ZN                                         |ZN                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+VPW                                        |VPW                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__clkinv_3 and gf180mcu_fd_sc_mcu7t5v0__clkinv_3 are equivalent.
+
+Cell A06_BH_top_wrapper (0) disconnected node: output_ready_IN
+Cell A06_BH_top_wrapper (0) disconnected node: spi_out0_IN
+Cell A06_BH_top_wrapper (0) disconnected node: spi_out1_IN
+Cell A06_BH_top_wrapper (0) disconnected node: spi_out2_IN
+Cell A06_BH_top_wrapper (0) disconnected node: spi_out3_IN
+Cell A06_BH_top_wrapper (1) disconnected node: output_ready_IN
+Cell A06_BH_top_wrapper (1) disconnected node: spi_out0_IN
+Cell A06_BH_top_wrapper (1) disconnected node: spi_out1_IN
+Cell A06_BH_top_wrapper (1) disconnected node: spi_out2_IN
+Cell A06_BH_top_wrapper (1) disconnected node: spi_out3_IN
+Class A06_BH_top_wrapper (0):  Merged 12065 parallel devices.
+Class A06_BH_top_wrapper (1):  Merged 12065 parallel devices.
+Cell A06_BH_top_wrapper (0) disconnected node: output_ready_IN
+Cell A06_BH_top_wrapper (0) disconnected node: spi_out0_IN
+Cell A06_BH_top_wrapper (0) disconnected node: spi_out1_IN
+Cell A06_BH_top_wrapper (0) disconnected node: spi_out2_IN
+Cell A06_BH_top_wrapper (0) disconnected node: spi_out3_IN
+Cell A06_BH_top_wrapper (1) disconnected node: output_ready_IN
+Cell A06_BH_top_wrapper (1) disconnected node: spi_out0_IN
+Cell A06_BH_top_wrapper (1) disconnected node: spi_out1_IN
+Cell A06_BH_top_wrapper (1) disconnected node: spi_out2_IN
+Cell A06_BH_top_wrapper (1) disconnected node: spi_out3_IN
+Subcircuit summary:
+Circuit 1: A06_BH_top_wrapper              |Circuit 2: A06_BH_top_wrapper              
+-------------------------------------------|-------------------------------------------
+gf180mcu_fd_sc_mcu7t5v0__antenna (4927->43 |gf180mcu_fd_sc_mcu7t5v0__antenna (4927->43 
+gf180mcu_fd_sc_mcu7t5v0__clkinv_1 (2880)   |gf180mcu_fd_sc_mcu7t5v0__clkinv_1 (2880)   
+gf180mcu_fd_sc_mcu7t5v0__and2_1 (655)      |gf180mcu_fd_sc_mcu7t5v0__and2_1 (655)      
+gf180mcu_fd_sc_mcu7t5v0__nor4_2 (63)       |gf180mcu_fd_sc_mcu7t5v0__nor4_2 (63)       
+gf180mcu_fd_sc_mcu7t5v0__tiel (797)        |gf180mcu_fd_sc_mcu7t5v0__tiel (797)        
+gf180mcu_fd_sc_mcu7t5v0__fillcap_4 (3505-> |gf180mcu_fd_sc_mcu7t5v0__fillcap_4 (3505-> 
+gf180mcu_fd_sc_mcu7t5v0__mux2_1 (396)      |gf180mcu_fd_sc_mcu7t5v0__mux2_1 (396)      
+gf180mcu_fd_sc_mcu7t5v0__fillcap_8 (2109-> |gf180mcu_fd_sc_mcu7t5v0__fillcap_8 (2109-> 
+gf180mcu_fd_sc_mcu7t5v0__nand2_1 (1283)    |gf180mcu_fd_sc_mcu7t5v0__nand2_1 (1283)    
+gf180mcu_fd_sc_mcu7t5v0__nor2_1 (742)      |gf180mcu_fd_sc_mcu7t5v0__nor2_1 (742)      
+gf180mcu_fd_sc_mcu7t5v0__fillcap_16 (969-> |gf180mcu_fd_sc_mcu7t5v0__fillcap_16 (969-> 
+gf180mcu_fd_sc_mcu7t5v0__nand2_4 (38)      |gf180mcu_fd_sc_mcu7t5v0__nand2_4 (38)      
+gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (774)    |gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (774)    
+gf180mcu_fd_sc_mcu7t5v0__xor3_1 (224)      |gf180mcu_fd_sc_mcu7t5v0__xor3_1 (224)      
+gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (374)   |gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (374)   
+gf180mcu_fd_sc_mcu7t5v0__nand2_2 (3)       |gf180mcu_fd_sc_mcu7t5v0__nand2_2 (3)       
+gf180mcu_fd_sc_mcu7t5v0__fillcap_32 (451-> |gf180mcu_fd_sc_mcu7t5v0__fillcap_32 (451-> 
+gf180mcu_fd_sc_mcu7t5v0__or2_1 (397)       |gf180mcu_fd_sc_mcu7t5v0__or2_1 (397)       
+gf180mcu_fd_sc_mcu7t5v0__tieh (653)        |gf180mcu_fd_sc_mcu7t5v0__tieh (653)        
+gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (31)      |gf180mcu_fd_sc_mcu7t5v0__xnor2_1 (31)      
+gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (67)      |gf180mcu_fd_sc_mcu7t5v0__aoi22_1 (67)      
+gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (541-> |gf180mcu_fd_sc_mcu7t5v0__fillcap_64 (541-> 
+gf180mcu_fd_sc_mcu7t5v0__xor2_1 (422)      |gf180mcu_fd_sc_mcu7t5v0__xor2_1 (422)      
+gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 (4)      |gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 (4)      
+gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (400)     |gf180mcu_fd_sc_mcu7t5v0__aoi21_1 (400)     
+gf180mcu_fd_sc_mcu7t5v0__oai221_1 (575)    |gf180mcu_fd_sc_mcu7t5v0__oai221_1 (575)    
+gf180mcu_fd_sc_mcu7t5v0__oai31_1 (86)      |gf180mcu_fd_sc_mcu7t5v0__oai31_1 (86)      
+gf180mcu_fd_sc_mcu7t5v0__and3_1 (21)       |gf180mcu_fd_sc_mcu7t5v0__and3_1 (21)       
+gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (66)     |gf180mcu_fd_sc_mcu7t5v0__aoi211_1 (66)     
+gf180mcu_fd_sc_mcu7t5v0__nor3_1 (55)       |gf180mcu_fd_sc_mcu7t5v0__nor3_1 (55)       
+gf180mcu_fd_sc_mcu7t5v0__oai21_1 (410)     |gf180mcu_fd_sc_mcu7t5v0__oai21_1 (410)     
+gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 (19)     |gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 (19)     
+gf180mcu_fd_sc_mcu7t5v0__oai22_1 (32)      |gf180mcu_fd_sc_mcu7t5v0__oai22_1 (32)      
+gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (29)     |gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 (29)     
+gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (49)      |gf180mcu_fd_sc_mcu7t5v0__xnor2_4 (49)      
+gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (1)      |gf180mcu_fd_sc_mcu7t5v0__aoi221_2 (1)      
+gf180mcu_fd_sc_mcu7t5v0__nor2_2 (55)       |gf180mcu_fd_sc_mcu7t5v0__nor2_2 (55)       
+gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 (237)   |gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 (237)   
+gf180mcu_fd_sc_mcu7t5v0__or2_2 (16)        |gf180mcu_fd_sc_mcu7t5v0__or2_2 (16)        
+gf180mcu_fd_sc_mcu7t5v0__inv_3 (19)        |gf180mcu_fd_sc_mcu7t5v0__inv_3 (19)        
+gf180mcu_fd_sc_mcu7t5v0__clkinv_2 (35)     |gf180mcu_fd_sc_mcu7t5v0__clkinv_2 (35)     
+gf180mcu_fd_sc_mcu7t5v0__oai21_2 (33)      |gf180mcu_fd_sc_mcu7t5v0__oai21_2 (33)      
+gf180mcu_fd_sc_mcu7t5v0__nand4_2 (17)      |gf180mcu_fd_sc_mcu7t5v0__nand4_2 (17)      
+gf180mcu_fd_sc_mcu7t5v0__nand3_1 (80)      |gf180mcu_fd_sc_mcu7t5v0__nand3_1 (80)      
+gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (33)      |gf180mcu_fd_sc_mcu7t5v0__aoi21_2 (33)      
+gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (10)    |gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2 (10)    
+gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 (4)      |gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 (4)      
+gf180mcu_fd_sc_mcu7t5v0__and3_2 (13)       |gf180mcu_fd_sc_mcu7t5v0__and3_2 (13)       
+gf180mcu_fd_sc_mcu7t5v0__nand3_2 (8)       |gf180mcu_fd_sc_mcu7t5v0__nand3_2 (8)       
+gf180mcu_fd_sc_mcu7t5v0__or2_4 (48)        |gf180mcu_fd_sc_mcu7t5v0__or2_4 (48)        
+gf180mcu_fd_sc_mcu7t5v0__nand4_4 (2)       |gf180mcu_fd_sc_mcu7t5v0__nand4_4 (2)       
+gf180mcu_fd_sc_mcu7t5v0__and4_1 (34)       |gf180mcu_fd_sc_mcu7t5v0__and4_1 (34)       
+gf180mcu_fd_sc_mcu7t5v0__buf_3 (4)         |gf180mcu_fd_sc_mcu7t5v0__buf_3 (4)         
+gf180mcu_fd_sc_mcu7t5v0__clkinv_8 (16)     |gf180mcu_fd_sc_mcu7t5v0__clkinv_8 (16)     
+gf180mcu_fd_sc_mcu7t5v0__nor4_1 (1)        |gf180mcu_fd_sc_mcu7t5v0__nor4_1 (1)        
+gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 (2)      |gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 (2)      
+gf180mcu_fd_sc_mcu7t5v0__or4_1 (16)        |gf180mcu_fd_sc_mcu7t5v0__or4_1 (16)        
+gf180mcu_fd_sc_mcu7t5v0__nor2_4 (18)       |gf180mcu_fd_sc_mcu7t5v0__nor2_4 (18)       
+gf180mcu_fd_sc_mcu7t5v0__clkinv_4 (15)     |gf180mcu_fd_sc_mcu7t5v0__clkinv_4 (15)     
+gf180mcu_fd_sc_mcu7t5v0__and4_2 (17)       |gf180mcu_fd_sc_mcu7t5v0__and4_2 (17)       
+gf180mcu_fd_sc_mcu7t5v0__xor3_4 (3)        |gf180mcu_fd_sc_mcu7t5v0__xor3_4 (3)        
+gf180mcu_fd_sc_mcu7t5v0__buf_12 (15)       |gf180mcu_fd_sc_mcu7t5v0__buf_12 (15)       
+gf180mcu_fd_sc_mcu7t5v0__nand3_4 (4)       |gf180mcu_fd_sc_mcu7t5v0__nand3_4 (4)       
+gf180mcu_fd_sc_mcu7t5v0__buf_16 (2)        |gf180mcu_fd_sc_mcu7t5v0__buf_16 (2)        
+gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 (4)     |gf180mcu_fd_sc_mcu7t5v0__clkbuf_12 (4)     
+gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (7)       |gf180mcu_fd_sc_mcu7t5v0__xnor3_1 (7)       
+gf180mcu_fd_sc_mcu7t5v0__buf_8 (18)        |gf180mcu_fd_sc_mcu7t5v0__buf_8 (18)        
+gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 (4)     |gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 (4)     
+gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (3)       |gf180mcu_fd_sc_mcu7t5v0__xnor3_4 (3)       
+gf180mcu_fd_sc_mcu7t5v0__xor2_4 (5)        |gf180mcu_fd_sc_mcu7t5v0__xor2_4 (5)        
+gf180mcu_fd_sc_mcu7t5v0__buf_4 (6)         |gf180mcu_fd_sc_mcu7t5v0__buf_4 (6)         
+gf180mcu_fd_sc_mcu7t5v0__xor3_2 (1)        |gf180mcu_fd_sc_mcu7t5v0__xor3_2 (1)        
+gf180mcu_fd_sc_mcu7t5v0__and2_2 (2)        |gf180mcu_fd_sc_mcu7t5v0__and2_2 (2)        
+gf180mcu_fd_sc_mcu7t5v0__buf_1 (4)         |gf180mcu_fd_sc_mcu7t5v0__buf_1 (4)         
+gf180mcu_fd_sc_mcu7t5v0__and3_4 (2)        |gf180mcu_fd_sc_mcu7t5v0__and3_4 (2)        
+gf180mcu_fd_sc_mcu7t5v0__buf_2 (1)         |gf180mcu_fd_sc_mcu7t5v0__buf_2 (1)         
+gf180mcu_fd_sc_mcu7t5v0__and2_4 (5)        |gf180mcu_fd_sc_mcu7t5v0__and2_4 (5)        
+gf180mcu_fd_sc_mcu7t5v0__nor4_4 (4)        |gf180mcu_fd_sc_mcu7t5v0__nor4_4 (4)        
+gf180mcu_fd_sc_mcu7t5v0__oai31_2 (1)       |gf180mcu_fd_sc_mcu7t5v0__oai31_2 (1)       
+gf180mcu_fd_sc_mcu7t5v0__nand4_1 (1)       |gf180mcu_fd_sc_mcu7t5v0__nand4_1 (1)       
+gf180mcu_fd_sc_mcu7t5v0__inv_1 (2)         |gf180mcu_fd_sc_mcu7t5v0__inv_1 (2)         
+gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (2)      |gf180mcu_fd_sc_mcu7t5v0__dffrnq_4 (2)      
+gf180mcu_fd_sc_mcu7t5v0__oai32_1 (1)       |gf180mcu_fd_sc_mcu7t5v0__oai32_1 (1)       
+gf180mcu_fd_sc_mcu7t5v0__inv_2 (2)         |gf180mcu_fd_sc_mcu7t5v0__inv_2 (2)         
+gf180mcu_fd_sc_mcu7t5v0__oai211_1 (1)      |gf180mcu_fd_sc_mcu7t5v0__oai211_1 (1)      
+gf180mcu_fd_sc_mcu7t5v0__oai221_2 (1)      |gf180mcu_fd_sc_mcu7t5v0__oai221_2 (1)      
+gf180mcu_fd_sc_mcu7t5v0__clkinv_3 (1)      |gf180mcu_fd_sc_mcu7t5v0__clkinv_3 (1)      
+Number of devices: 12818                   |Number of devices: 12818                   
+Number of nets: 12392                      |Number of nets: 12392                      
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: A06_BH_top_wrapper              |Circuit 2: A06_BH_top_wrapper              
+-------------------------------------------|-------------------------------------------
+output_ready_OE                            |output_ready_OE                            
+spi_out0_OE                                |spi_out0_OE                                
+spi_out1_OE                                |spi_out1_OE                                
+spi_out2_OE                                |spi_out2_OE                                
+spi_out3_OE                                |spi_out3_OE                                
+input_ready_PD                             |input_ready_PD                             
+input_ready_PU                             |input_ready_PU                             
+load_row_or_col_PD                         |load_row_or_col_PD                         
+load_row_or_col_PU                         |load_row_or_col_PU                         
+output_ready_CS                            |output_ready_CS                            
+output_ready_IE                            |output_ready_IE                            
+output_ready_PD                            |output_ready_PD                            
+output_ready_PDRV0                         |output_ready_PDRV0                         
+output_ready_PDRV1                         |output_ready_PDRV1                         
+output_ready_PU                            |output_ready_PU                            
+output_ready_SL                            |output_ready_SL                            
+output_valid_PD                            |output_valid_PD                            
+output_valid_PU                            |output_valid_PU                            
+rst_n_PD                                   |rst_n_PD                                   
+rst_n_PU                                   |rst_n_PU                                   
+spi_in0_PD                                 |spi_in0_PD                                 
+spi_in0_PU                                 |spi_in0_PU                                 
+spi_in1_PD                                 |spi_in1_PD                                 
+spi_in1_PU                                 |spi_in1_PU                                 
+spi_in2_PD                                 |spi_in2_PD                                 
+spi_in2_PU                                 |spi_in2_PU                                 
+spi_in3_PD                                 |spi_in3_PD                                 
+spi_in3_PU                                 |spi_in3_PU                                 
+spi_out0_CS                                |spi_out0_CS                                
+spi_out0_IE                                |spi_out0_IE                                
+spi_out0_PD                                |spi_out0_PD                                
+spi_out0_PDRV0                             |spi_out0_PDRV0                             
+spi_out0_PDRV1                             |spi_out0_PDRV1                             
+spi_out0_PU                                |spi_out0_PU                                
+spi_out0_SL                                |spi_out0_SL                                
+spi_out1_CS                                |spi_out1_CS                                
+spi_out1_IE                                |spi_out1_IE                                
+spi_out1_PD                                |spi_out1_PD                                
+spi_out1_PDRV0                             |spi_out1_PDRV0                             
+spi_out1_PDRV1                             |spi_out1_PDRV1                             
+spi_out1_PU                                |spi_out1_PU                                
+spi_out1_SL                                |spi_out1_SL                                
+clk_PU                                     |clk_PU                                     
+spi_out2_CS                                |spi_out2_CS                                
+spi_out2_IE                                |spi_out2_IE                                
+spi_out2_PD                                |spi_out2_PD                                
+spi_out2_PDRV0                             |spi_out2_PDRV0                             
+spi_out2_PDRV1                             |spi_out2_PDRV1                             
+spi_out2_PU                                |spi_out2_PU                                
+spi_out2_SL                                |spi_out2_SL                                
+clk_PD                                     |clk_PD                                     
+spi_out3_CS                                |spi_out3_CS                                
+spi_out3_IE                                |spi_out3_IE                                
+spi_out3_PD                                |spi_out3_PD                                
+spi_out3_PDRV0                             |spi_out3_PDRV0                             
+spi_out3_PDRV1                             |spi_out3_PDRV1                             
+spi_out3_PU                                |spi_out3_PU                                
+spi_out3_SL                                |spi_out3_SL                                
+clk                                        |clk                                        
+input_ready                                |input_ready                                
+load_row_or_col                            |load_row_or_col                            
+output_valid                               |output_valid                               
+rst_n                                      |rst_n                                      
+spi_in0                                    |spi_in0                                    
+spi_in1                                    |spi_in1                                    
+spi_in2                                    |spi_in2                                    
+spi_in3                                    |spi_in3                                    
+spi_out3_OUT                               |spi_out3_OUT                               
+spi_out1_OUT                               |spi_out1_OUT                               
+spi_out2_OUT                               |spi_out2_OUT                               
+spi_out0_OUT                               |spi_out0_OUT                               
+output_ready_OUT                           |output_ready_OUT                           
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+output_ready_IN                            |output_ready_IN                            
+spi_out0_IN                                |spi_out0_IN                                
+spi_out1_IN                                |spi_out1_IN                                
+spi_out2_IN                                |spi_out2_IN                                
+spi_out3_IN                                |spi_out3_IN                                
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes A06_BH_top_wrapper and A06_BH_top_wrapper are equivalent.
+
+Final result: Circuits match uniquely.
+.

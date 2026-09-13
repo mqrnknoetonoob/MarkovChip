@@ -26,13 +26,13 @@
 [TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
-Reading /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/synthesis/1-gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.no_pg.lib as a blackbox
+Reading /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/synthesis/1-gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.no_pg.lib as a blackbox
 
-1. Executing Liberty frontend: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/synthesis/1-gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.no_pg.lib
+1. Executing Liberty frontend: /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/synthesis/1-gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.no_pg.lib
 Imported 229 cell types from liberty file.
 
-2. Executing Verilog-2005 frontend: /openlane/designs/Markov_Chain_Accelerator/src/Markov_Chain_Accelerator_Netlist.v
-Parsing SystemVerilog input from `/openlane/designs/Markov_Chain_Accelerator/src/Markov_Chain_Accelerator_Netlist.v' to AST representation.
+2. Executing Verilog-2005 frontend: /openlane/designs/spm/src/Markov_Chain_Accelerator_Netlist.v
+Parsing SystemVerilog input from `/openlane/designs/spm/src/Markov_Chain_Accelerator_Netlist.v' to AST representation.
 Generating RTLIL representation for module `\Adder_Tree_16in'.
 Generating RTLIL representation for module `\Comparator'.
 Generating RTLIL representation for module `\LFSR'.
@@ -47,13 +47,13 @@ Generating RTLIL representation for module `\memory_enable_decoder'.
 Generating RTLIL representation for module `\priority_encoder'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: /openlane/designs/Markov_Chain_Accelerator/src/A06_BH_top_wrapper.v
-Parsing SystemVerilog input from `/openlane/designs/Markov_Chain_Accelerator/src/A06_BH_top_wrapper.v' to AST representation.
+3. Executing Verilog-2005 frontend: /openlane/designs/spm/src/A06_BH_top_wrapper.v
+Parsing SystemVerilog input from `/openlane/designs/spm/src/A06_BH_top_wrapper.v' to AST representation.
 Generating RTLIL representation for module `\A06_BH_top_wrapper'.
 Successfully finished Verilog frontend.
 
 4. Generating Graphviz representation of design.
-Writing dot description to `/openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/synthesis/hierarchy.dot'.
+Writing dot description to `/openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/synthesis/hierarchy.dot'.
 Dumping module A06_BH_top_wrapper to page 1.
 
 5. Executing HIERARCHY pass (managing design hierarchy).
@@ -88,7 +88,7 @@ Used module:             \Comparator
 Used module:                 \priority_encoder
 Used module:         \Adder_Tree_16in
 Removed 0 unused modules.
-WARNING: TRISTATE_BUFFER_MAP is defined but could not be found: /home/user/.ciel/gf180mcuC/libs.tech/openlane/gf180mcu_fd_sc_mcu7t5v0/tribuff_map.v
+WARNING: TRISTATE_BUFFER_MAP is defined but could not be found: /home/arnob/.volare/volare/gf180mcu/versions/0fe599b2afb6708d281543108caf8310912f54af/gf180mcuC/libs.tech/openlane/gf180mcu_fd_sc_mcu7t5v0/tribuff_map.v
 
 6. Executing HIERARCHY pass (managing design hierarchy).
 
@@ -546,7 +546,7 @@ Checking module A06_BH_top_wrapper...
 Found and reported 0 problems.
 
 44. Generating Graphviz representation of design.
-Writing dot description to `/openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/synthesis/post_techmap.dot'.
+Writing dot description to `/openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/synthesis/post_techmap.dot'.
 Dumping module A06_BH_top_wrapper to page 1.
 
 45. Executing SHARE pass (SAT-based resource sharing).
@@ -709,7 +709,7 @@ Mapping DFF cells in module `\A06_BH_top_wrapper':
 
 51. Executing ABC pass (technology mapping using ABC).
 
-51.1. Extracting gate netlist of module `\A06_BH_top_wrapper' to `/tmp/yosys-abc-zm8Sec/input.blif'..
+51.1. Extracting gate netlist of module `\A06_BH_top_wrapper' to `/tmp/yosys-abc-MIRAkP/input.blif'..
 Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
 Don't call ABC as there is nothing to map.
 Removing temp directory.
@@ -782,6 +782,6 @@ Found and reported 0 problems.
 59. Executing Verilog backend.
 Dumping module `\A06_BH_top_wrapper'.
 
-End of script. Logfile hash: 81ef2b906a, CPU: user 10.51s system 0.28s, MEM: 219.61 MB peak
+End of script. Logfile hash: fa273814c4, CPU: user 9.14s system 0.15s, MEM: 194.16 MB peak
 Yosys 0.30+48 (git sha1 14d50a176d5, gcc 8.3.1 -fPIC -Os)
-Time spent: 30% 2x write_verilog (3 sec), 22% 16x opt_clean (2 sec), ...
+Time spent: 35% 2x write_verilog (3 sec), 22% 16x opt_clean (2 sec), ...

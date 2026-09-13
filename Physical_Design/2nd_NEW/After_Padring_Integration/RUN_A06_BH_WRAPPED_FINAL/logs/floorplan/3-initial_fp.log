@@ -1,0 +1,41 @@
+OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+define_corners Typical
+read_liberty -corner Typical /home/user/.ciel/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+Using 1e-12 for capacitance...
+Using 1e+00 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-06 for power...
+Using 1e-06 for distance...
+[INFO ODB-0222] Reading LEF file: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/merged.nom.lef
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0223]     Created 15 technology layers
+[INFO ODB-0224]     Created 60 technology vias
+[INFO ODB-0225]     Created 229 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/merged.nom.lef
+Reading netlist '/openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/results/synthesis/A06_BH_top_wrapper.v'…
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 5.714
+[INFO]: Setting input delay to: 5.714
+[INFO]: Setting load to: 0.07291
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO] Using the set CORE_AREA; ignoring core margin parameters
+[WARNING IFP-0028] Core area lower left (5.000, 5.000) snapped to (5.040, 7.840).
+[INFO IFP-0001] Added 137 rows of 1964 site GF018hv5v_mcu_sc7 with height 1.
+[INFO IFP-0030] Inserted 0 tiecells using gf180mcu_fd_sc_mcu7t5v0__tiel/ZN.
+[INFO IFP-0030] Inserted 0 tiecells using gf180mcu_fd_sc_mcu7t5v0__tieh/Z.
+[INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
+[INFO] Floorplanned on a die area of 0.0 0.0 1110.0 550.0 (microns). Saving to /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/reports/floorplan/3-initial_fp_die_area.rpt.
+[INFO] Floorplanned on a core area of 5.04 7.84 1104.88 544.88 (microns). Saving to /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/reports/floorplan/3-initial_fp_core_area.rpt.
+Writing OpenROAD database to '/openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/floorplan/3-initial_fp.odb'…
+Writing layout to '/openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/floorplan/3-initial_fp.def'…
+Writing timing constraints to '/openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/floorplan/3-initial_fp.sdc'…

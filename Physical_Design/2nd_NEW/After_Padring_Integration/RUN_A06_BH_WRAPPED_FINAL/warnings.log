@@ -1,0 +1,5 @@
+[WARNING]: VSRC_LOC_FILES is not defined. The IR drop analysis will run, but the values may be inaccurate.
+[WARNING]: ::env(KLAYOUT_DRC_TECH_SCRIPT) is not defined or doesn't exist for the current PDK. So, GDSII streaming out using KLayout will be skipped.
+[WARNING]: This warning can be turned off by setting ::env(RUN_KLAYOUT_DRC) to 0, or designating a tech file.
+[WARNING]: This PDK does not support the Circuit Validity Checker, skipping...
+[WARNING]: There are max fanout violations in the design at the typical corner. Please refer to 'designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/reports/signoff/33-rcx_sta.checks.rpt'.

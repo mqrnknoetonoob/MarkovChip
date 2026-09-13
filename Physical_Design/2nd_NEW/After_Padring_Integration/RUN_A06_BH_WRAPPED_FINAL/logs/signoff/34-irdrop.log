@@ -1,0 +1,55 @@
+OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/results/routing/A06_BH_top_wrapper.odb'…
+define_corners Typical
+read_liberty -corner Typical /home/user/.ciel/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+Using 1e-12 for capacitance...
+Using 1e+00 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-06 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/17-A06_BH_top_wrapper.sdc'…
+[INFO]: Setting RC values...
+[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/reports/signoff/34-irdrop-VDD.rpt.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net VDD is not explicitly set.
+[WARNING PSM-0022] Using voltage 0.000V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[INFO PSM-0076] Setting metal node density to be standard cell height times 5.
+[WARNING PSM-0030] VSRC location at (134.960um, 136.360um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (174.960um, 177.670um).
+[WARNING PSM-0030] VSRC location at (974.960um, 136.360um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (942.960um, 177.670um).
+[WARNING PSM-0030] VSRC location at (414.960um, 276.360um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (482.160um, 330.850um).
+[WARNING PSM-0030] VSRC location at (694.960um, 416.360um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (635.760um, 484.030um).
+[INFO PSM-0031] Number of PDN nodes on net VDD = 5879.
+[INFO PSM-0064] Number of voltage sources = 4.
+[INFO PSM-0040] All PDN stripes on net VDD are connected.
+########## IR report #################
+Worstcase voltage: -4.75e-02 V
+Average IR drop  : 3.50e-02 V
+Worstcase IR drop: 4.75e-02 V
+######################################
+[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/reports/signoff/34-irdrop-VSS.rpt.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net VSS is not explicitly set.
+[WARNING PSM-0021] Using voltage 0.000V for ground network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[INFO PSM-0076] Setting metal node density to be standard cell height times 5.
+[WARNING PSM-0030] VSRC location at (134.960um, 136.360um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (178.260um, 180.970um).
+[WARNING PSM-0030] VSRC location at (974.960um, 136.360um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (946.260um, 180.970um).
+[WARNING PSM-0030] VSRC location at (414.960um, 276.360um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (485.460um, 334.150um).
+[WARNING PSM-0030] VSRC location at (694.960um, 416.360um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (639.060um, 487.330um).
+[INFO PSM-0031] Number of PDN nodes on net VSS = 5948.
+[INFO PSM-0064] Number of voltage sources = 4.
+[INFO PSM-0040] All PDN stripes on net VSS are connected.
+########## IR report #################
+Worstcase voltage: 4.72e-02 V
+Average IR drop  : 3.52e-02 V
+Worstcase IR drop: 4.72e-02 V
+######################################

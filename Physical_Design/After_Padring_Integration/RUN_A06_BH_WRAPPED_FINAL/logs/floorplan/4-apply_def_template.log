@@ -1,7 +1,7 @@
 OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
 This program is licensed under the BSD-3 license. See the LICENSE file for details.
 Components of this program may be licensed under more restrictive licenses which must be honored.
-[INFO ODB-0222] Reading LEF file: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/merged.nom.lef
+[INFO ODB-0222] Reading LEF file: /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/merged.nom.lef
 [INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
   	EOLENCLOSURE 0.34 0.06 ;"
 [INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
@@ -10,11 +10,11 @@ Components of this program may be licensed under more restrictive licenses which
 [INFO ODB-0223]     Created 15 technology layers
 [INFO ODB-0224]     Created 60 technology vias
 [INFO ODB-0225]     Created 229 library cells
-[INFO ODB-0226] Finished LEF file:  /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/merged.nom.lef
-[INFO ODB-0127] Reading DEF file: /openlane/designs/Markov_Chain_Accelerator/src/A06_BH.def
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/spm/src/A06_BH.def
 [INFO ODB-0128] Design: A06_BH
 [INFO ODB-0130]     Created 79 pins.
-[INFO ODB-0134] Finished DEF file: /openlane/designs/Markov_Chain_Accelerator/src/A06_BH.def
+[INFO ODB-0134] Finished DEF file: /openlane/designs/spm/src/A06_BH.def
 Using manufacturing grid: 10 Using dbu per mircons: 2000
 Found 77 block terminals in existing database...
 Found 79 template_bterms:
@@ -130,7 +130,7 @@ Wrote pin spi_in1_PD at layer Metal2 at (188580, 1098000, 189340, 1100000)...
 Wrote pin spi_in1_PU at layer Metal2 at (197310, 1098000, 198070, 1100000)...
 Wrote pin spi_in2 at layer Metal2 at (267520, 1098000, 268280, 1100000)...
 Wrote pin spi_in2_PD at layer Metal2 at (388580, 1098000, 389340, 1100000)...
-Wrote pin spi_in2_PU at layer Metal2 at (397310, 1098000, 398070, 1100000)...[INFO ODB-0222] Reading LEF file: /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/merged.nom.lef
+Wrote pin spi_in2_PU at layer Metal2 at (397310, 1098000, 398070, 1100000)...[INFO ODB-0222] Reading LEF file: /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/merged.nom.lef
 [INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
   	EOLENCLOSURE 0.34 0.06 ;"
 [INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
@@ -139,11 +139,11 @@ Wrote pin spi_in2_PU at layer Metal2 at (397310, 1098000, 398070, 1100000)...[IN
 [INFO ODB-0223]     Created 15 technology layers
 [INFO ODB-0224]     Created 60 technology vias
 [INFO ODB-0225]     Created 229 library cells
-[INFO ODB-0226] Finished LEF file:  /openlane/designs/Markov_Chain_Accelerator/runs/Mrqn-9-Sept/tmp/merged.nom.lef
-[INFO ODB-0127] Reading DEF file: /openlane/designs/Markov_Chain_Accelerator/src/A06_BH.def
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/spm/src/A06_BH.def
 [INFO ODB-0128] Design: A06_BH
 [INFO ODB-0130]     Created 79 pins.
-[INFO ODB-0134] Finished DEF file: /openlane/designs/Markov_Chain_Accelerator/src/A06_BH.def
+[INFO ODB-0134] Finished DEF file: /openlane/designs/spm/src/A06_BH.def
 
 Wrote pin spi_in3 at layer Metal2 at (467520, 1098000, 468280, 1100000)...
 Wrote pin spi_in3_PD at layer Metal2 at (588580, 1098000, 589340, 1100000)...

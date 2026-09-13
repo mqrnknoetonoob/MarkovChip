@@ -1,0 +1,5 @@
+CORNERS ERROR: invalid command name "corners"
+SDF WRITE ERROR (Fastest): Error: multi_corner.tcl line 182, Fastest is not the name of process corner.
+SDF WRITE ERROR (Slowest): Error: multi_corner.tcl line 182, Slowest is not the name of process corner.
+LIB WRITE ERROR (Fastest): Error: multi_corner.tcl line 182, Fastest is not the name of process corner.
+LIB WRITE ERROR (Slowest): Error: multi_corner.tcl line 182, Slowest is not the name of process corner.
