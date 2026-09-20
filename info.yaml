@@ -13,6 +13,9 @@ project:
   discord:     "AlFateh_36"
   description: "16-State 12-bit Stochastic Multi-Step Markov Transition Matrix Accelerator IP Block"
   lvs_config:  "lvs_config.json"
+  drc_ready: true
+  lvs_ready: true
+  
 
 # =============================================================================
 # Pin Definitions
