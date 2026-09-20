@@ -1,6 +1,6 @@
 << properties >>
 string FIXED_BBOX 0 0 222000 110000
-string GDS_END 23591158
-string GDS_FILE /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/results/signoff/A06_BH_top_wrapper.magic.gds
+string GDS_END 23595766
+string GDS_FILE /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/results/signoff/A06_BH_top_wrapper.magic.gds
 string GDS_START 449292
 << end >>

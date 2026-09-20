@@ -1,0 +1,3 @@
+Using Techfile: /home/user/.ciel/gf180mcuC/libs.tech/klayout/drc/gf180mcu.drc
+Using GDS file: /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/results/signoff/A06_BH_top_wrapper.gds
+Output Report File: /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/results/signoff/A06_BH_top_wrapper.gds.lydrc

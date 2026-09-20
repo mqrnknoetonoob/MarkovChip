@@ -2,8 +2,8 @@ Netgen 1.5.255 compiled on Wed Jul 12 10:06:14 UTC 2023
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Generating JSON file result
-Reading netlist file /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/results/signoff/A06_BH_top_wrapper.spice
-Reading netlist file /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/signoff/38-A06_BH_top_wrapper.pnl.v
+Reading netlist file /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/results/signoff/A06_BH_top_wrapper.spice
+Reading netlist file /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/tmp/signoff/38-A06_BH_top_wrapper.pnl.v
 Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
 Creating placeholder cell definition for module gf180mcu_fd_sc_mcu7t5v0__tieh.
 Creating placeholder cell definition for module gf180mcu_fd_sc_mcu7t5v0__tiel.
@@ -97,10 +97,10 @@ Creating placeholder cell definition for module gf180mcu_fd_sc_mcu7t5v0__clkbuf_
 Creating placeholder cell definition for module gf180mcu_fd_sc_mcu7t5v0__buf_2.
 Creating placeholder cell definition for module gf180mcu_fd_sc_mcu7t5v0__buf_3.
 
-Reading setup file /home/arnob/.volare/volare/gf180mcu/versions/0fe599b2afb6708d281543108caf8310912f54af/gf180mcuC/libs.tech/netgen/gf180mcuC_setup.tcl
+Reading setup file /home/user/.ciel/gf180mcuC/libs.tech/netgen/gf180mcuC_setup.tcl
 
-Comparison output logged to file /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/logs/signoff/41-A06_BH_top_wrapper.lef.lvs.log
-Logging to file "/openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/logs/signoff/41-A06_BH_top_wrapper.lef.lvs.log" enabled
+Comparison output logged to file /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/logs/signoff/41-A06_BH_top_wrapper.lef.lvs.log
+Logging to file "/openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/logs/signoff/41-A06_BH_top_wrapper.lef.lvs.log" enabled
 
 Contents of circuit 1:  Circuit: 'gf180mcu_fd_sc_mcu7t5v0__antenna'
 Circuit gf180mcu_fd_sc_mcu7t5v0__antenna contains 0 device instances.
@@ -1257,5 +1257,5 @@ Circuit 1 contains 12392 nets,    Circuit 2 contains 12392 nets.
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "/openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/logs/signoff/41-A06_BH_top_wrapper.lef.lvs.log" disabled
+Logging to file "/openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/logs/signoff/41-A06_BH_top_wrapper.lef.lvs.log" disabled
 LVS Done.

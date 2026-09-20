@@ -1,9 +1,9 @@
 OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
 This program is licensed under the BSD-3 license. See the LICENSE file for details.
 Components of this program may be licensed under more restrictive licenses which must be honored.
-[INFO]: Reading ODB at '/openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/results/routing/A06_BH_top_wrapper.odb'…
+[INFO]: Reading ODB at '/openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/results/routing/A06_BH_top_wrapper.odb'…
 define_corners Typical
-read_liberty -corner Typical /home/arnob/.volare/volare/gf180mcu/versions/0fe599b2afb6708d281543108caf8310912f54af/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+read_liberty -corner Typical /home/user/.ciel/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
 Using 1e-12 for capacitance...
 Using 1e+00 for resistance...
 Using 1e-09 for time...
@@ -11,11 +11,11 @@ Using 1e+00 for voltage...
 Using 1e-03 for current...
 Using 1e-06 for power...
 Using 1e-06 for distance...
-Reading design constraints file at '/openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/tmp/17-A06_BH_top_wrapper.sdc'…
+Reading design constraints file at '/openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/tmp/17-A06_BH_top_wrapper.sdc'…
 [INFO]: Setting RC values...
-[INFO PSM-0001] Reading voltage source file: /openlane/designs/spm/src/VSRC_VDD.loc.
-[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/reports/signoff/34-irdrop-VDD.rpt.
-[INFO PSM-0015] Reading location of VDD and VSS sources from /openlane/designs/spm/src/VSRC_VDD.loc.
+[INFO PSM-0001] Reading voltage source file: /openlane/designs/Markov_Chain_Accelerator/src/VSRC_VDD.loc.
+[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/reports/signoff/34-irdrop-VDD.rpt.
+[INFO PSM-0015] Reading location of VDD and VSS sources from /openlane/designs/Markov_Chain_Accelerator/src/VSRC_VDD.loc.
 [INFO PSM-0076] Setting metal node density to be standard cell height times 5.
 [WARNING PSM-0030] VSRC location at (0.500um, 101.115um) and size 10.250um, is not located on an existing power stripe node. Moving to closest node at (0.140um, 112.840um).
 [WARNING PSM-0067] Multiple voltage supply values mappedat the same node (0.140um, 112.840um).If you provided a vsrc file. Check for duplicate entries.Choosing voltage value 5.000.
@@ -31,9 +31,9 @@ Worstcase voltage: 4.86e+00 V
 Average IR drop  : 1.19e-01 V
 Worstcase IR drop: 1.40e-01 V
 ######################################
-[INFO PSM-0001] Reading voltage source file: /openlane/designs/spm/src/VSRC_VSS.loc.
-[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/spm/runs/FP_PDN_CHECK_NODES_v4/reports/signoff/34-irdrop-VSS.rpt.
-[INFO PSM-0015] Reading location of VDD and VSS sources from /openlane/designs/spm/src/VSRC_VSS.loc.
+[INFO PSM-0001] Reading voltage source file: /openlane/designs/Markov_Chain_Accelerator/src/VSRC_VSS.loc.
+[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/reports/signoff/34-irdrop-VSS.rpt.
+[INFO PSM-0015] Reading location of VDD and VSS sources from /openlane/designs/Markov_Chain_Accelerator/src/VSRC_VSS.loc.
 [INFO PSM-0076] Setting metal node density to be standard cell height times 5.
 [WARNING PSM-0030] VSRC location at (0.500um, 201.115um) and size 10.250um, is not located on an existing power stripe node. Moving to closest node at (0.140um, 191.140um).
 [WARNING PSM-0067] Multiple voltage supply values mappedat the same node (0.140um, 191.140um).If you provided a vsrc file. Check for duplicate entries.Choosing voltage value 0.000.

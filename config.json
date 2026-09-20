@@ -1,8 +1,13 @@
-{   "DESIGN_NAME": "A06_BH_top_wrapper",
+{   
+    "DESIGN_NAME": "A06_BH_top_wrapper",
     "VERILOG_FILES": [
     "dir::src/Markov_Chain_Accelerator_Netlist.v",
     "dir::src/A06_BH_top_wrapper.v"
      ],
+    "VSRC_LOC_FILES": [
+    "VDD", "dir::src/VSRC_VDD.loc",
+    "VSS", "dir::src/VSRC_VSS.loc"
+    ],
     "CLOCK_PORT": "clk",
     "CLOCK_PERIOD": 28.57,
     "PDK": "gf180mcuC",
@@ -31,7 +36,7 @@
     "FP_PDN_CORE_RING": 1,
     "FP_PDN_CORE_RING_VOFFSET": "0",
     "FP_PDN_CORE_RING_HOFFSET": "0",
-    "FP_PDN_CHECK_NODES": 0,
+    "FP_PDN_CHECK_NODES": 1,
     "FP_PDN_MULTILAYER": 1,
     "PL_TARGET_DENSITY": 0.56,
     "PL_RESIZER_MAX_SLEW_MARGIN": 45,
@@ -44,5 +49,10 @@
     "RUN_HEURISTIC_DIODE_INSERTION": 1,
     "DIODE_ON_PORTS": "in",
     "MAGIC_DEF_LABELS": false,
-    "RUN_KLAYOUT_DRC": true
+    "RUN_KLAYOUT_DRC": true,
+    "DEF_UNITS_PER_MICRON": 1000,
+    "FP_PDN_VPITCH": "25",
+    "FP_PDN_HPITCH": "25",
+    "FP_PDN_VOFFSET": "5",
+    "FP_PDN_HOFFSET": "5"
 }
