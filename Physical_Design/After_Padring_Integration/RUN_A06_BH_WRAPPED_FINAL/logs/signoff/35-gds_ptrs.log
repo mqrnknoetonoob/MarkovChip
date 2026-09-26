@@ -115,4 +115,4 @@ Reading "A06_BH_top_wrapper".
     30000 uses
     35000 uses
     40000 uses
-[INFO]: Wrote /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/tmp/signoff/gds_ptrs.mag including GDS pointers.
+[INFO]: Wrote /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_v9_odb_refresh/tmp/signoff/gds_ptrs.mag including GDS pointers.

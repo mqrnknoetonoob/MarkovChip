@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 10
-timestamp 1789716339
+timestamp 1790159021
 << obsm1 >>
 rect 866 1508 220976 109730
 << metal2 >>
@@ -152,7 +152,7 @@ rect 0 49888 220500 61798
 rect 260 49692 220500 49888
 rect 0 1530 220500 49692
 << obsm3 >>
-rect 130 1540 217810 109284
+rect 46 1540 217810 109284
 << metal4 >>
 rect 28 588 348 109956
 rect 688 1248 1008 109296
@@ -854,8 +854,8 @@ port 79 nsew signal output
 string FIXED_BBOX 0 0 222000 110000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 23595766
-string GDS_FILE /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/results/signoff/A06_BH_top_wrapper.magic.gds
+string GDS_END 23601142
+string GDS_FILE /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_v9_odb_refresh/results/signoff/A06_BH_top_wrapper.magic.gds
 string GDS_START 449292
 << end >>
 

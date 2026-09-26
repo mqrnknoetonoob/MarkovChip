@@ -1,30 +1,40 @@
 #!/usr/bin/env python3
 """
-post_routing_patch.py
+post_routing_patch.py  (v7 -- direct pad-to-ring via stack, per reviewer feedback)
 
-Design-scoped OpenLane post-routing hook for Markov_Chain_Accelerator
-(A06_BH_top_wrapper). Called automatically by flow.tcl's pdn_bridge_patch
-step (only if this file exists at designs/<DESIGN>/hooks/post_routing_patch.py
--- see flow.tcl's run_pdn_bridge_patch_step proc), right after routing
-completes and before parasitics/STA/IR-drop/GDS/LVS/DRC steps consume the
-routing DEF.
+v5/v6 bridged each pad's Metal2 boundary pin to the shared FOLLOWPIN
+row-rail start-x (5.04um), landing a Metal1 via at the nearest real row
+for that net. That closed the open circuit and passed DRC/antenna/LVS/
+connectivity checks -- but reviewer feedback (Mitch Bailey) correctly
+identified the resulting path as electrically weak: current has to
+travel pad -> Metal2 -> Metal1 -> along the row rail -> through
+whatever general Metal1->Metal4 connection exists -> Metal4 vertical
+stripes -> Metal5 horizontal stripes -> and only then reach the ring.
+Long, resistive, and dependent on the general internal mesh rather than
+a direct low-resistance path to the ring itself.
 
-Called as:
-    python3 post_routing_patch.py <input_def> <output_def>
+v7 fix: in addition to the existing Metal1 via (kept -- an extra
+parallel path to ground/power is never a problem), add a SECOND, direct
+via stack at each pad: Metal2 -> Via2 -> Metal3 -> Via3 -> Metal4,
+landing exactly on that net's own power RING wire -- not the general
+grid, not the row rail.
 
-This is the same bridging logic verified in this session (Magic DRC: 0
-errors; OpenROAD antenna check: 0 violations; PSM: PSM-0040 connected,
-node count +18/net as expected) -- relocated here so it runs automatically
-as part of the flow instead of by hand between flow stages.
+Ring centerline x-coordinates below were read directly off this
+design's own routed DEF (grep -n "SHAPE RING", scoped per net's own
+SPECIALNETS block) -- NOT estimated or derived from a formula. VDD's
+ring and VSS's ring sit at genuinely different x (confirmed, see the
+full documentation's section on this investigation) -- do not assume
+they're interchangeable, and do not assume these values hold for a
+different routed DEF without re-verifying:
 
-Root cause recap (see A06_PDN_fix_full_documentation.md for full detail):
-the pad-frame VDD/VSS boundary pins (from the reviewer's FP_DEF_TEMPLATE,
-A06_BH.def) sit on Metal2 at the die edge, but the design's PDN grid never
-generates any geometry on Metal2 -- it only ever exists on Metal1 (rails)
-and Metal4/5 (grid/ring). This script bridges that gap post-route by
-inserting Metal2 stub wires + Metal1 via drops directly into the routed
-DEF's SPECIALNETS section, snapping each via to the nearest real
-FOLLOWPIN row for its own net (VDD/VSS rows are not interchangeable).
+    grep -n "VDD ( PIN\\|VSS ( PIN" <def>              # find each net's block start
+    awk 'NR>=<start> && NR<=<next_net_start> && /SHAPE RING/' <def>
+
+Read the x-coordinate (first number) off the vertical RING segment
+nearest the die edge for that net -- that's the ring's centerline; the
+wire's half-width (second value in the same "widths"/wire-width field,
+here 3200 DBU = 1.6um) tells you the ring's full span around that
+centerline, useful for sanity-checking the target lands inside it.
 """
 
 import re
@@ -32,16 +42,7 @@ import sys
 
 DEF_UNITS_PER_MICRON = 2000  # verified for THIS design's routed DEF via:
                               #   grep -m1 "UNITS DISTANCE MICRONS" <def>
-                              # NOTE: an earlier floorplan-stage DEF in this
-                              # same project used 200 DBU/um -- the scale is
-                              # NOT constant across flow stages. If this hook
-                              # is ever reused for a different design or a
-                              # differently-configured run, re-verify this
-                              # value against that run's actual routed DEF
-                              # before trusting it.
 
-# y-ranges in microns, taken directly from A06_BH.def VDD/VSS PIN rects
-# (the reviewer-supplied FP_DEF_TEMPLATE boundary spec for this design)
 VDD_RANGES_UM = [
     (109.14, 118.64), (95.99, 106.24), (84.14, 94.39),
     (70.61, 80.86), (58.76, 69.01), (46.36, 55.86),
@@ -52,46 +53,45 @@ VSS_RANGES_UM = [
 ]
 
 X_LO_UM = 0.0    # die edge, overlaps the existing FP_DEF_TEMPLATE pin
-X_HI_UM = 5.04   # shared FOLLOWPIN row start-x for BOTH nets -- verified
-                 # via direct grep that VSS's own FOLLOWPIN rows exist ONLY
-                 # here, same as VDD's, despite VDD's and VSS's power RINGS
-                 # sitting at different x (5.04um vs 1.74um respectively).
-                 # The ring-x difference is real but irrelevant to the
-                 # bridge target -- the row rail, not the ring surface, is
-                 # the actual electrical tie-in point. See documentation
-                 # section 4.2 for the full investigation of this point.
+X_HI_UM = 5.04   # shared FOLLOWPIN row start-x for BOTH nets (Metal1 via
+                 # target -- unchanged from v5/v6, kept as a parallel path)
 
-JOG_WIDTH_UM = 0.14  # thin Metal2 jog width if a snapped row falls outside
-                     # [y_lo, y_hi] -- tune to Metal2 min-width rule if this
-                     # ever actually triggers (not observed for this design)
+# Ring centerline x, in DBU, read directly off the routed DEF -- per net,
+# NOT shared (see module docstring). This is the NEW via stack's target.
+RING_X_DBU_BY_NET = {
+    "VDD": 8480,   # ring wire spans 6880-10080 DBU (width 3200), centerline 8480
+    "VSS": 1880,   # ring wire spans  280- 3480 DBU (width 3200), centerline 1880
+}
+
+JOG_WIDTH_UM = 0.14
 
 
 def um_to_dbu(v):
     return int(round(v * DEF_UNITS_PER_MICRON))
 
 
-def find_m1_m2_via(def_text):
+def find_via(def_text, layer_a, layer_b):
     """
     Scan the DEF's VIAS section for a via master explicitly defined with
-    LAYERS Metal1 <cut> Metal2 -- reuses whatever real via master this
-    design's own router already proved out, rather than inventing new via
-    geometry.
+    LAYERS <layer_a> <cut> <layer_b> -- reuses a real, already-proven via
+    from this design's own VIAS section rather than inventing new via
+    geometry. Returns the via name, or None if not found.
     """
     vias_match = re.search(r'^VIAS\s+\d+\s*;(.*?)^END VIAS', def_text, re.DOTALL | re.MULTILINE)
     if not vias_match:
-        return {}
+        return None
     vias_block = vias_match.group(1)
-    candidates = {}
+    pattern = re.compile(
+        rf'-\s+(\S+)\s+.*LAYERS\s+{layer_a}\s+\S+\s+{layer_b}\b'
+    )
     for line in vias_block.splitlines():
-        line = line.strip()
-        m = re.match(r'-\s+(\S+)\s+.*LAYERS\s+Metal1\s+\S+\s+Metal2\b', line)
+        m = pattern.match(line.strip())
         if m:
-            candidates[m.group(1)] = 1
-    return candidates
+            return m.group(1)
+    return None
 
 
 def parse_followpin_rows(net_block_text, x_dbu):
-    """Real FOLLOWPIN Metal1 row y-values (dbu) for THIS net's own block."""
     rows = [int(y) for y in re.findall(
         rf'FOLLOWPIN\s+\(\s*{x_dbu}\s+(\d+)\s*\)', net_block_text
     )]
@@ -102,7 +102,18 @@ def nearest_row(rows_dbu, target_dbu):
     return min(rows_dbu, key=lambda r: abs(r - target_dbu))
 
 
-def build_stub_wire(via_name, y_lo_um, y_hi_um, via_y_dbu, width_um):
+def build_stub_wire(net_name, m1_via_name, m2_m3_via_name, m3_m4_via_name,
+                     y_lo_um, y_hi_um, via_y_dbu, width_um, ring_x_dbu):
+    """
+    One Metal2 stripe spanning the full pin height (unchanged from v5),
+    PLUS:
+      - the existing Metal1 via at the nearest real FOLLOWPIN row for
+        this net (unchanged from v5 -- kept as a parallel path)
+      - NEW: a direct Metal2->Via2->Metal3->Via3->Metal4 stack landing
+        on this net's own ring centerline, at the pad's own y-center
+        (the ring is a continuous wire spanning the full die height, so
+        no row-snapping is needed here, unlike the periodic Metal1 rows)
+    """
     y_lo_dbu = um_to_dbu(y_lo_um)
     y_hi_dbu = um_to_dbu(y_hi_um)
     y_c_dbu = um_to_dbu((y_lo_um + y_hi_um) / 2.0)
@@ -114,6 +125,8 @@ def build_stub_wire(via_name, y_lo_um, y_hi_um, via_y_dbu, width_um):
         f"    NEW Metal2 {width_dbu} + SHAPE STRIPE "
         f"( {x_lo} {y_c_dbu} ) ( {x_hi} {y_c_dbu} )"
     ]
+
+    # -- Existing Metal1 row-rail via (v5/v6, kept as a parallel path) --
     if not (y_lo_dbu <= via_y_dbu <= y_hi_dbu):
         jog_width_dbu = um_to_dbu(JOG_WIDTH_UM)
         lines.append(
@@ -121,12 +134,27 @@ def build_stub_wire(via_name, y_lo_um, y_hi_um, via_y_dbu, width_um):
             f"( {x_hi} {y_c_dbu} ) ( {x_hi} {via_y_dbu} )"
         )
     lines.append(
-        f"    NEW Metal1 0 + SHAPE STRIPE ( {x_hi} {via_y_dbu} ) {via_name}"
+        f"    NEW Metal1 0 + SHAPE STRIPE ( {x_hi} {via_y_dbu} ) {m1_via_name}"
     )
+
+    # -- NEW: direct Metal2 -> Metal3 -> Metal4(ring) stack --
+    # Both via drops sit at the SAME (x, y) point so their footprints
+    # stack directly on top of one another (Metal2 -> Via2 -> Metal3 ->
+    # Via3 -> Metal4), landing on the ring at the pad's own y-center.
+    lines.append(
+        f"    NEW Metal2 0 + SHAPE STRIPE ( {ring_x_dbu} {y_c_dbu} ) {m2_m3_via_name}"
+    )
+    lines.append(
+        f"    NEW Metal3 0 + SHAPE STRIPE ( {ring_x_dbu} {y_c_dbu} ) {m3_m4_via_name}"
+    )
+
     return "\n".join(lines)
 
 
-def patch_net(def_text, net_name, ranges_um, via_name, log):
+def patch_net(def_text, net_name, ranges_um, m1_via_name, m2_m3_via_name,
+              m3_m4_via_name, log):
+    ring_x_dbu = RING_X_DBU_BY_NET[net_name]
+
     sn_match = re.search(r'(SPECIALNETS\s+\d+\s*;.*?)(END SPECIALNETS)', def_text, re.DOTALL)
     if not sn_match:
         raise RuntimeError("Could not find SPECIALNETS section in this DEF")
@@ -146,17 +174,21 @@ def patch_net(def_text, net_name, ranges_um, via_name, log):
             f"No FOLLOWPIN rows found for net {net_name} at x={x_hi_dbu} dbu "
             f"({X_HI_UM}um). This design's routed DEF may differ from the one "
             f"this hook was verified against -- do not trust the patch output "
-            f"until re-verified. See module docstring."
+            f"until re-verified."
         )
 
-    log(f"{net_name}: {len(rows_dbu)} real FOLLOWPIN rows found at x={X_HI_UM}um")
+    log(f"{net_name}: {len(rows_dbu)} real FOLLOWPIN rows found at x={X_HI_UM}um; "
+        f"ring centerline x={ring_x_dbu} dbu ({ring_x_dbu/DEF_UNITS_PER_MICRON}um)")
 
     new_branches = []
     for (y_lo, y_hi) in ranges_um:
         y_c_dbu = um_to_dbu((y_lo + y_hi) / 2.0)
         row_dbu = nearest_row(rows_dbu, y_c_dbu)
         width_um = y_hi - y_lo
-        new_branches.append(build_stub_wire(via_name, y_lo, y_hi, row_dbu, width_um))
+        new_branches.append(build_stub_wire(
+            net_name, m1_via_name, m2_m3_via_name, m3_m4_via_name,
+            y_lo, y_hi, row_dbu, width_um, ring_x_dbu
+        ))
 
     insertion = "\n" + "\n".join(new_branches) + "\n    "
     patched_sn_block = (
@@ -174,29 +206,36 @@ def main():
     in_path, out_path = sys.argv[1], sys.argv[2]
 
     def log(msg):
-        print(f"[post_routing_patch] {msg}")
+        print(f"[post_routing_patch v7] {msg}")
 
     with open(in_path, "r") as f:
         def_text = f.read()
 
-    log("Scanning for the design's own Metal1<->Metal2 via master ...")
-    candidates = find_m1_m2_via(def_text)
-    if not candidates:
+    log("Scanning for this design's own via masters (Metal1-Metal2, Metal2-Metal3, Metal3-Metal4) ...")
+    m1_via = find_via(def_text, "Metal1", "Metal2")
+    m2_m3_via = find_via(def_text, "Metal2", "Metal3")
+    m3_m4_via = find_via(def_text, "Metal3", "Metal4")
+
+    missing = [name for name, v in [
+        ("Metal1-Metal2", m1_via), ("Metal2-Metal3", m2_m3_via), ("Metal3-Metal4", m3_m4_via)
+    ] if v is None]
+    if missing:
         print(
-            "[post_routing_patch] FATAL: no Metal1<->Metal2 via master found "
-            "in this DEF's VIAS section. This hook was verified against a "
-            "specific routed DEF for A06_BH_top_wrapper -- if this design's "
-            "PDN/via structure has changed, this hook needs re-verification, "
-            "not blind re-use. Aborting rather than guessing.",
+            f"[post_routing_patch v7] FATAL: could not find a real via master for: "
+            f"{', '.join(missing)} in this DEF's VIAS section. This hook was "
+            f"verified against a specific routed DEF -- if this design's via "
+            f"structure has changed, this hook needs re-verification, not blind "
+            f"re-use. Aborting rather than guessing.",
             file=sys.stderr,
         )
         sys.exit(2)
 
-    via_name = max(candidates, key=candidates.get)
-    log(f"Using via master: {via_name}")
+    log(f"Metal1-Metal2 via: {m1_via}")
+    log(f"Metal2-Metal3 via: {m2_m3_via}")
+    log(f"Metal3-Metal4 via: {m3_m4_via}")
 
-    def_text = patch_net(def_text, "VDD", VDD_RANGES_UM, via_name, log)
-    def_text = patch_net(def_text, "VSS", VSS_RANGES_UM, via_name, log)
+    def_text = patch_net(def_text, "VDD", VDD_RANGES_UM, m1_via, m2_m3_via, m3_m4_via, log)
+    def_text = patch_net(def_text, "VSS", VSS_RANGES_UM, m1_via, m2_m3_via, m3_m4_via, log)
 
     with open(out_path, "w") as f:
         f.write(def_text)

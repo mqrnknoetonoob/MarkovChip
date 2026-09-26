@@ -26,9 +26,9 @@
 [TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
-Reading /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/tmp/synthesis/1-gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.no_pg.lib as a blackbox
+Reading /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_v9_odb_refresh/tmp/synthesis/1-gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.no_pg.lib as a blackbox
 
-1. Executing Liberty frontend: /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/tmp/synthesis/1-gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.no_pg.lib
+1. Executing Liberty frontend: /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_v9_odb_refresh/tmp/synthesis/1-gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.no_pg.lib
 Imported 229 cell types from liberty file.
 
 2. Executing Verilog-2005 frontend: /openlane/designs/Markov_Chain_Accelerator/src/Markov_Chain_Accelerator_Netlist.v
@@ -53,7 +53,7 @@ Generating RTLIL representation for module `\A06_BH_top_wrapper'.
 Successfully finished Verilog frontend.
 
 4. Generating Graphviz representation of design.
-Writing dot description to `/openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/tmp/synthesis/hierarchy.dot'.
+Writing dot description to `/openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_v9_odb_refresh/tmp/synthesis/hierarchy.dot'.
 Dumping module A06_BH_top_wrapper to page 1.
 
 5. Executing HIERARCHY pass (managing design hierarchy).
@@ -546,7 +546,7 @@ Checking module A06_BH_top_wrapper...
 Found and reported 0 problems.
 
 44. Generating Graphviz representation of design.
-Writing dot description to `/openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/tmp/synthesis/post_techmap.dot'.
+Writing dot description to `/openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_v9_odb_refresh/tmp/synthesis/post_techmap.dot'.
 Dumping module A06_BH_top_wrapper to page 1.
 
 45. Executing SHARE pass (SAT-based resource sharing).
@@ -709,7 +709,7 @@ Mapping DFF cells in module `\A06_BH_top_wrapper':
 
 51. Executing ABC pass (technology mapping using ABC).
 
-51.1. Extracting gate netlist of module `\A06_BH_top_wrapper' to `/tmp/yosys-abc-7WvGH4/input.blif'..
+51.1. Extracting gate netlist of module `\A06_BH_top_wrapper' to `/tmp/yosys-abc-s0eQMm/input.blif'..
 Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
 Don't call ABC as there is nothing to map.
 Removing temp directory.
@@ -782,6 +782,6 @@ Found and reported 0 problems.
 59. Executing Verilog backend.
 Dumping module `\A06_BH_top_wrapper'.
 
-End of script. Logfile hash: f31095b6d4, CPU: user 10.52s system 0.28s, MEM: 219.45 MB peak
+End of script. Logfile hash: da2a61a49d, CPU: user 10.94s system 0.37s, MEM: 219.59 MB peak
 Yosys 0.30+48 (git sha1 14d50a176d5, gcc 8.3.1 -fPIC -Os)
-Time spent: 30% 2x write_verilog (3 sec), 22% 16x opt_clean (2 sec), ...
+Time spent: 29% 2x write_verilog (3 sec), 21% 16x opt_clean (2 sec), ...

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
- <description>XOR /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/results/signoff/A06_BH_top_wrapper.gds vs. /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_test/results/signoff/A06_BH_top_wrapper.klayout.gds</description>
+ <description>XOR /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_v9_odb_refresh/results/signoff/A06_BH_top_wrapper.gds vs. /openlane/designs/Markov_Chain_Accelerator/runs/automated_pdn_fix_v9_odb_refresh/results/signoff/A06_BH_top_wrapper.klayout.gds</description>
  <original-file/>
  <generator>drc: script='/openlane/scripts/klayout/xor.drc'</generator>
  <top-cell>A06_BH_top_wrapper</top-cell>
