@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "A06_BH_top_wrapper")
- (DATE "Wed Sep 23 10:22:36 2026")
+ (DATE "Fri Oct  2 19:56:36 2026")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -185273,8 +185273,8 @@
      (IOPATH I1 Z (0.000:0.000:0.000)))
     (COND I0===1'b0
      (IOPATH I1 Z (0.637:0.637:0.637) (0.816:0.816:0.816)))
-    (IOPATH S Z (0.658:0.658:0.658) (0.780:0.780:0.780))
-    (IOPATH S Z (0.951:0.951:0.951) (0.928:0.928:0.928))
+    (IOPATH S Z (0.658:0.658:0.658) (0.781:0.781:0.781))
+    (IOPATH S Z (0.952:0.952:0.952) (0.928:0.928:0.928))
    )
   )
  )
@@ -186112,7 +186112,7 @@
     (REMOVAL (COND ENABLE_SETN === 1'b1 (posedge RN)) (COND ENABLE_SETN === 1'b1 (posedge CLK)) (1.047:1.047:1.047))
     (RECOVERY (COND ENABLE_SETN === 1'b1 (posedge RN)) (COND ENABLE_SETN === 1'b1 (posedge CLK)) (-0.694:-0.694:-0.694))
     (SETUP (COND ENABLE_RN_AND_SETN === 1'b1 (posedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (0.338:0.338:0.339))
-    (SETUP (COND ENABLE_RN_AND_SETN === 1'b1 (negedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (0.619:0.620:0.621))
+    (SETUP (COND ENABLE_RN_AND_SETN === 1'b1 (negedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (0.620:0.621:0.621))
     (HOLD (COND ENABLE_RN_AND_SETN === 1'b1 (posedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (-0.068:-0.068:-0.068))
     (HOLD (COND ENABLE_RN_AND_SETN === 1'b1 (negedge D)) (COND ENABLE_RN_AND_SETN === 1'b1 (posedge CLK)) (-0.007:-0.008:-0.009))
     (WIDTH (posedge CLK) (1.097:1.097:1.097))
