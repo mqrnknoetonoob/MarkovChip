@@ -18,6 +18,7 @@ project:
   lvs_ready: true
   gf_def_ready: true
   ws_def_ready: false
+  export_control: "Export_Control_GF.docx"
   
 
 # =============================================================================
